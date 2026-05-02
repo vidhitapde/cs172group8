@@ -35,7 +35,8 @@ while frontier and pages_crawled < max_pages:
     soup = BeautifulSoup(page.content, "html.parser")
     title = soup.title.string
     # clean title to replace all non word, space, or hyphen chars with underscore
-    clean_title = re.sub(r'[^\w\s-]', '_', title)
+    clean_title = re.sub(r'[^\w]', '_', title)
+    clean_title = re.sub(r'_+', '_', clean_title)  # remove multiple underscores in a row
 
     file_path = os.path.join(output_dir, f"{clean_title}.html")
 
