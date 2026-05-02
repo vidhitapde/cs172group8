@@ -7,7 +7,7 @@ from collections import deque
 from urllib.parse import urljoin
 import re
 
-headers = {'User-Agent': 'CS172_CelebScraper/0.0 (rchan192@ucr.edu)'}
+headers = {'User-Agent': 'CS172_CATEGORY1Scraper/0.0 (email@email.com)'}
 
 seed_urls = sys.argv[1]
 max_pages = int(sys.argv[2])
