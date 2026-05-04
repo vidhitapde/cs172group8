@@ -4,8 +4,10 @@ import sys
 import os
 import time
 from collections import deque
-from urllib.parse import urljoin, urlparse
+from urllib.parse import urljoin, urlparse, urlunparse
 import re
+
+from utils import normalize_url
 import urllib.robotparser
 
 headers = {'User-Agent': 'CS172_CATEGORY1Scraper/0.0 (email@email.com)'}
@@ -52,6 +54,7 @@ pages_crawled = 0
 while frontier and pages_crawled < max_pages:
     website, curr_hop = frontier.popleft()
 
+    website = normalize_url(website)
     if website in visited or curr_hop > max_hops:
         continue
 
