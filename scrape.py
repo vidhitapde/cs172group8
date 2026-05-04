@@ -16,6 +16,13 @@ headers = {'User-Agent': 'CS172_CATEGORY1Scraper/0.0 (email@email.com)'}
 robot_parser_list = {}
 visited_lock = threading.Lock()  
 robot_lock = threading.Lock()
+thread_event = threading.Event()
+
+seed_urls = sys.argv[1]
+max_pages = int(sys.argv[2])
+max_hops = int(sys.argv[3])
+output_dir = sys.argv[4]
+time_limit_secs = int(sys.argv[5])
 
 def get_base_url(url):
     parsed_url = urlparse(url)
@@ -43,13 +50,6 @@ def rp_can_fetch(url):
     rp = robot_txt_parser(url)
     return rp.can_fetch(headers["User-Agent"], url)
 
-seed_urls = sys.argv[1]
-max_pages = int(sys.argv[2])
-max_hops = int(sys.argv[3])
-output_dir = sys.argv[4]
-
-
-
 # create output directory if it does not exist
 if not os.path.exists(output_dir):
     os.makedirs(output_dir)
@@ -60,10 +60,15 @@ for url in open(seed_urls).read().splitlines():
     frontier.put((url, 0))
 visited = set()
 pages_crawled = 0
+start_time = time.time()
 
 def worker():
     global pages_crawled
-    while True:
+    while not thread_event.is_set():  
+        if time.time() - start_time > time_limit_secs:
+            print(f"time limit of {time_limit_secs}s reached!")
+            thread_event.set()
+            break  
         try:
             website, curr_hop = frontier.get(timeout=3)
         except queue.Empty:
@@ -116,7 +121,7 @@ def worker():
                         frontier.put((normalized_full_url, curr_hop+1))
         time.sleep(1)
         frontier.task_done()
-
+        
 num_threads = 5
 threads = []
 for i in range(num_threads):
@@ -124,7 +129,12 @@ for i in range(num_threads):
     t.start()
     threads.append(t)
 
-frontier.join()
+for t in threads:
+    while t.is_alive() and not thread_event.is_set():
+        if time.time() - start_time > time_limit_secs:
+            print(f"time limit of {time_limit_secs}s reached!")
+            thread_event.set()
+
 for t in threads:
     t.join()
 
