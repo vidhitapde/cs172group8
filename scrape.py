@@ -4,10 +4,36 @@ import sys
 import os
 import time
 from collections import deque
-from urllib.parse import urljoin
+from urllib.parse import urljoin, urlparse
 import re
+import urllib.robotparser
 
 headers = {'User-Agent': 'CS172_CATEGORY1Scraper/0.0 (email@email.com)'}
+robot_parser_list = {}
+
+def get_base_url(url):
+    parsed_url = urlparse(url)
+    return f"{parsed_url.scheme}://{parsed_url.netloc}"
+
+def robot_txt_parser(url):
+    base_url = get_base_url(url)
+    if base_url not in robot_parser_list:
+        rp = urllib.robotparser.RobotFileParser()
+        robot_url = urljoin(base_url, "/robots.txt")
+        rp.set_url(robot_url)
+
+        try: 
+            response = requests.get(robot_url, headers=headers,timeout=5, allow_redirects=True)
+            response.raise_for_status()
+            rp.parse(response.text.splitlines())
+        except Exception as e:
+            print(f"Error reading robots.txt from {robot_url}: {e}")
+        robot_parser_list[base_url] = rp
+    return robot_parser_list[base_url]
+
+def rp_can_fetch(url):
+    rp = robot_txt_parser(url)
+    return rp.can_fetch(headers["User-Agent"], url)
 
 seed_urls = sys.argv[1]
 max_pages = int(sys.argv[2])
@@ -28,6 +54,12 @@ while frontier and pages_crawled < max_pages:
 
     if website in visited or curr_hop > max_hops:
         continue
+
+    #check robot.txt
+    if not rp_can_fetch(website):
+        print(f"Skipping {website}, restricted by robots.txt.")
+        continue
+
 
     page = requests.get(website, headers=headers)
     html_file = page.text
