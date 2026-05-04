@@ -6,11 +6,12 @@ import time
 from collections import deque
 from urllib.parse import urljoin, urlparse, urlunparse
 import re
-from utils import normalize_url
 import urllib.robotparser
 import threading
 import queue
+from utils import normalize_url, save_json_file, extract_text_content, parse_folder
 
+encoding = "utf-8"
 headers = {'User-Agent': 'CS172_CATEGORY1Scraper/0.0 (email@email.com)'}
 robot_parser_list = {}
 visited_lock = threading.Lock()  
@@ -126,3 +127,7 @@ for i in range(num_threads):
 frontier.join()
 for t in threads:
     t.join()
+
+
+data = parse_folder(output_dir)
+save_json_file(data, os.path.join(output_dir, "outputs.json"))
