@@ -2,7 +2,7 @@ import os
 import shutil 
 
 # folder names containing the output files
-folders = ["output_music", "output_film", "output_game"]
+folders = ["output_music", "output_film", "output_game", "output_celebrities"]
 
 # creates a new folder to store all five combined output files
 output_folder = "combined_output"
