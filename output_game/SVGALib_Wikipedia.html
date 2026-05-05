@@ -1,0 +1,868 @@
+<!DOCTYPE html>
+<html class="client-nojs vector-feature-language-in-header-enabled vector-feature-language-in-main-menu-disabled vector-feature-language-in-main-page-header-disabled vector-feature-page-tools-pinned-disabled vector-feature-toc-pinned-clientpref-1 vector-feature-main-menu-pinned-disabled vector-feature-limited-width-clientpref-1 vector-feature-limited-width-content-enabled vector-feature-custom-font-size-clientpref-1 vector-feature-appearance-pinned-clientpref-1 skin-theme-clientpref-day vector-sticky-header-enabled vector-toc-available skin-theme-clientpref-thumb-standard" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<title>SVGALib - Wikipedia</title>
+<script>(function(){var className="client-js vector-feature-language-in-header-enabled vector-feature-language-in-main-menu-disabled vector-feature-language-in-main-page-header-disabled vector-feature-page-tools-pinned-disabled vector-feature-toc-pinned-clientpref-1 vector-feature-main-menu-pinned-disabled vector-feature-limited-width-clientpref-1 vector-feature-limited-width-content-enabled vector-feature-custom-font-size-clientpref-1 vector-feature-appearance-pinned-clientpref-1 skin-theme-clientpref-day vector-sticky-header-enabled vector-toc-available skin-theme-clientpref-thumb-standard";var cookie=document.cookie.match(/(?:^|; )enwikimwclientpreferences=([^;]+)/);if(cookie){cookie[1].split('%2C').forEach(function(pref){className=className.replace(new RegExp('(^| )'+pref.replace(/-clientpref-\w+$|[^\w-]+/g,'')+'-clientpref-\\w+( |$)'),'$1'+pref+'$2');});}document.documentElement.className=className;}());RLCONF={"wgBreakFrames":false,"wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgRequestId":"0b83ed96-7ce4-4d45-9bd1-5b64127d527e","wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"SVGALib","wgTitle":"SVGALib","wgCurRevisionId":1334124867,"wgRevisionId":1334124867,"wgArticleId":1874031,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Articles with short description","Short description is different from Wikidata","Articles with example C code","Free computer libraries","Graphics libraries","Video game development software for Linux"],"wgPageViewLanguage":"en","wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgRelevantPageName":"SVGALib","wgRelevantArticleId":1874031,"wgTempUserName":null,"wgIsProbablyEditable":true,"wgRelevantPageIsProbablyEditable":true,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgNoticeProject":"wikipedia","wgFlaggedRevsParams":{"tags":{"status":{"levels":1}}},"wgConfirmEditCaptchaNeededForGenericEdit":"hcaptcha","wgConfirmEditForceShowCaptcha":false,"wgConfirmEditHCaptchaVisualEditorOnLoadIntegrationEnabled":false,"wgConfirmEditHCaptchaSiteKey":"5d0c670e-a5f4-4258-ad16-1f42792c9c62","wgMediaViewerOnClick":true,"wgMediaViewerEnabledByDefault":true,"wgPopupsFlags":0,"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","pageVariantFallbacks":"en"},"wgMFDisplayWikibaseDescriptions":{"search":true,"watchlist":true,"tagline":false,"nearby":true},"wgWMESchemaEditAttemptStepOversample":false,"wgWMEPageLength":20000,"wgTestKitchenUserExperiments":{"overrides":[],"enrolled":[],"assigned":[],"subject_ids":[]},"wgEditSubmitButtonLabelPublish":true,"wgVisualEditorPageIsDisambiguation":false,"wgULSPosition":"interlanguage","wgULSisCompactLinksEnabled":false,"wgVector2022LanguageInHeader":true,"wgULSisLanguageSelectorEmpty":false,"wgULSLanguageSelectorV2Enabled":false,"wgWikibaseItemId":"Q3498967","wgCheckUserClientHintsHeadersJsApi":["brands","architecture","bitness","fullVersionList","mobile","model","platform","platformVersion"],"GEHomepageSuggestedEditsEnableTopics":true,"wgGESuggestedEditsTaskTypes":{"taskTypes":["copyedit","link-recommendation"],"unavailableTaskTypes":[]},"wgGETopicsMatchModeEnabled":false,"wgGELevelingUpEnabledForUser":false};
+RLSTATE={"ext.globalCssJs.user.styles":"ready","site.styles":"ready","user.styles":"ready","ext.globalCssJs.user":"ready","user":"ready","user.options":"loading","ext.wikimediamessages.styles":"ready","ext.cite.styles":"ready","skins.vector.search.codex.styles":"ready","skins.vector.styles":"ready","skins.vector.icons":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready","ext.uls.interlanguage":"ready","wikibase.client.init":"ready"};RLPAGEMODULES=["ext.parsermigration.survey","ext.cite.ux-enhancements","site","mediawiki.page.ready","skins.vector.js","ext.centralNotice.geoIP","ext.centralNotice.startUp","ext.gadget.ReferenceTooltips","ext.gadget.switcher","ext.urlShortener.toolbar","ext.centralauth.centralautologin","ext.testKitchen","mmv.bootstrap","ext.popups","ext.visualEditor.desktopArticleTarget.init","ext.echo.centralauth","ext.eventLogging","ext.wikimediaEvents","ext.navigationTiming","ext.uls.interface","ext.cx.eventlogging.campaigns","ext.cx.uls.quick.actions","wikibase.client.vector-2022","wikibase.databox.fromWikidata","ext.checkUser.clientHints","ext.quicksurveys.init","ext.growthExperiments.SuggestedEditSession"];</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.loader.impl(function(){return["user.options@12s5i",function($,jQuery,require,module){mw.user.tokens.set({"patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+}];});});</script>
+<link rel="stylesheet" href="/w/load.php?lang=en&amp;modules=ext.cite.styles%7Cext.uls.interlanguage%7Cext.visualEditor.desktopArticleTarget.noscript%7Cext.wikimediamessages.styles%7Cskins.vector.icons%2Cstyles%7Cskins.vector.search.codex.styles%7Cwikibase.client.init&amp;only=styles&amp;skin=vector-2022">
+<script async="" src="/w/load.php?lang=en&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=vector-2022"></script>
+<meta name="ResourceLoaderDynamicStyles" content="">
+<link rel="stylesheet" href="/w/load.php?lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=vector-2022">
+<meta name="generator" content="MediaWiki 1.46.0-wmf.26">
+<meta name="referrer" content="origin">
+<meta name="referrer" content="origin-when-cross-origin">
+<meta name="robots" content="max-image-preview:standard">
+<meta name="format-detection" content="telephone=no">
+<meta name="viewport" content="width=1120">
+<meta property="og:title" content="SVGALib - Wikipedia">
+<meta property="og:type" content="website">
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="/w/index.php?title=SVGALib&amp;action=edit">
+<link rel="apple-touch-icon" href="/static/apple-touch/wikipedia.png">
+<link rel="icon" href="/static/favicon/wikipedia.ico">
+<link rel="search" type="application/opensearchdescription+xml" href="/w/rest.php/v1/search" title="Wikipedia (en)">
+<link rel="EditURI" type="application/rsd+xml" href="//en.wikipedia.org/w/api.php?action=rsd">
+<link rel="canonical" href="https://en.wikipedia.org/wiki/SVGALib">
+<link rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/deed.en">
+<link rel="alternate" type="application/atom+xml" title="Wikipedia Atom feed" href="/w/index.php?title=Special:RecentChanges&amp;feed=atom">
+<link rel="dns-prefetch" href="//meta.wikimedia.org" />
+<link rel="dns-prefetch" href="auth.wikimedia.org">
+</head>
+<body class="skin--responsive skin-vector skin-vector-search-vue mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject mw-editable page-SVGALib rootpage-SVGALib skin-vector-2022 action-view">
+<div id="mw-aria-live-region" class="mw-aria-live-region" aria-live="polite"></div><a class="mw-jump-link" href="#bodyContent">Jump to content</a>
+<div class="vector-header-container">
+	<header class="vector-header mw-header no-font-mode-scale">
+		<div class="vector-header-start">
+			<nav class="vector-main-menu-landmark" aria-label="Site">
+				
+<div id="vector-main-menu-dropdown" class="vector-dropdown vector-main-menu-dropdown vector-button-flush-left vector-button-flush-right"  title="Main menu" >
+	<input type="checkbox" id="vector-main-menu-dropdown-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-vector-main-menu-dropdown" class="vector-dropdown-checkbox "  aria-label="Main menu"  >
+	<label id="vector-main-menu-dropdown-label" for="vector-main-menu-dropdown-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only " aria-hidden="true"  ><span class="vector-icon mw-ui-icon-menu mw-ui-icon-wikimedia-menu"></span>
+
+<span class="vector-dropdown-label-text">Main menu</span>
+	</label>
+	<div class="vector-dropdown-content">
+
+
+				<div id="vector-main-menu-unpinned-container" class="vector-unpinned-container">
+		
+<div id="vector-main-menu" class="vector-main-menu vector-pinnable-element">
+	<div
+	class="vector-pinnable-header vector-main-menu-pinnable-header vector-pinnable-header-unpinned"
+	data-feature-name="main-menu-pinned"
+	data-pinnable-element-id="vector-main-menu"
+	data-pinned-container-id="vector-main-menu-pinned-container"
+	data-unpinned-container-id="vector-main-menu-unpinned-container"
+>
+	<div class="vector-pinnable-header-label">Main menu</div>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-main-menu.pin">move to sidebar</button>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-main-menu.unpin">hide</button>
+</div>
+
+	
+<div id="p-navigation" class="vector-menu mw-portlet mw-portlet-navigation"  >
+	<div class="vector-menu-heading">
+		Navigation
+	</div>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="n-mainpage-description" class="mw-list-item"><a href="/wiki/Main_Page" title="Visit the main page [z]" accesskey="z"><span>Main page</span></a></li><li id="n-contents" class="mw-list-item"><a href="/wiki/Wikipedia:Contents" title="Guides to browsing Wikipedia"><span>Contents</span></a></li><li id="n-currentevents" class="mw-list-item"><a href="/wiki/Portal:Current_events" title="Articles related to current events"><span>Current events</span></a></li><li id="n-randompage" class="mw-list-item"><a href="/wiki/Special:Random" title="Visit a randomly selected article [x]" accesskey="x"><span>Random article</span></a></li><li id="n-aboutsite" class="mw-list-item"><a href="/wiki/Wikipedia:About" title="Learn about Wikipedia and how it works"><span>About Wikipedia</span></a></li><li id="n-contactpage" class="mw-list-item"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us" title="How to contact Wikipedia"><span>Contact us</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+	
+<div id="p-interaction" class="vector-menu mw-portlet mw-portlet-interaction"  >
+	<div class="vector-menu-heading">
+		Contribute
+	</div>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="n-help" class="mw-list-item"><a href="/wiki/Help:Contents" title="Guidance on how to use and edit Wikipedia"><span>Help</span></a></li><li id="n-introduction" class="mw-list-item"><a href="/wiki/Help:Introduction" title="Learn how to edit Wikipedia"><span>Learn to edit</span></a></li><li id="n-portal" class="mw-list-item"><a href="/wiki/Wikipedia:Community_portal" title="The hub for editors"><span>Community portal</span></a></li><li id="n-recentchanges" class="mw-list-item"><a href="/wiki/Special:RecentChanges" title="A list of recent changes to Wikipedia [r]" accesskey="r"><span>Recent changes</span></a></li><li id="n-upload" class="mw-list-item"><a href="/wiki/Wikipedia:File_upload_wizard" title="Add images or other media for use on Wikipedia"><span>Upload file</span></a></li><li id="n-specialpages" class="mw-list-item"><a href="/wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q"><span>Special pages</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+</div>
+
+				</div>
+
+	</div>
+</div>
+
+		</nav>
+			
+<a href="/wiki/Main_Page" class="mw-logo">
+	<img class="mw-logo-icon" src="/static/images/icons/enwiki-25.svg" alt="" aria-hidden="true" height="50" width="50">
+	<span class="mw-logo-container skin-invert">
+		<img class="mw-logo-wordmark" alt="Wikipedia" src="/static/images/mobile/copyright/wikipedia-wordmark-en-25.svg" style="width: 8.75em; height: 1.375em;">
+		<img class="mw-logo-tagline" alt="The Free Encyclopedia" src="/static/images/mobile/copyright/wikipedia-tagline-en-25.svg" width="140" height="11" style="width: 8.75em; height: 0.6875em;">
+	</span>
+</a>
+
+		</div>
+		<div class="vector-header-end">
+			
+<div id="p-search" role="search" class="vector-search-box-vue  vector-search-box-collapses vector-search-box-show-thumbnail vector-search-box-auto-expand-width vector-search-box">
+	<a href="/wiki/Special:Search" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only search-toggle" title="Search Wikipedia [f]" accesskey="f"><span class="vector-icon mw-ui-icon-search mw-ui-icon-wikimedia-search"></span>
+
+<span>Search</span>
+	</a>
+	<div class="vector-typeahead-search-container">
+		<div class="cdx-typeahead-search cdx-typeahead-search--show-thumbnail cdx-typeahead-search--auto-expand-width">
+			<form action="/w/index.php" id="searchform" class="cdx-search-input cdx-search-input--has-end-button">
+				<div id="simpleSearch" class="cdx-search-input__input-wrapper"  data-search-loc="header-moved">
+					<div class="cdx-text-input cdx-text-input--has-start-icon">
+						<input
+							class="cdx-text-input__input mw-searchInput" autocomplete="off"
+							 type="search" name="search" placeholder="Search Wikipedia" aria-label="Search Wikipedia" autocapitalize="none" spellcheck="false" title="Search Wikipedia [f]" accesskey="f" id="searchInput"
+							>
+						<span class="cdx-text-input__icon cdx-text-input__start-icon"></span>
+					</div>
+					<input type="hidden" name="title" value="Special:Search">
+				</div>
+				<button class="cdx-button cdx-search-input__end-button">Search</button>
+			</form>
+		</div>
+	</div>
+</div>
+
+			<nav class="vector-user-links vector-user-links-wide" aria-label="Personal tools">
+	<div class="vector-user-links-main">
+	
+<div id="p-vector-user-menu-preferences" class="vector-menu mw-portlet emptyPortlet"  >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			
+		</ul>
+		
+	</div>
+</div>
+
+	
+<div id="p-vector-user-menu-userpage" class="vector-menu mw-portlet emptyPortlet"  >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			
+		</ul>
+		
+	</div>
+</div>
+
+	<nav class="vector-appearance-landmark" aria-label="Appearance">
+		
+<div id="vector-appearance-dropdown" class="vector-dropdown "  title="Change the appearance of the page&#039;s font size, width, and color" >
+	<input type="checkbox" id="vector-appearance-dropdown-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-vector-appearance-dropdown" class="vector-dropdown-checkbox "  aria-label="Appearance"  >
+	<label id="vector-appearance-dropdown-label" for="vector-appearance-dropdown-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only " aria-hidden="true"  ><span class="vector-icon mw-ui-icon-appearance mw-ui-icon-wikimedia-appearance"></span>
+
+<span class="vector-dropdown-label-text">Appearance</span>
+	</label>
+	<div class="vector-dropdown-content">
+
+
+			<div id="vector-appearance-unpinned-container" class="vector-unpinned-container">
+				
+			</div>
+		
+	</div>
+</div>
+
+	</nav>
+	
+<div id="p-vector-user-menu-notifications" class="vector-menu mw-portlet emptyPortlet"  >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			
+		</ul>
+		
+	</div>
+</div>
+
+	
+<div id="p-vector-user-menu-overflow" class="vector-menu mw-portlet"  >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			<li id="pt-sitesupport-2" class="mw-list-item user-links-collapsible-item"><a data-mw-interface  href="https://donate.wikimedia.org/?wmf_source=donate&amp;wmf_medium=sidebar&amp;wmf_campaign=en.wikipedia.org&amp;uselang=en" class=" cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet"><span class="vector-icon mw-ui-icon-heart mw-ui-icon-wikimedia-heart"></span>
+
+<span>Donate</span></a>
+</li>
+<li id="pt-createaccount-2" class="mw-list-item user-links-collapsible-item"><a data-mw-interface  href="/w/index.php?title=Special:CreateAccount&amp;returnto=SVGALib" title="You are encouraged to create an account and log in; however, it is not mandatory" class=""><span>Create account</span></a>
+</li>
+<li id="pt-login-2" class="mw-list-item user-links-collapsible-item"><a data-mw-interface  href="/w/index.php?title=Special:UserLogin&amp;returnto=SVGALib" title="You&#039;re encouraged to log in; however, it&#039;s not mandatory. [o]" accesskey="o" class=""><span>Log in</span></a>
+</li>
+
+			
+		</ul>
+		
+	</div>
+</div>
+
+	</div>
+	
+<div id="vector-user-links-dropdown" class="vector-dropdown vector-user-menu vector-button-flush-right vector-user-menu-logged-out user-links-collapsible-item"  title="Log in and more options" >
+	<input type="checkbox" id="vector-user-links-dropdown-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-vector-user-links-dropdown" class="vector-dropdown-checkbox "  aria-label="Personal tools"  >
+	<label id="vector-user-links-dropdown-label" for="vector-user-links-dropdown-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only " aria-hidden="true"  ><span class="vector-icon mw-ui-icon-ellipsis mw-ui-icon-wikimedia-ellipsis"></span>
+
+<span class="vector-dropdown-label-text">Personal tools</span>
+	</label>
+	<div class="vector-dropdown-content">
+
+
+		
+<div id="p-personal" class="vector-menu mw-portlet mw-portlet-personal user-links-collapsible-item"  title="User menu" >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			<li id="pt-sitesupport" class="mw-list-item user-links-collapsible-item"><a data-mw-interface  href="https://donate.wikimedia.org/?wmf_source=donate&amp;wmf_medium=sidebar&amp;wmf_campaign=en.wikipedia.org&amp;uselang=en" class=""><span class="vector-icon mw-ui-icon-heart mw-ui-icon-wikimedia-heart"></span>
+
+<span>Donate</span></a>
+</li>
+<li id="pt-createaccount" class="mw-list-item user-links-collapsible-item"><a data-mw-interface  href="/w/index.php?title=Special:CreateAccount&amp;returnto=SVGALib" title="You are encouraged to create an account and log in; however, it is not mandatory" class=""><span class="vector-icon mw-ui-icon-userAdd mw-ui-icon-wikimedia-userAdd"></span>
+
+<span>Create account</span></a>
+</li>
+<li id="pt-login" class="mw-list-item user-links-collapsible-item"><a data-mw-interface  href="/w/index.php?title=Special:UserLogin&amp;returnto=SVGALib" title="You&#039;re encouraged to log in; however, it&#039;s not mandatory. [o]" accesskey="o" class=""><span class="vector-icon mw-ui-icon-logIn mw-ui-icon-wikimedia-logIn"></span>
+
+<span>Log in</span></a>
+</li>
+
+			
+		</ul>
+		
+	</div>
+</div>
+
+	
+	</div>
+</div>
+
+</nav>
+
+		</div>
+	</header>
+</div>
+<div class="mw-page-container">
+	<div class="mw-page-container-inner">
+		<div class="vector-sitenotice-container">
+			<div id="siteNotice"><!-- CentralNotice --></div>
+		</div>
+		<div class="vector-column-start">
+			<div class="vector-main-menu-container">
+		<div id="mw-navigation">
+			<nav id="mw-panel" class="vector-main-menu-landmark" aria-label="Site">
+				<div id="vector-main-menu-pinned-container" class="vector-pinned-container">
+				
+				</div>
+		</nav>
+		</div>
+	</div>
+	<div class="vector-sticky-pinned-container">
+				<nav id="mw-panel-toc" aria-label="Contents" data-event-name="ui.sidebar-toc" class="mw-table-of-contents-container vector-toc-landmark">
+					<div id="vector-toc-pinned-container" class="vector-pinned-container">
+					<div id="vector-toc" class="vector-toc vector-pinnable-element">
+	<div
+	class="vector-pinnable-header vector-toc-pinnable-header vector-pinnable-header-pinned"
+	data-feature-name="toc-pinned"
+	data-pinnable-element-id="vector-toc"
+	data-pinned-container-id="vector-toc-pinned-container"
+	data-unpinned-container-id="vector-toc-unpinned-container"
+>
+	<h2 class="vector-pinnable-header-label">Contents</h2>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-toc.pin">move to sidebar</button>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-toc.unpin">hide</button>
+</div>
+
+
+	<ul class="vector-toc-contents" id="mw-panel-toc-list">
+		<li id="toc-mw-content-text"
+			class="vector-toc-list-item vector-toc-level-1">
+			<a href="#" class="vector-toc-link">
+				<div class="vector-toc-text">(Top)</div>
+			</a>
+		</li>
+		<li id="toc-History"
+		class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded">
+		<a class="vector-toc-link" href="#History">
+			<div class="vector-toc-text">
+				<span class="vector-toc-numb">1</span>
+				<span>History</span>
+			</div>
+		</a>
+		
+		<ul id="toc-History-sublist" class="vector-toc-list">
+		</ul>
+	</li>
+	<li id="toc-References"
+		class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded">
+		<a class="vector-toc-link" href="#References">
+			<div class="vector-toc-text">
+				<span class="vector-toc-numb">2</span>
+				<span>References</span>
+			</div>
+		</a>
+		
+		<ul id="toc-References-sublist" class="vector-toc-list">
+		</ul>
+	</li>
+	<li id="toc-External_links"
+		class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded">
+		<a class="vector-toc-link" href="#External_links">
+			<div class="vector-toc-text">
+				<span class="vector-toc-numb">3</span>
+				<span>External links</span>
+			</div>
+		</a>
+		
+		<ul id="toc-External_links-sublist" class="vector-toc-list">
+		</ul>
+	</li>
+</ul>
+</div>
+
+					</div>
+		</nav>
+			</div>
+		</div>
+		<div class="mw-content-container">
+			<main id="content" class="mw-body">
+				<header class="mw-body-header vector-page-titlebar no-font-mode-scale">
+					<nav aria-label="Contents" class="vector-toc-landmark">
+						
+<div id="vector-page-titlebar-toc" class="vector-dropdown vector-page-titlebar-toc vector-button-flush-left"  title="Table of Contents" >
+	<input type="checkbox" id="vector-page-titlebar-toc-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-vector-page-titlebar-toc" class="vector-dropdown-checkbox "  aria-label="Toggle the table of contents"  >
+	<label id="vector-page-titlebar-toc-label" for="vector-page-titlebar-toc-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only " aria-hidden="true"  ><span class="vector-icon mw-ui-icon-listBullet mw-ui-icon-wikimedia-listBullet"></span>
+
+<span class="vector-dropdown-label-text">Toggle the table of contents</span>
+	</label>
+	<div class="vector-dropdown-content">
+
+
+							<div id="vector-page-titlebar-toc-unpinned-container" class="vector-unpinned-container">
+			</div>
+		
+	</div>
+</div>
+
+					</nav>
+					<h1 id="firstHeading" class="firstHeading mw-first-heading"><span lang="en" dir="ltr"><span class="mw-page-title-main">SVGALib</span></span></h1>
+							
+<div id="p-lang-btn" class="vector-dropdown mw-portlet mw-portlet-lang"  >
+	<input type="checkbox" id="p-lang-btn-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-p-lang-btn" class="vector-dropdown-checkbox mw-interlanguage-selector" aria-label="Go to an article in another language. Available in 5 languages"   >
+	<label id="p-lang-btn-label" for="p-lang-btn-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--action-progressive mw-portlet-lang-heading-5" aria-hidden="true"  ><span class="vector-icon mw-ui-icon-language-progressive mw-ui-icon-wikimedia-language-progressive"></span>
+
+<span class="vector-dropdown-label-text">5 languages</span>
+	</label>
+	<div class="vector-dropdown-content">
+
+		<div class="vector-menu-content">
+			
+			<ul class="vector-menu-content-list">
+				
+				<li class="interlanguage-link interwiki-es mw-list-item"><a href="https://es.wikipedia.org/wiki/SVGALib" title="SVGALib – Spanish" lang="es" hreflang="es" data-title="SVGALib" data-language-autonym="Español" data-language-local-name="Spanish" class="interlanguage-link-target"><span>Español</span></a></li><li class="interlanguage-link interwiki-fi mw-list-item"><a href="https://fi.wikipedia.org/wiki/SVGAlib" title="SVGAlib – Finnish" lang="fi" hreflang="fi" data-title="SVGAlib" data-language-autonym="Suomi" data-language-local-name="Finnish" class="interlanguage-link-target"><span>Suomi</span></a></li><li class="interlanguage-link interwiki-pl mw-list-item"><a href="https://pl.wikipedia.org/wiki/SVGAlib" title="SVGAlib – Polish" lang="pl" hreflang="pl" data-title="SVGAlib" data-language-autonym="Polski" data-language-local-name="Polish" class="interlanguage-link-target"><span>Polski</span></a></li><li class="interlanguage-link interwiki-pt mw-list-item"><a href="https://pt.wikipedia.org/wiki/SVGAlib" title="SVGAlib – Portuguese" lang="pt" hreflang="pt" data-title="SVGAlib" data-language-autonym="Português" data-language-local-name="Portuguese" class="interlanguage-link-target"><span>Português</span></a></li><li class="interlanguage-link interwiki-zh mw-list-item"><a href="https://zh.wikipedia.org/wiki/SVGALib" title="SVGALib – Chinese" lang="zh" hreflang="zh" data-title="SVGALib" data-language-autonym="中文" data-language-local-name="Chinese" class="interlanguage-link-target"><span>中文</span></a></li>
+			</ul>
+			<div class="after-portlet after-portlet-lang"><span class="wb-langlinks-edit wb-langlinks-link"><a href="https://www.wikidata.org/wiki/Special:EntityPage/Q3498967#sitelinks-wikipedia" title="Edit interlanguage links" class="wbc-editpage">Edit links</a></span></div>
+		</div>
+
+	</div>
+</div>
+</header>
+				<div class="vector-page-toolbar vector-feature-custom-font-size-clientpref--excluded">
+					<div class="vector-page-toolbar-container">
+						<div id="left-navigation">
+							<nav aria-label="Namespaces">
+								
+<div id="p-associated-pages" class="vector-menu vector-menu-tabs mw-portlet mw-portlet-associated-pages"  >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="ca-nstab-main" class="selected vector-tab-noicon mw-list-item"><a href="/wiki/SVGALib" title="View the content page [c]" accesskey="c"><span>Article</span></a></li><li id="ca-talk" class="vector-tab-noicon mw-list-item"><a href="/wiki/Talk:SVGALib" rel="discussion" title="Discuss improvements to the content page [t]" accesskey="t"><span>Talk</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+								
+<div id="vector-variants-dropdown" class="vector-dropdown emptyPortlet"  >
+	<input type="checkbox" id="vector-variants-dropdown-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-vector-variants-dropdown" class="vector-dropdown-checkbox " aria-label="Change language variant"   >
+	<label id="vector-variants-dropdown-label" for="vector-variants-dropdown-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet" aria-hidden="true"  ><span class="vector-dropdown-label-text">English</span>
+	</label>
+	<div class="vector-dropdown-content">
+
+
+					
+<div id="p-variants" class="vector-menu mw-portlet mw-portlet-variants emptyPortlet"  >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			
+		</ul>
+		
+	</div>
+</div>
+
+				
+	</div>
+</div>
+
+							</nav>
+						</div>
+						<div id="right-navigation" class="vector-collapsible">
+							<nav aria-label="Views">
+								
+<div id="p-views" class="vector-menu vector-menu-tabs mw-portlet mw-portlet-views"  >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="ca-view" class="selected vector-tab-noicon mw-list-item"><a href="/wiki/SVGALib"><span>Read</span></a></li><li id="ca-edit" class="vector-tab-noicon mw-list-item"><a href="/w/index.php?title=SVGALib&amp;action=edit" title="Edit this page [e]" accesskey="e"><span>Edit</span></a></li><li id="ca-history" class="vector-tab-noicon mw-list-item"><a href="/w/index.php?title=SVGALib&amp;action=history" title="Past revisions of this page [h]" accesskey="h"><span>View history</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+							</nav>
+				
+							<nav class="vector-page-tools-landmark" aria-label="Page tools">
+								
+<div id="vector-page-tools-dropdown" class="vector-dropdown vector-page-tools-dropdown"  >
+	<input type="checkbox" id="vector-page-tools-dropdown-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-vector-page-tools-dropdown" class="vector-dropdown-checkbox "  aria-label="Tools"  >
+	<label id="vector-page-tools-dropdown-label" for="vector-page-tools-dropdown-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet" aria-hidden="true"  ><span class="vector-dropdown-label-text">Tools</span>
+	</label>
+	<div class="vector-dropdown-content">
+
+
+									<div id="vector-page-tools-unpinned-container" class="vector-unpinned-container">
+						
+<div id="vector-page-tools" class="vector-page-tools vector-pinnable-element">
+	<div
+	class="vector-pinnable-header vector-page-tools-pinnable-header vector-pinnable-header-unpinned"
+	data-feature-name="page-tools-pinned"
+	data-pinnable-element-id="vector-page-tools"
+	data-pinned-container-id="vector-page-tools-pinned-container"
+	data-unpinned-container-id="vector-page-tools-unpinned-container"
+>
+	<div class="vector-pinnable-header-label">Tools</div>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-page-tools.pin">move to sidebar</button>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-page-tools.unpin">hide</button>
+</div>
+
+	
+<div id="p-cactions" class="vector-menu mw-portlet mw-portlet-cactions emptyPortlet vector-has-collapsible-items"  title="More options" >
+	<div class="vector-menu-heading">
+		Actions
+	</div>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="ca-more-view" class="selected vector-more-collapsible-item mw-list-item"><a href="/wiki/SVGALib"><span>Read</span></a></li><li id="ca-more-edit" class="vector-more-collapsible-item mw-list-item"><a href="/w/index.php?title=SVGALib&amp;action=edit" title="Edit this page [e]" accesskey="e"><span>Edit</span></a></li><li id="ca-more-history" class="vector-more-collapsible-item mw-list-item"><a href="/w/index.php?title=SVGALib&amp;action=history"><span>View history</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+<div id="p-tb" class="vector-menu mw-portlet mw-portlet-tb"  >
+	<div class="vector-menu-heading">
+		General
+	</div>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="t-whatlinkshere" class="mw-list-item"><a href="/wiki/Special:WhatLinksHere/SVGALib" title="List of all English Wikipedia pages containing links to this page [j]" accesskey="j"><span>What links here</span></a></li><li id="t-recentchangeslinked" class="mw-list-item"><a href="/wiki/Special:RecentChangesLinked/SVGALib" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k"><span>Related changes</span></a></li><li id="t-upload" class="mw-list-item"><a href="//en.wikipedia.org/wiki/Wikipedia:File_Upload_Wizard" title="Upload files [u]" accesskey="u"><span>Upload file</span></a></li><li id="t-permalink" class="mw-list-item"><a href="/w/index.php?title=SVGALib&amp;oldid=1334124867" title="Permanent link to this revision of this page"><span>Permanent link</span></a></li><li id="t-info" class="mw-list-item"><a href="/w/index.php?title=SVGALib&amp;action=info" title="More information about this page"><span>Page information</span></a></li><li id="t-cite" class="mw-list-item"><a href="/w/index.php?title=Special:CiteThisPage&amp;page=SVGALib&amp;id=1334124867&amp;wpFormIdentifier=titleform" title="Information on how to cite this page"><span>Cite this page</span></a></li><li id="t-urlshortener" class="mw-list-item"><a href="/w/index.php?title=Special:UrlShortener&amp;url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FSVGALib"><span>Get shortened URL</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+<div id="p-coll-print_export" class="vector-menu mw-portlet mw-portlet-coll-print_export"  >
+	<div class="vector-menu-heading">
+		Print/export
+	</div>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="coll-download-as-rl" class="mw-list-item"><a href="/w/index.php?title=Special:DownloadAsPdf&amp;page=SVGALib&amp;action=show-download-screen" title="Download this page as a PDF file"><span>Download as PDF</span></a></li><li id="t-print" class="mw-list-item"><a href="/w/index.php?title=SVGALib&amp;printable=yes" title="Printable version of this page [p]" accesskey="p"><span>Printable version</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+<div id="p-wikibase-otherprojects" class="vector-menu mw-portlet mw-portlet-wikibase-otherprojects"  >
+	<div class="vector-menu-heading">
+		In other projects
+	</div>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="t-wikibase" class="wb-otherproject-link wb-otherproject-wikibase-dataitem mw-list-item"><a href="https://www.wikidata.org/wiki/Special:EntityPage/Q3498967" title="Structured data on this page hosted by Wikidata [g]" accesskey="g"><span>Wikidata item</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+</div>
+
+									</div>
+				
+	</div>
+</div>
+
+							</nav>
+						</div>
+					</div>
+				</div>
+				<div class="vector-column-end no-font-mode-scale">
+					<div class="vector-sticky-pinned-container">
+						<div class="wp25eastereggs-vector-sitenotice-landmark"></div>
+						<nav class="vector-page-tools-landmark" aria-label="Page tools">
+							<div id="vector-page-tools-pinned-container" class="vector-pinned-container">
+				
+							</div>
+		</nav>
+						<nav class="vector-appearance-landmark" aria-label="Appearance">
+							<div id="vector-appearance-pinned-container" class="vector-pinned-container">
+				<div id="vector-appearance" class="vector-appearance vector-pinnable-element">
+	<div
+	class="vector-pinnable-header vector-appearance-pinnable-header vector-pinnable-header-pinned"
+	data-feature-name="appearance-pinned"
+	data-pinnable-element-id="vector-appearance"
+	data-pinned-container-id="vector-appearance-pinned-container"
+	data-unpinned-container-id="vector-appearance-unpinned-container"
+>
+	<div class="vector-pinnable-header-label">Appearance</div>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-appearance.pin">move to sidebar</button>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-appearance.unpin">hide</button>
+</div>
+
+
+</div>
+
+							</div>
+		</nav>
+					</div>
+				</div>
+				<div id="bodyContent" class="vector-body" aria-labelledby="firstHeading" data-mw-ve-target-container>
+					<div class="vector-body-before-content">
+							<div class="mw-indicators">
+		</div>
+
+						<div id="siteSub" class="noprint">From Wikipedia, the free encyclopedia</div>
+					</div>
+					<div id="contentSub"><div id="mw-content-subtitle"></div></div>
+					
+					
+					<div id="mw-content-text" class="mw-body-content"><div class="mw-subjectpageheader">
+</div><div class="mw-content-ltr mw-parser-output" lang="en" dir="ltr"><div class="shortdescription nomobile noexcerpt noprint searchaux" style="display:none">Linux SuperVGA Graphics Library</div>
+<style data-mw-deduplicate="TemplateStyles:r1316064257">.mw-parser-output .infobox-subbox{padding:0;border:none;margin:-3px;width:auto;min-width:100%;font-size:100%;clear:none;float:none;background-color:transparent;color:inherit}.mw-parser-output .infobox-3cols-child{margin:-3px}.mw-parser-output .infobox .navbar{font-size:100%}@media screen{html.skin-theme-clientpref-night .mw-parser-output .infobox-full-data:not(.notheme)>div:not(.notheme)[style]{background:#1f1f23!important;color:#f8f9fa}}@media screen and (prefers-color-scheme:dark){html.skin-theme-clientpref-os .mw-parser-output .infobox-full-data:not(.notheme)>div:not(.notheme)[style]{background:#1f1f23!important;color:#f8f9fa}}@media(min-width:640px){body.skin--responsive .mw-parser-output .infobox-table{display:table!important}body.skin--responsive .mw-parser-output .infobox-table>caption{display:table-caption!important}body.skin--responsive .mw-parser-output .infobox-table>tbody{display:table-row-group}body.skin--responsive .mw-parser-output .infobox-table th,body.skin--responsive .mw-parser-output .infobox-table td{padding-left:inherit;padding-right:inherit}}</style><table class="infobox vevent"><tbody><tr><th colspan="2" class="infobox-above summary">SVGAlib</th></tr><tr><th scope="row" class="infobox-label" style="white-space: nowrap;"><a href="/wiki/Programmer" title="Programmer">Original author</a></th><td class="infobox-data">Harm Hanemaayer<sup id="cite&#95;ref-1" class="reference"><a href="#cite_note-1"><span class="cite-bracket">&#91;</span>1<span class="cite-bracket">&#93;</span></a></sup></td></tr><tr><th scope="row" class="infobox-label" style="white-space: nowrap;"><a href="/wiki/Programmer" title="Programmer">Developer</a></th><td class="infobox-data">Matan Ziv-Av</td></tr><tr><th scope="row" class="infobox-label" style="white-space: nowrap;">Initial release</th><td class="infobox-data">1992-1993</td></tr><tr style="display: none;"><td colspan="2" class="infobox-full-data"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1316064257" /></td></tr><tr><th scope="row" class="infobox-label" style="white-space: nowrap;"><a href="/wiki/Software_release_life_cycle" title="Software release life cycle">Stable release</a></th><td class="infobox-data"><div style="margin:0px;">1.4.3
+   / June&#160;2, 2001<span class="noprint">&#59;&#32;24 years ago</span><span style="display:none">&#160;(<span class="bday dtstart published updated">2001-06-02</span>)</span><sup id="cite&#95;ref-svgalib-releases&#95;2-1" class="reference"><a href="#cite_note-svgalib-releases-2"><span class="cite-bracket">&#91;</span>2<span class="cite-bracket">&#93;</span></a></sup></div></td></tr><tr><th scope="row" class="infobox-label" style="white-space: nowrap;"><a href="/wiki/Software_release_life_cycle#Beta" title="Software release life cycle">Preview release</a></th><td class="infobox-data"><div style="margin:0px;">1.9.25<sup id="cite&#95;ref-svgalib-releases&#95;2-0" class="reference"><a href="#cite_note-svgalib-releases-2"><span class="cite-bracket">&#91;</span>2<span class="cite-bracket">&#93;</span></a></sup>
+   / July&#160;14, 2007<span class="noprint">&#59;&#32;18 years ago</span><span style="display:none">&#160;(<span class="bday dtstart published updated">2007-07-14</span>)</span></div></td></tr><tr style="display:none"><td colspan="2">
+</td></tr><tr><th scope="row" class="infobox-label" style="white-space: nowrap;">Written in</th><td class="infobox-data"><a href="/wiki/C_(programming_language)" title="C (programming language)">C</a></td></tr><tr><th scope="row" class="infobox-label" style="white-space: nowrap;"><a href="/wiki/Operating_system" title="Operating system">Operating system</a></th><td class="infobox-data"><a href="/wiki/AmigaOS" title="AmigaOS">AmigaOS</a>, <a href="/wiki/Linux" title="Linux">Linux</a>, <a href="/wiki/FreeBSD" title="FreeBSD">FreeBSD</a></td></tr><tr><th scope="row" class="infobox-label" style="white-space: nowrap;"><a href="/wiki/Computing_platform" title="Computing platform">Platform</a></th><td class="infobox-data"><a href="/wiki/PowerPC" title="PowerPC">PPC</a>, <a href="/wiki/X86" title="X86">x86</a>, <a href="/wiki/X86-64" title="X86-64">x86-64</a></td></tr><tr><th scope="row" class="infobox-label" style="white-space: nowrap;"><a href="/wiki/Software_categories#Categorization_approaches" title="Software categories">Type</a></th><td class="infobox-data"><a href="/wiki/Library_(software)" class="mw-redirect" title="Library (software)">Library</a></td></tr><tr><th scope="row" class="infobox-label" style="white-space: nowrap;"><a href="/wiki/Software_license" title="Software license">License</a></th><td class="infobox-data">Copyright by respective authors, generic permissive license</td></tr><tr><th scope="row" class="infobox-label" style="white-space: nowrap;">Website</th><td class="infobox-data"><span class="url"><a rel="nofollow" class="external text" href="https://www.svgalib.org">www<wbr />.svgalib<wbr />.org</a></span></td></tr></tbody></table> 
+<p><b>SVGAlib</b>, styled as "Linux SuperVGA Graphics Library", is a legacy <a href="/wiki/Open_source" title="Open source">open-source</a> <a href="/wiki/Low-level_programming_language" title="Low-level programming language">low-level</a> <a href="/wiki/Computer_graphics" title="Computer graphics">graphics</a> <a href="/wiki/Library_(software)" class="mw-redirect" title="Library (software)">library</a> for accessing <a href="/wiki/Super_VGA" title="Super VGA">SuperVGA</a> hardware on PC-compatible systems running on <a href="/wiki/Linux" title="Linux">Linux</a>, with later ports to <a href="/wiki/AmigaOS" title="AmigaOS">AmigaOS</a> and <a href="/wiki/FreeBSD" title="FreeBSD">FreeBSD</a>. SVGAlib allowed programs to change <a href="/wiki/VESA_BIOS_Extensions" title="VESA BIOS Extensions">video mode</a> to display full-screen graphics, without the use of a <a href="/wiki/Windowing_system" title="Windowing system">windowing system</a>.<sup id="cite&#95;ref-svgalib-tutorial&#95;3-0" class="reference"><a href="#cite_note-svgalib-tutorial-3"><span class="cite-bracket">&#91;</span>3<span class="cite-bracket">&#93;</span></a></sup><sup id="cite&#95;ref-4" class="reference"><a href="#cite_note-4"><span class="cite-bracket">&#91;</span>4<span class="cite-bracket">&#93;</span></a></sup> Alongside <a href="/wiki/X11" class="mw-redirect" title="X11">X11</a> and the <a href="/wiki/General_Graphics_Interface" title="General Graphics Interface">General Graphics Interface</a>, it was one of the earliest libraries allowing graphical <a href="/wiki/Video_games_and_Linux" title="Video games and Linux">video games on Linux</a>.
+</p><p>Although still available online, SVGAlib has seen no code releases since July 2006 (19 years ago) and would be considered superseded and discontinued.
+</p>
+<div class="mw-heading mw-heading2"><h2 id="History">History</h2><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=SVGALib&amp;action=edit&amp;section=1" title="Edit section: History"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></div>
+<p>The first version of SVGAlib was based on version 1.2 of another library, VGAlib by Tommy Frandsen.<sup id="cite&#95;ref-svgalib-manpage&#95;5-0" class="reference"><a href="#cite_note-svgalib-manpage-5"><span class="cite-bracket">&#91;</span>5<span class="cite-bracket">&#93;</span></a></sup> SVGAlib added support for many more SuperVGA chipsets and video modes.
+</p><p>Several games like <a href="/wiki/Ambrosia_Software" title="Ambrosia Software">Ambrosia Software</a>'s <i><a href="/wiki/Maelstrom_(1992_video_game)" title="Maelstrom (1992 video game)">Maelstrom</a></i> by <a href="/wiki/Sam_Lantinga" title="Sam Lantinga">Sam Lantinga</a>, the first-person games <i>Freaks!</i> and <i>Space Plumber</i><sup id="cite&#95;ref-6" class="reference"><a href="#cite_note-6"><span class="cite-bracket">&#91;</span>6<span class="cite-bracket">&#93;</span></a></sup><sup id="cite&#95;ref-7" class="reference"><a href="#cite_note-7"><span class="cite-bracket">&#91;</span>7<span class="cite-bracket">&#93;</span></a></sup> using the QDGDF library,<sup id="cite&#95;ref-8" class="reference"><a href="#cite_note-8"><span class="cite-bracket">&#91;</span>8<span class="cite-bracket">&#93;</span></a></sup><sup id="cite&#95;ref-9" class="reference"><a href="#cite_note-9"><span class="cite-bracket">&#91;</span>9<span class="cite-bracket">&#93;</span></a></sup> and most famously <a href="/wiki/Id_Software" title="Id Software">id Software</a>'s <i><a href="/wiki/Doom_(1993_video_game)" title="Doom (1993 video game)">Doom</a></i> (alongside an <a href="/wiki/X11" class="mw-redirect" title="X11">X11</a> version) and <i><a href="/wiki/Quake_(video_game)" title="Quake (video game)">Quake</a></i> (after the submission of a third-party patch based on leaked source code<sup id="cite&#95;ref-10" class="reference"><a href="#cite_note-10"><span class="cite-bracket">&#91;</span>10<span class="cite-bracket">&#93;</span></a></sup>) were ported to use SVGAlib from other operating systems,<sup id="cite&#95;ref-11" class="reference"><a href="#cite_note-11"><span class="cite-bracket">&#91;</span>11<span class="cite-bracket">&#93;</span></a></sup> as  was <i>Doom</i> porter <a href="/wiki/Dave_Taylor_(game_programmer)" title="Dave Taylor (game programmer)">Dave Taylor</a>'s <i><a href="/wiki/Abuse_(video_game)" title="Abuse (video game)">Abuse</a></i>.
+</p><p><i><a href="/wiki/Wolfenstein_3D" title="Wolfenstein 3D">Wolfenstein 3D</a></i> was also ported following its source code being released in 1995,<sup id="cite&#95;ref-12" class="reference"><a href="#cite_note-12"><span class="cite-bracket">&#91;</span>12<span class="cite-bracket">&#93;</span></a></sup> as well as the id produced <i><a href="/wiki/Heretic_(video_game)" title="Heretic (video game)">Heretic</a></i>, <i><a href="/wiki/Hexen_(video_game)" class="mw-redirect" title="Hexen (video game)">Hexen</a></i> and <i><a href="/wiki/Hexen_II" title="Hexen II">Hexen II</a></i> after 1999,<sup id="cite&#95;ref-13" class="reference"><a href="#cite_note-13"><span class="cite-bracket">&#91;</span>13<span class="cite-bracket">&#93;</span></a></sup> and <i><a href="/wiki/Descent_(video_game)" title="Descent (video game)">Descent</a></i> and <i><a href="/wiki/Descent_II" title="Descent II">Descent II</a></i> by <a href="/wiki/Parallax_Software" class="mw-redirect" title="Parallax Software">Parallax Software</a> after 1998.<sup id="cite&#95;ref-14" class="reference"><a href="#cite_note-14"><span class="cite-bracket">&#91;</span>14<span class="cite-bracket">&#93;</span></a></sup> Certain <a href="/wiki/Source_port" class="mw-redirect" title="Source port">source ports</a> for <i>Doom</i>, <i>Quake</i>, and <i>Abuse</i> maintained support for SVGAlib.<sup id="cite&#95;ref-15" class="reference"><a href="#cite_note-15"><span class="cite-bracket">&#91;</span>15<span class="cite-bracket">&#93;</span></a></sup> The library is also supported by the <a href="/wiki/MAME" title="MAME">MAME</a>/<a href="/wiki/MESS" class="mw-redirect" title="MESS">MESS</a> emulator.<sup id="cite&#95;ref-16" class="reference"><a href="#cite_note-16"><span class="cite-bracket">&#91;</span>16<span class="cite-bracket">&#93;</span></a></sup>
+</p><p>First party Linux games that have supported it include <i>Alizarin Tetris</i>,<sup id="cite&#95;ref-17" class="reference"><a href="#cite_note-17"><span class="cite-bracket">&#91;</span>17<span class="cite-bracket">&#93;</span></a></sup> <i>Bdash</i>,<sup id="cite&#95;ref-18" class="reference"><a href="#cite_note-18"><span class="cite-bracket">&#91;</span>18<span class="cite-bracket">&#93;</span></a></sup> <i>Fleuch</i>,<sup id="cite&#95;ref-19" class="reference"><a href="#cite_note-19"><span class="cite-bracket">&#91;</span>19<span class="cite-bracket">&#93;</span></a></sup> <i>Hatman</i>,<sup id="cite&#95;ref-20" class="reference"><a href="#cite_note-20"><span class="cite-bracket">&#91;</span>20<span class="cite-bracket">&#93;</span></a></sup> <i>Intelligent FRAC</i>,<sup id="cite&#95;ref-21" class="reference"><a href="#cite_note-21"><span class="cite-bracket">&#91;</span>21<span class="cite-bracket">&#93;</span></a></sup> <i>Koules</i>,<sup id="cite&#95;ref-22" class="reference"><a href="#cite_note-22"><span class="cite-bracket">&#91;</span>22<span class="cite-bracket">&#93;</span></a></sup> <i><a href="/wiki/LinCity" class="mw-redirect" title="LinCity">LinCity</a></i>,<sup id="cite&#95;ref-23" class="reference"><a href="#cite_note-23"><span class="cite-bracket">&#91;</span>23<span class="cite-bracket">&#93;</span></a></sup><sup id="cite&#95;ref-24" class="reference"><a href="#cite_note-24"><span class="cite-bracket">&#91;</span>24<span class="cite-bracket">&#93;</span></a></sup>  <i>Linberto</i>,<sup id="cite&#95;ref-25" class="reference"><a href="#cite_note-25"><span class="cite-bracket">&#91;</span>25<span class="cite-bracket">&#93;</span></a></sup> <i>Quadra</i>,<sup id="cite&#95;ref-26" class="reference"><a href="#cite_note-26"><span class="cite-bracket">&#91;</span>26<span class="cite-bracket">&#93;</span></a></sup> <i>Repton</i>,<sup id="cite&#95;ref-27" class="reference"><a href="#cite_note-27"><span class="cite-bracket">&#91;</span>27<span class="cite-bracket">&#93;</span></a></sup> <i>SABRE</i>,<sup id="cite&#95;ref-28" class="reference"><a href="#cite_note-28"><span class="cite-bracket">&#91;</span>28<span class="cite-bracket">&#93;</span></a></sup> <i>Thrust</i> (also supported <a href="/wiki/General_Graphics_Interface" title="General Graphics Interface">GGI</a>),<sup id="cite&#95;ref-29" class="reference"><a href="#cite_note-29"><span class="cite-bracket">&#91;</span>29<span class="cite-bracket">&#93;</span></a></sup> <i>Zarch</i>,<sup id="cite&#95;ref-30" class="reference"><a href="#cite_note-30"><span class="cite-bracket">&#91;</span>30<span class="cite-bracket">&#93;</span></a></sup> and <i>Zblast</i>,<sup id="cite&#95;ref-31" class="reference"><a href="#cite_note-31"><span class="cite-bracket">&#91;</span>31<span class="cite-bracket">&#93;</span></a></sup> among others.<sup id="cite&#95;ref-32" class="reference"><a href="#cite_note-32"><span class="cite-bracket">&#91;</span>32<span class="cite-bracket">&#93;</span></a></sup><sup id="cite&#95;ref-33" class="reference"><a href="#cite_note-33"><span class="cite-bracket">&#91;</span>33<span class="cite-bracket">&#93;</span></a></sup><sup id="cite&#95;ref-34" class="reference"><a href="#cite_note-34"><span class="cite-bracket">&#91;</span>34<span class="cite-bracket">&#93;</span></a></sup>
+</p><p>SVGAlib was popular in the mid to late 1990s.<sup id="cite&#95;ref-35" class="reference"><a href="#cite_note-35"><span class="cite-bracket">&#91;</span>35<span class="cite-bracket">&#93;</span></a></sup><sup id="cite&#95;ref-36" class="reference"><a href="#cite_note-36"><span class="cite-bracket">&#91;</span>36<span class="cite-bracket">&#93;</span></a></sup> A reference book, <i>Linux Graphics Programming with SVGAlib</i>, was authored by Jay Link in 2000.<sup id="cite&#95;ref-37" class="reference"><a href="#cite_note-37"><span class="cite-bracket">&#91;</span>37<span class="cite-bracket">&#93;</span></a></sup> Around the turn of the millennium, many applications that used it migrated to <a href="/wiki/X_Window_System" title="X Window System">X11</a> and <a href="/wiki/Simple_DirectMedia_Layer" title="Simple DirectMedia Layer">SDL</a>,<sup id="cite&#95;ref-38" class="reference"><a href="#cite_note-38"><span class="cite-bracket">&#91;</span>38<span class="cite-bracket">&#93;</span></a></sup> which could (until SDL 2.0) make use of SVGAlib as a video driver.<sup id="cite&#95;ref-sdl-faq&#95;39-0" class="reference"><a href="#cite_note-sdl-faq-39"><span class="cite-bracket">&#91;</span>39<span class="cite-bracket">&#93;</span></a></sup><sup id="cite&#95;ref-40" class="reference"><a href="#cite_note-40"><span class="cite-bracket">&#91;</span>40<span class="cite-bracket">&#93;</span></a></sup> This was in part due to the risks of <a href="/wiki/Privilege_escalation" title="Privilege escalation">privilege escalation</a> due to SVGAlib requiring applications to be run as the <a href="/wiki/Superuser" title="Superuser">'root'</a> user.<sup id="cite&#95;ref-41" class="reference"><a href="#cite_note-41"><span class="cite-bracket">&#91;</span>41<span class="cite-bracket">&#93;</span></a></sup><sup id="cite&#95;ref-42" class="reference"><a href="#cite_note-42"><span class="cite-bracket">&#91;</span>42<span class="cite-bracket">&#93;</span></a></sup><sup id="cite&#95;ref-43" class="reference"><a href="#cite_note-43"><span class="cite-bracket">&#91;</span>43<span class="cite-bracket">&#93;</span></a></sup>
+</p>
+<div class="mw-heading mw-heading2"><h2 id="References">References</h2><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=SVGALib&amp;action=edit&amp;section=2" title="Edit section: References"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></div>
+<style data-mw-deduplicate="TemplateStyles:r1327269900">.mw-parser-output .reflist-columns-2{column-width:30em}.mw-parser-output .reflist-columns-3{column-width:25em}body.skin-vector-2022 .mw-parser-output .reflist-columns-2{column-width:27em}body.skin-vector-2022 .mw-parser-output .reflist-columns-3{column-width:22.5em}.mw-parser-output .references[data-mw-group=upper-alpha]{list-style-type:upper-alpha}.mw-parser-output .references[data-mw-group=upper-roman]{list-style-type:upper-roman}.mw-parser-output .references[data-mw-group=lower-alpha]{list-style-type:lower-alpha}.mw-parser-output .references[data-mw-group=lower-greek]{list-style-type:lower-greek}.mw-parser-output .references[data-mw-group=lower-roman]{list-style-type:lower-roman}.mw-parser-output div.reflist-liststyle-upper-alpha .references{list-style-type:upper-alpha}.mw-parser-output div.reflist-liststyle-upper-roman .references{list-style-type:upper-roman}.mw-parser-output div.reflist-liststyle-lower-alpha .references{list-style-type:lower-alpha}.mw-parser-output div.reflist-liststyle-lower-greek .references{list-style-type:lower-greek}.mw-parser-output div.reflist-liststyle-lower-roman .references{list-style-type:lower-roman}</style><div>
+<div class="mw-references-wrap mw-references-columns"><ol class="references">
+<li id="cite&#95;note-1"><span class="mw-cite-backlink"><b><a href="#cite_ref-1">^</a></b></span> <span class="reference-text"><style data-mw-deduplicate="TemplateStyles:r1333433106">.mw-parser-output cite.citation{font-style:inherit;word-wrap:break-word}.mw-parser-output .citation q{quotes:"\"""\"""'""'"}.mw-parser-output .citation:target{background-color:rgba(0,127,255,0.133)}.mw-parser-output .id-lock-free.id-lock-free a{background:url("//upload.wikimedia.org/wikipedia/commons/6/65/Lock-green.svg")right 0.1em center/9px no-repeat}.mw-parser-output .id-lock-limited.id-lock-limited a,.mw-parser-output .id-lock-registration.id-lock-registration a{background:url("//upload.wikimedia.org/wikipedia/commons/d/d6/Lock-gray-alt-2.svg")right 0.1em center/9px no-repeat}.mw-parser-output .id-lock-subscription.id-lock-subscription a{background:url("//upload.wikimedia.org/wikipedia/commons/a/aa/Lock-red-alt-2.svg")right 0.1em center/9px no-repeat}.mw-parser-output .cs1-ws-icon a{background:url("//upload.wikimedia.org/wikipedia/commons/4/4c/Wikisource-logo.svg")right 0.1em center/12px no-repeat}body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .id-lock-free a,body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .id-lock-limited a,body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .id-lock-registration a,body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .id-lock-subscription a,body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .cs1-ws-icon a{background-size:contain;padding:0 1em 0 0}.mw-parser-output .cs1-code{color:inherit;background:inherit;border:none;padding:inherit}.mw-parser-output .cs1-hidden-error{display:none;color:var(--color-error,#bf3c2c)}.mw-parser-output .cs1-visible-error{color:var(--color-error,#bf3c2c)}.mw-parser-output .cs1-maint{display:none;color:#085;margin-left:0.3em}.mw-parser-output .cs1-kern-left{padding-left:0.2em}.mw-parser-output .cs1-kern-right{padding-right:0.2em}.mw-parser-output .citation .mw-selflink{font-weight:inherit}@media screen{.mw-parser-output .cs1-format{font-size:95%}html.skin-theme-clientpref-night .mw-parser-output .cs1-maint{color:#18911f}}@media screen and (prefers-color-scheme:dark){html.skin-theme-clientpref-os .mw-parser-output .cs1-maint{color:#18911f}}</style><cite id="CITEREFPitzel1994" class="citation web cs1">Pitzel, Brad (1994-02-12). <a rel="nofollow" class="external text" href="https://groups.google.com/g/comp.os.linux.announce/c/os3OUbGEbRk/m/G1Nz3lV0AiQJ">"Sasteroids v1.0 release (vga arcade game)"</a><span class="reference-accessdate">. Retrieved <span class="nowrap">2023-10-01</span></span>. <q><i>This started out as a direct port of xasteroids to run under svgalib (super-vga graphics library by Harm Hanemaayer)</i></q></cite><span title="ctx&#95;ver=Z39.88-2004&amp;rft&#95;val&#95;fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=Sasteroids+v1.0+release+%28vga+arcade+game%29&amp;rft.date=1994-02-12&amp;rft.aulast=Pitzel&amp;rft.aufirst=Brad&amp;rft&#95;id=https%3A%2F%2Fgroups.google.com%2Fg%2Fcomp.os.linux.announce%2Fc%2Fos3OUbGEbRk%2Fm%2FG1Nz3lV0AiQJ&amp;rfr&#95;id=info%3Asid%2Fen.wikipedia.org%3ASVGALib" class="Z3988"></span></span>
+</li>
+<li id="cite&#95;note-svgalib-releases-2"><span class="mw-cite-backlink">^ <a href="#cite_ref-svgalib-releases_2-0"><sup><i><b>a</b></i></sup></a> <a href="#cite_ref-svgalib-releases_2-1"><sup><i><b>b</b></i></sup></a></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1333433106" /><cite class="citation web cs1"><a rel="nofollow" class="external text" href="http://my.svgalib.org/svgalib/#143">"SVGALIB"</a><span class="reference-accessdate">. Retrieved <span class="nowrap">16 October</span> 2022</span>.</cite><span title="ctx&#95;ver=Z39.88-2004&amp;rft&#95;val&#95;fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=SVGALIB&amp;rft&#95;id=http%3A%2F%2Fmy.svgalib.org%2Fsvgalib%2F%23143&amp;rfr&#95;id=info%3Asid%2Fen.wikipedia.org%3ASVGALib" class="Z3988"></span></span>
+</li>
+<li id="cite&#95;note-svgalib-tutorial-3"><span class="mw-cite-backlink"><b><a href="#cite_ref-svgalib-tutorial_3-0">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1333433106" /><cite id="CITEREFLink" class="citation web cs1">Link, Jay. <a rel="nofollow" class="external text" href="http://www.svgalib.org/jay/beginners_guide/beginners_guide.html">"SVGAlib Tutorials"</a>. <i>www.svgalib.org</i><span class="reference-accessdate">. Retrieved <span class="nowrap">16 October</span> 2022</span>.</cite><span title="ctx&#95;ver=Z39.88-2004&amp;rft&#95;val&#95;fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=www.svgalib.org&amp;rft.atitle=SVGAlib+Tutorials&amp;rft.aulast=Link&amp;rft.aufirst=Jay&amp;rft&#95;id=http%3A%2F%2Fwww.svgalib.org%2Fjay%2Fbeginners&#95;guide%2Fbeginners&#95;guide.html&amp;rfr&#95;id=info%3Asid%2Fen.wikipedia.org%3ASVGALib" class="Z3988"></span></span>
+</li>
+<li id="cite&#95;note-4"><span class="mw-cite-backlink"><b><a href="#cite_ref-4">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1333433106" /><cite id="CITEREFLink1999" class="citation web cs1">Link, Jay (1999-09-30). <a rel="nofollow" class="external text" href="https://www.developer.com/guides/easy-graphics-a-beginners-guide-to-svgalib/">"Easy graphics: A beginner's guide to SVGAlib"</a>. <i>Developer.com</i><span class="reference-accessdate">. Retrieved <span class="nowrap">2023-09-29</span></span>.</cite><span title="ctx&#95;ver=Z39.88-2004&amp;rft&#95;val&#95;fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=Developer.com&amp;rft.atitle=Easy+graphics%3A+A+beginner%27s+guide+to+SVGAlib&amp;rft.date=1999-09-30&amp;rft.aulast=Link&amp;rft.aufirst=Jay&amp;rft&#95;id=https%3A%2F%2Fwww.developer.com%2Fguides%2Feasy-graphics-a-beginners-guide-to-svgalib%2F&amp;rfr&#95;id=info%3Asid%2Fen.wikipedia.org%3ASVGALib" class="Z3988"></span></span>
+</li>
+<li id="cite&#95;note-svgalib-manpage-5"><span class="mw-cite-backlink"><b><a href="#cite_ref-svgalib-manpage_5-0">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1333433106" /><cite class="citation web cs1"><a rel="nofollow" class="external text" href="https://linux.die.net/man/7/svgalib">"svgalib(7): low level graphics library for - Linux man page"</a>. <i>linux.die.net</i><span class="reference-accessdate">. Retrieved <span class="nowrap">16 October</span> 2022</span>.</cite><span title="ctx&#95;ver=Z39.88-2004&amp;rft&#95;val&#95;fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=linux.die.net&amp;rft.atitle=svgalib%287%29%3A+low+level+graphics+library+for+-+Linux+man+page&amp;rft&#95;id=https%3A%2F%2Flinux.die.net%2Fman%2F7%2Fsvgalib&amp;rfr&#95;id=info%3Asid%2Fen.wikipedia.org%3ASVGALib" class="Z3988"></span></span>
+</li>
+<li id="cite&#95;note-6"><span class="mw-cite-backlink"><b><a href="#cite_ref-6">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1333433106" /><cite id="CITEREFWilson2024" class="citation web cs1">Wilson, Hamish (2024-09-03). <a rel="nofollow" class="external text" href="https://www.gamingonlinux.com/2024/09/building-a-retro-linux-gaming-computer-part-43-demons-and-angels/">"Building a Retro Linux Gaming Computer Part 43: Demons and Angels"</a>. <i><a href="/wiki/GamingOnLinux" class="mw-redirect" title="GamingOnLinux">GamingOnLinux</a></i><span class="reference-accessdate">. Retrieved <span class="nowrap">2024-09-04</span></span>.</cite><span title="ctx&#95;ver=Z39.88-2004&amp;rft&#95;val&#95;fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=GamingOnLinux&amp;rft.atitle=Building+a+Retro+Linux+Gaming+Computer+Part+43%3A+Demons+and+Angels&amp;rft.date=2024-09-03&amp;rft.aulast=Wilson&amp;rft.aufirst=Hamish&amp;rft&#95;id=https%3A%2F%2Fwww.gamingonlinux.com%2F2024%2F09%2Fbuilding-a-retro-linux-gaming-computer-part-43-demons-and-angels%2F&amp;rfr&#95;id=info%3Asid%2Fen.wikipedia.org%3ASVGALib" class="Z3988"></span></span>
+</li>
+<li id="cite&#95;note-7"><span class="mw-cite-backlink"><b><a href="#cite_ref-7">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1333433106" /><cite class="citation web cs1"><a rel="nofollow" class="external text" href="https://nixbit.com/software/space-plumber-1.1.0-review/">"Space Plumber 1.1.0 RC1 review"</a>. <i>Nixbit</i><span class="reference-accessdate">. Retrieved <span class="nowrap">2023-09-29</span></span>.</cite><span title="ctx&#95;ver=Z39.88-2004&amp;rft&#95;val&#95;fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=Nixbit&amp;rft.atitle=Space+Plumber+1.1.0+RC1+review&amp;rft&#95;id=https%3A%2F%2Fnixbit.com%2Fsoftware%2Fspace-plumber-1.1.0-review%2F&amp;rfr&#95;id=info%3Asid%2Fen.wikipedia.org%3ASVGALib" class="Z3988"></span></span>
+</li>
+<li id="cite&#95;note-8"><span class="mw-cite-backlink"><b><a href="#cite_ref-8">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1333433106" /><cite id="CITEREFTTC&#95;Development&#95;Team2001" class="citation web cs1">TTC Development Team (2001-01-01). <a rel="nofollow" class="external text" href="https://triptico.com/software/qdgdf.html">"Quick and Dirty Game Development Framework"</a><span class="reference-accessdate">. Retrieved <span class="nowrap">2024-06-07</span></span>.</cite><span title="ctx&#95;ver=Z39.88-2004&amp;rft&#95;val&#95;fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=Quick+and+Dirty+Game+Development+Framework&amp;rft.date=2001-01-01&amp;rft.au=TTC+Development+Team&amp;rft&#95;id=https%3A%2F%2Ftriptico.com%2Fsoftware%2Fqdgdf.html&amp;rfr&#95;id=info%3Asid%2Fen.wikipedia.org%3ASVGALib" class="Z3988"></span></span>
+</li>
+<li id="cite&#95;note-9"><span class="mw-cite-backlink"><b><a href="#cite_ref-9">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1333433106" /><cite class="citation web cs1"><a rel="nofollow" class="external text" href="https://nixbit.com/software/quick-and-dirty-game-development-framework-review/">"Quick and Dirty Game Development Framework 0.9.1 review"</a>. <i>Nixbit</i><span class="reference-accessdate">. Retrieved <span class="nowrap">2024-06-07</span></span>.</cite><span title="ctx&#95;ver=Z39.88-2004&amp;rft&#95;val&#95;fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=Nixbit&amp;rft.atitle=Quick+and+Dirty+Game+Development+Framework+0.9.1+review&amp;rft&#95;id=https%3A%2F%2Fnixbit.com%2Fsoftware%2Fquick-and-dirty-game-development-framework-review%2F&amp;rfr&#95;id=info%3Asid%2Fen.wikipedia.org%3ASVGALib" class="Z3988"></span></span>
+</li>
+<li id="cite&#95;note-10"><span class="mw-cite-backlink"><b><a href="#cite_ref-10">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1333433106" /><cite id="CITEREFWilson2023" class="citation web cs1">Wilson, Hamish (2023-02-27). <a rel="nofollow" class="external text" href="https://www.gamingonlinux.com/2023/02/building-a-retro-linux-gaming-computer-part-27-lost-souls/">"Building a Retro Linux Gaming Computer - Part 27: Lost Souls"</a>. <i><a href="/wiki/GamingOnLinux" class="mw-redirect" title="GamingOnLinux">GamingOnLinux</a></i><span class="reference-accessdate">. Retrieved <span class="nowrap">2023-02-27</span></span>.</cite><span title="ctx&#95;ver=Z39.88-2004&amp;rft&#95;val&#95;fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=GamingOnLinux&amp;rft.atitle=Building+a+Retro+Linux+Gaming+Computer+-+Part+27%3A+Lost+Souls&amp;rft.date=2023-02-27&amp;rft.aulast=Wilson&amp;rft.aufirst=Hamish&amp;rft&#95;id=https%3A%2F%2Fwww.gamingonlinux.com%2F2023%2F02%2Fbuilding-a-retro-linux-gaming-computer-part-27-lost-souls%2F&amp;rfr&#95;id=info%3Asid%2Fen.wikipedia.org%3ASVGALib" class="Z3988"></span></span>
+</li>
+<li id="cite&#95;note-11"><span class="mw-cite-backlink"><b><a href="#cite_ref-11">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1333433106" /><cite id="CITEREFKarim" class="citation web cs1">Karim, Jawed. <a rel="nofollow" class="external text" href="https://dl.acm.org/doi/fullHtml/10.5555/327469.327475">"Porting MS-DOS Graphics Applications"</a>. <i><a href="/wiki/Association_for_Computing_Machinery" title="Association for Computing Machinery">ACM</a></i><span class="reference-accessdate">. Retrieved <span class="nowrap">2023-09-29</span></span>.</cite><span title="ctx&#95;ver=Z39.88-2004&amp;rft&#95;val&#95;fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=ACM&amp;rft.atitle=Porting+MS-DOS+Graphics+Applications&amp;rft.aulast=Karim&amp;rft.aufirst=Jawed&amp;rft&#95;id=https%3A%2F%2Fdl.acm.org%2Fdoi%2FfullHtml%2F10.5555%2F327469.327475&amp;rfr&#95;id=info%3Asid%2Fen.wikipedia.org%3ASVGALib" class="Z3988"></span></span>
+</li>
+<li id="cite&#95;note-12"><span class="mw-cite-backlink"><b><a href="#cite_ref-12">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1333433106" /><cite id="CITEREFDarkOne2005" class="citation web cs1">DarkOne (2005-04-10). <a rel="nofollow" class="external text" href="https://newwolf.sourceforge.net/links.htm">"Wolfenstein3D Links"</a>. <i>NewWolf</i>. <a href="/wiki/SourceForge" title="SourceForge">SourceForge</a><span class="reference-accessdate">. Retrieved <span class="nowrap">2023-09-26</span></span>. <q><i>Linux Wolf - Runs either in a window (xwolf3d) or with svgalib (swolf3d).</i></q></cite><span title="ctx&#95;ver=Z39.88-2004&amp;rft&#95;val&#95;fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=NewWolf&amp;rft.atitle=Wolfenstein3D+Links&amp;rft.date=2005-04-10&amp;rft.au=DarkOne&amp;rft&#95;id=https%3A%2F%2Fnewwolf.sourceforge.net%2Flinks.htm&amp;rfr&#95;id=info%3Asid%2Fen.wikipedia.org%3ASVGALib" class="Z3988"></span></span>
+</li>
+<li id="cite&#95;note-13"><span class="mw-cite-backlink"><b><a href="#cite_ref-13">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1333433106" /><cite id="CITEREFWilson2022" class="citation web cs1">Wilson, Hamish (2022-03-15). <a rel="nofollow" class="external text" href="https://www.gamingonlinux.com/2022/03/building-a-retro-linux-gaming-computer-part-16-we-are-all-doomed/">"Building a Retro Linux Gaming Computer - Part 16: We Are All Doomed"</a>. <i><a href="/wiki/GamingOnLinux" class="mw-redirect" title="GamingOnLinux">GamingOnLinux</a></i><span class="reference-accessdate">. Retrieved <span class="nowrap">2023-09-29</span></span>.</cite><span title="ctx&#95;ver=Z39.88-2004&amp;rft&#95;val&#95;fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=GamingOnLinux&amp;rft.atitle=Building+a+Retro+Linux+Gaming+Computer+-+Part+16%3A+We+Are+All+Doomed&amp;rft.date=2022-03-15&amp;rft.aulast=Wilson&amp;rft.aufirst=Hamish&amp;rft&#95;id=https%3A%2F%2Fwww.gamingonlinux.com%2F2022%2F03%2Fbuilding-a-retro-linux-gaming-computer-part-16-we-are-all-doomed%2F&amp;rfr&#95;id=info%3Asid%2Fen.wikipedia.org%3ASVGALib" class="Z3988"></span></span>
+</li>
+<li id="cite&#95;note-14"><span class="mw-cite-backlink"><b><a href="#cite_ref-14">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1333433106" /><cite id="CITEREFptesone2004" class="citation web cs1">ptesone (2004-04-06). <a rel="nofollow" class="external text" href="https://www.linuxquestions.org/questions/linux-newbie-8/can-only-run-d1x-as-root-166902/">"can only run d1x as root!"</a>. <i>Linux Questions</i><span class="reference-accessdate">. Retrieved <span class="nowrap">2023-10-04</span></span>.</cite><span title="ctx&#95;ver=Z39.88-2004&amp;rft&#95;val&#95;fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=Linux+Questions&amp;rft.atitle=can+only+run+d1x+as+root%21&amp;rft.date=2004-04-06&amp;rft.au=ptesone&amp;rft&#95;id=https%3A%2F%2Fwww.linuxquestions.org%2Fquestions%2Flinux-newbie-8%2Fcan-only-run-d1x-as-root-166902%2F&amp;rfr&#95;id=info%3Asid%2Fen.wikipedia.org%3ASVGALib" class="Z3988"></span></span>
+</li>
+<li id="cite&#95;note-15"><span class="mw-cite-backlink"><b><a href="#cite_ref-15">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1333433106" /><cite id="CITEREFWilson2023" class="citation web cs1">Wilson, Hamish (2023-11-06). <a rel="nofollow" class="external text" href="https://www.gamingonlinux.com/2023/11/building-a-retro-linux-gaming-computer-part-34-abusing-the-system/">"Building a Retro Linux Gaming Computer Part 34: Abusing the System"</a>. <i><a href="/wiki/GamingOnLinux" class="mw-redirect" title="GamingOnLinux">GamingOnLinux</a></i><span class="reference-accessdate">. Retrieved <span class="nowrap">2023-11-07</span></span>.</cite><span title="ctx&#95;ver=Z39.88-2004&amp;rft&#95;val&#95;fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=GamingOnLinux&amp;rft.atitle=Building+a+Retro+Linux+Gaming+Computer+Part+34%3A+Abusing+the+System&amp;rft.date=2023-11-06&amp;rft.aulast=Wilson&amp;rft.aufirst=Hamish&amp;rft&#95;id=https%3A%2F%2Fwww.gamingonlinux.com%2F2023%2F11%2Fbuilding-a-retro-linux-gaming-computer-part-34-abusing-the-system%2F&amp;rfr&#95;id=info%3Asid%2Fen.wikipedia.org%3ASVGALib" class="Z3988"></span></span>
+</li>
+<li id="cite&#95;note-16"><span class="mw-cite-backlink"><b><a href="#cite_ref-16">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1333433106" /><cite class="citation web cs1"><a rel="nofollow" class="external text" href="https://easymamecab.mameworld.info/html/svgalib.htm">"SVGAlib help"</a>. <i>Easy MAMECab</i><span class="reference-accessdate">. Retrieved <span class="nowrap">2023-12-07</span></span>.</cite><span title="ctx&#95;ver=Z39.88-2004&amp;rft&#95;val&#95;fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=Easy+MAMECab&amp;rft.atitle=SVGAlib+help&amp;rft&#95;id=https%3A%2F%2Feasymamecab.mameworld.info%2Fhtml%2Fsvgalib.htm&amp;rfr&#95;id=info%3Asid%2Fen.wikipedia.org%3ASVGALib" class="Z3988"></span></span>
+</li>
+<li id="cite&#95;note-17"><span class="mw-cite-backlink"><b><a href="#cite_ref-17">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1333433106" /><cite class="citation web cs1"><a rel="nofollow" class="external text" href="https://web.archive.org/web/20060103160637/http://www.the-underdogs.org/game.php?id=3920">"Alizarin Tetris"</a>. <i><a href="/wiki/Home_of_the_Underdogs" title="Home of the Underdogs">Home of the Underdogs</a></i>. Archived from <a rel="nofollow" class="external text" href="http://www.the-underdogs.org/game.php?id=3920">the original</a> on 2006-01-03<span class="reference-accessdate">. Retrieved <span class="nowrap">2023-09-29</span></span>.</cite><span title="ctx&#95;ver=Z39.88-2004&amp;rft&#95;val&#95;fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=Home+of+the+Underdogs&amp;rft.atitle=Alizarin+Tetris&amp;rft&#95;id=http%3A%2F%2Fwww.the-underdogs.org%2Fgame.php%3Fid%3D3920&amp;rfr&#95;id=info%3Asid%2Fen.wikipedia.org%3ASVGALib" class="Z3988"></span></span>
+</li>
+<li id="cite&#95;note-18"><span class="mw-cite-backlink"><b><a href="#cite_ref-18">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1333433106" /><cite class="citation web cs1"><a rel="nofollow" class="external text" href="http://www.bd-fans.com/FreewareUnix.html">"Freeware Boulder Dash Clones - Unix"</a>. <i>Boulderdash - Martijn's Boulder Dash Fan Site</i><span class="reference-accessdate">. Retrieved <span class="nowrap">2023-11-07</span></span>. <q><i>A Linux clone of Boulder Dash with 256 colour graphics and digitized sounds. It requires the svgalib library.</i></q></cite><span title="ctx&#95;ver=Z39.88-2004&amp;rft&#95;val&#95;fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=Boulderdash+-+Martijn%27s+Boulder+Dash+Fan+Site&amp;rft.atitle=Freeware+Boulder+Dash+Clones+-+Unix&amp;rft&#95;id=http%3A%2F%2Fwww.bd-fans.com%2FFreewareUnix.html&amp;rfr&#95;id=info%3Asid%2Fen.wikipedia.org%3ASVGALib" class="Z3988"></span></span>
+</li>
+<li id="cite&#95;note-19"><span class="mw-cite-backlink"><b><a href="#cite_ref-19">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1333433106" /><cite id="CITEREFKroll2000" class="citation web cs1">Kroll, Jason (2000-01-31). <a rel="nofollow" class="external text" href="https://www.linuxjournal.com/article/3798?page=0,1">"GAMES FOCUS"</a>. <i><a href="/wiki/Linux_Journal" title="Linux Journal">Linux Journal</a></i><span class="reference-accessdate">. Retrieved <span class="nowrap">2023-12-18</span></span>.</cite><span title="ctx&#95;ver=Z39.88-2004&amp;rft&#95;val&#95;fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=Linux+Journal&amp;rft.atitle=GAMES+FOCUS&amp;rft.date=2000-01-31&amp;rft.aulast=Kroll&amp;rft.aufirst=Jason&amp;rft&#95;id=https%3A%2F%2Fwww.linuxjournal.com%2Farticle%2F3798%3Fpage%3D0%2C1&amp;rfr&#95;id=info%3Asid%2Fen.wikipedia.org%3ASVGALib" class="Z3988"></span></span>
+</li>
+<li id="cite&#95;note-20"><span class="mw-cite-backlink"><b><a href="#cite_ref-20">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1333433106" /><cite id="CITEREFWilson2023" class="citation web cs1">Wilson, Hamish (2023-12-12). <a rel="nofollow" class="external text" href="https://www.gamingonlinux.com/2023/12/building-a-retro-linux-gaming-computer-part-36-entertainment-for-x-windows/">"Building a Retro Linux Gaming Computer Part 36: Entertainment for X Windows"</a>. <i><a href="/wiki/GamingOnLinux" class="mw-redirect" title="GamingOnLinux">GamingOnLinux</a></i><span class="reference-accessdate">. Retrieved <span class="nowrap">2023-12-15</span></span>. <q><i>Hatman - The Game of Kings is an impressive but undercooked SVGAlib clone of Pacman which does have an RPM package on the disc but sadly had sound support disabled at compilation. There were a number of other Pacman clones featured, but this one had the most potential.</i></q></cite><span title="ctx&#95;ver=Z39.88-2004&amp;rft&#95;val&#95;fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=GamingOnLinux&amp;rft.atitle=Building+a+Retro+Linux+Gaming+Computer+Part+36%3A+Entertainment+for+X+Windows&amp;rft.date=2023-12-12&amp;rft.aulast=Wilson&amp;rft.aufirst=Hamish&amp;rft&#95;id=https%3A%2F%2Fwww.gamingonlinux.com%2F2023%2F12%2Fbuilding-a-retro-linux-gaming-computer-part-36-entertainment-for-x-windows%2F&amp;rfr&#95;id=info%3Asid%2Fen.wikipedia.org%3ASVGALib" class="Z3988"></span></span>
+</li>
+<li id="cite&#95;note-21"><span class="mw-cite-backlink"><b><a href="#cite_ref-21">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1333433106" /><cite class="citation web cs1"><a rel="nofollow" class="external text" href="https://www.icewalkers.com/linux/software/512360/Intelligent-FRAC-(ifrac).html">"Intelligent FRAC"</a>. <i>Ice Walkers</i>. 2003-11-20<span class="reference-accessdate">. Retrieved <span class="nowrap">2023-09-29</span></span>.</cite><span title="ctx&#95;ver=Z39.88-2004&amp;rft&#95;val&#95;fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=Ice+Walkers&amp;rft.atitle=Intelligent+FRAC&amp;rft.date=2003-11-20&amp;rft&#95;id=https%3A%2F%2Fwww.icewalkers.com%2Flinux%2Fsoftware%2F512360%2FIntelligent-FRAC-%28ifrac%29.html&amp;rfr&#95;id=info%3Asid%2Fen.wikipedia.org%3ASVGALib" class="Z3988"></span></span>
+</li>
+<li id="cite&#95;note-22"><span class="mw-cite-backlink"><b><a href="#cite_ref-22">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1333433106" /><cite class="citation web cs1"><a rel="nofollow" class="external text" href="http://web.mit.edu/~linux/redhat/redhat-5.2/i386/doc/rhmanual/manual/doc067.htm">"Impressing Your Friends with RPM"</a>. <i>Official <a href="/wiki/Red_Hat_Linux" title="Red Hat Linux">Red Hat Linux</a> FAQ</i>. <a href="/wiki/Massachusetts_Institute_of_Technology" title="Massachusetts Institute of Technology">Massachusetts Institute of Technology</a><span class="reference-accessdate">. Retrieved <span class="nowrap">2023-09-29</span></span>.</cite><span title="ctx&#95;ver=Z39.88-2004&amp;rft&#95;val&#95;fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=Official+Red+Hat+Linux+FAQ&amp;rft.atitle=Impressing+Your+Friends+with+RPM&amp;rft&#95;id=http%3A%2F%2Fweb.mit.edu%2F~linux%2Fredhat%2Fredhat-5.2%2Fi386%2Fdoc%2Frhmanual%2Fmanual%2Fdoc067.htm&amp;rfr&#95;id=info%3Asid%2Fen.wikipedia.org%3ASVGALib" class="Z3988"></span></span>
+</li>
+<li id="cite&#95;note-23"><span class="mw-cite-backlink"><b><a href="#cite_ref-23">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1333433106" /><cite id="CITEREFHeuserHampton2003" class="citation web cs1">Heuser, Werner; Hampton, Wade W. (2003-02-27). <a rel="nofollow" class="external text" href="https://www.csse.uwa.edu.au/programming/linux/Linux-HowTo-9/Ecology-HOWTO-12.html">"Games"</a>. <i>Linux Ecology HOWTO</i><span class="reference-accessdate">. Retrieved <span class="nowrap">2023-09-29</span></span>. <q><i>lincity build &amp; maintain a city/country. You are required to build and maintain a city. You must feed, house, provide jobs and goods for your residents. You can build a sustainable economy with the help of renewable energy and recycling, or you can go for broke and build rockets to escape from a pollution ridden and resource starved planet, it's up to you. Due to the finite resources available in any one place, this is not a game that you can leave for long periods of time. This game is similar to the commercial simulation game with a similar name. This package provides files common to both the X and SVGALIB versions of the game.</i></q></cite><span title="ctx&#95;ver=Z39.88-2004&amp;rft&#95;val&#95;fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=Linux+Ecology+HOWTO&amp;rft.atitle=Games&amp;rft.date=2003-02-27&amp;rft.aulast=Heuser&amp;rft.aufirst=Werner&amp;rft.au=Hampton%2C+Wade+W.&amp;rft&#95;id=https%3A%2F%2Fwww.csse.uwa.edu.au%2Fprogramming%2Flinux%2FLinux-HowTo-9%2FEcology-HOWTO-12.html&amp;rfr&#95;id=info%3Asid%2Fen.wikipedia.org%3ASVGALib" class="Z3988"></span></span>
+</li>
+<li id="cite&#95;note-24"><span class="mw-cite-backlink"><b><a href="#cite_ref-24">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1333433106" /><cite id="CITEREFWilson2023" class="citation web cs1">Wilson, Hamish (2023-09-04). <a rel="nofollow" class="external text" href="https://www.gamingonlinux.com/2023/09/building-a-retro-linux-gaming-computer-part-32-two-steps-forward-one-step-back/">"Building a Retro Linux Gaming Computer Part 32: Two Steps Forward, One Step Back"</a><span class="reference-accessdate">. Retrieved <span class="nowrap">2023-09-29</span></span>. <q><i>As well as not being in keeping with the aesthetic, the LCD also had the annoying habit of showing a warning about being out of range on top of what otherwise looked to be a workable display, especially when playing games that utilized SVGAlib for graphics. I could get around this by launching certain more pliant SVGAlib games such as the final build of LinCity before starting up the offending applications, as for whatever reason this would seem to soothe the nerves of the display, but I was more than happy to leave those headaches behind.</i></q></cite><span title="ctx&#95;ver=Z39.88-2004&amp;rft&#95;val&#95;fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=Building+a+Retro+Linux+Gaming+Computer+Part+32%3A+Two+Steps+Forward%2C+One+Step+Back&amp;rft.date=2023-09-04&amp;rft.aulast=Wilson&amp;rft.aufirst=Hamish&amp;rft&#95;id=https%3A%2F%2Fwww.gamingonlinux.com%2F2023%2F09%2Fbuilding-a-retro-linux-gaming-computer-part-32-two-steps-forward-one-step-back%2F&amp;rfr&#95;id=info%3Asid%2Fen.wikipedia.org%3ASVGALib" class="Z3988"></span></span>
+</li>
+<li id="cite&#95;note-25"><span class="mw-cite-backlink"><b><a href="#cite_ref-25">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1333433106" /><cite class="citation web cs1"><a rel="nofollow" class="external text" href="https://happypenguin.altervista.org/sheet.php?gameid=235">"Linberto"</a>. <i>The Linux Game Tome</i>. 2001-04-05<span class="reference-accessdate">. Retrieved <span class="nowrap">2023-09-29</span></span>.</cite><span title="ctx&#95;ver=Z39.88-2004&amp;rft&#95;val&#95;fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=The+Linux+Game+Tome&amp;rft.atitle=Linberto&amp;rft.date=2001-04-05&amp;rft&#95;id=https%3A%2F%2Fhappypenguin.altervista.org%2Fsheet.php%3Fgameid%3D235&amp;rfr&#95;id=info%3Asid%2Fen.wikipedia.org%3ASVGALib" class="Z3988"></span></span>
+</li>
+<li id="cite&#95;note-26"><span class="mw-cite-backlink"><b><a href="#cite_ref-26">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1333433106" /><cite class="citation web cs1"><a rel="nofollow" class="external text" href="https://www.icewalkers.com/linux/software/54020/Quadra.html">"Qundra"</a>. <i>Ice Walkers</i>. 2012-02-26<span class="reference-accessdate">. Retrieved <span class="nowrap">2023-09-29</span></span>.</cite><span title="ctx&#95;ver=Z39.88-2004&amp;rft&#95;val&#95;fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=Ice+Walkers&amp;rft.atitle=Qundra&amp;rft.date=2012-02-26&amp;rft&#95;id=https%3A%2F%2Fwww.icewalkers.com%2Flinux%2Fsoftware%2F54020%2FQuadra.html&amp;rfr&#95;id=info%3Asid%2Fen.wikipedia.org%3ASVGALib" class="Z3988"></span></span>
+</li>
+<li id="cite&#95;note-27"><span class="mw-cite-backlink"><b><a href="#cite_ref-27">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1333433106" /><cite id="CITEREFMarten2015" class="citation web cs1">Marten, Jonathan (2015-12-08). <a rel="nofollow" class="external text" href="http://www.keelhaul.me.uk/krepton/">"KRepton version 4"</a><span class="reference-accessdate">. Retrieved <span class="nowrap">2023-09-29</span></span>. <q><i>KRepton was originally written by Sandro Sigala for Linux using the SVGAlib library, and then rewritten entirely using the QT and KDE libraries for release 1.0 of KDE.</i></q></cite><span title="ctx&#95;ver=Z39.88-2004&amp;rft&#95;val&#95;fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=KRepton+version+4&amp;rft.date=2015-12-08&amp;rft.aulast=Marten&amp;rft.aufirst=Jonathan&amp;rft&#95;id=http%3A%2F%2Fwww.keelhaul.me.uk%2Fkrepton%2F&amp;rfr&#95;id=info%3Asid%2Fen.wikipedia.org%3ASVGALib" class="Z3988"></span></span>
+</li>
+<li id="cite&#95;note-28"><span class="mw-cite-backlink"><b><a href="#cite_ref-28">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1333433106" /><cite id="CITEREFAyers1998" class="citation web cs1">Ayers, Larry (1998-07-01). <a rel="nofollow" class="external text" href="https://linuxgazette.net/issue30/ayers3.html">"Sabre: An Svgalib Flight Sim"</a>. <i><a href="/wiki/Linux_Gazette" title="Linux Gazette">Linux Gazette</a></i><span class="reference-accessdate">. Retrieved <span class="nowrap">2023-09-29</span></span>.</cite><span title="ctx&#95;ver=Z39.88-2004&amp;rft&#95;val&#95;fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=Linux+Gazette&amp;rft.atitle=Sabre%3A+An+Svgalib+Flight+Sim&amp;rft.date=1998-07-01&amp;rft.aulast=Ayers&amp;rft.aufirst=Larry&amp;rft&#95;id=https%3A%2F%2Flinuxgazette.net%2Fissue30%2Fayers3.html&amp;rfr&#95;id=info%3Asid%2Fen.wikipedia.org%3ASVGALib" class="Z3988"></span></span>
+</li>
+<li id="cite&#95;note-29"><span class="mw-cite-backlink"><b><a href="#cite_ref-29">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1333433106" /><cite id="CITEREFPayne2021" class="citation web cs1">Payne, Dennis (2021-09-20). <a rel="nofollow" class="external text" href="https://www.linkedin.com/pulse/open-game-source-inertia-blast-dennis-payne">"Open Game Source: Inertia Blast"</a>. <i><a href="/wiki/LinkedIn" title="LinkedIn">LinkedIn</a></i><span class="reference-accessdate">. Retrieved <span class="nowrap">2023-09-29</span></span>. <q><i>When I first installed Linux I stumbled on a remake of Thrust. It was brutally difficult but I enjoyed the game. At the time I ran it under svgalib, an old console graphic system which required root access.</i></q></cite><span title="ctx&#95;ver=Z39.88-2004&amp;rft&#95;val&#95;fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=LinkedIn&amp;rft.atitle=Open+Game+Source%3A+Inertia+Blast&amp;rft.date=2021-09-20&amp;rft.aulast=Payne&amp;rft.aufirst=Dennis&amp;rft&#95;id=https%3A%2F%2Fwww.linkedin.com%2Fpulse%2Fopen-game-source-inertia-blast-dennis-payne&amp;rfr&#95;id=info%3Asid%2Fen.wikipedia.org%3ASVGALib" class="Z3988"></span></span>
+</li>
+<li id="cite&#95;note-30"><span class="mw-cite-backlink"><b><a href="#cite_ref-30">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1333433106" /><cite id="CITEREFVan&#95;Os" class="citation web cs1">Van Os, Thom. <a rel="nofollow" class="external text" href="https://web.archive.org/web/20160303194753/http://thom.best.vwh.net/software.html#zarch">"Software"</a>. <i>Thom's Toys</i>. Archived from <a rel="nofollow" class="external text" href="http://thom.best.vwh.net/software.html#zarch">the original</a> on 2016-03-03<span class="reference-accessdate">. Retrieved <span class="nowrap">2023-12-18</span></span>.</cite><span title="ctx&#95;ver=Z39.88-2004&amp;rft&#95;val&#95;fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=Thom%27s+Toys&amp;rft.atitle=Software&amp;rft.aulast=Van+Os&amp;rft.aufirst=Thom&amp;rft&#95;id=http%3A%2F%2Fthom.best.vwh.net%2Fsoftware.html%23zarch&amp;rfr&#95;id=info%3Asid%2Fen.wikipedia.org%3ASVGALib" class="Z3988"></span></span>
+</li>
+<li id="cite&#95;note-31"><span class="mw-cite-backlink"><b><a href="#cite_ref-31">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1333433106" /><cite class="citation web cs1"><a rel="nofollow" class="external text" href="https://community.linuxmint.com/software/view/zblast-svgalib">"zblast-svgalib"</a>. <i><a href="/wiki/Linux_Mint" title="Linux Mint">Linux Mint</a></i><span class="reference-accessdate">. Retrieved <span class="nowrap">2023-09-29</span></span>.</cite><span title="ctx&#95;ver=Z39.88-2004&amp;rft&#95;val&#95;fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=Linux+Mint&amp;rft.atitle=zblast-svgalib&amp;rft&#95;id=https%3A%2F%2Fcommunity.linuxmint.com%2Fsoftware%2Fview%2Fzblast-svgalib&amp;rfr&#95;id=info%3Asid%2Fen.wikipedia.org%3ASVGALib" class="Z3988"></span></span>
+</li>
+<li id="cite&#95;note-32"><span class="mw-cite-backlink"><b><a href="#cite_ref-32">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1333433106" /><cite class="citation web cs1"><a rel="nofollow" class="external text" href="https://www.ibiblio.org/pub/historic-linux/ftp-archives/sunsite.unc.edu/Sep-29-1996/games/video/INDEX.html">"Index of /pub/Linux/games/video"</a>. <i><a href="/wiki/Ibiblio" title="Ibiblio">ibiblio</a></i><span class="reference-accessdate">. Retrieved <span class="nowrap">2023-09-29</span></span>.</cite><span title="ctx&#95;ver=Z39.88-2004&amp;rft&#95;val&#95;fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=ibiblio&amp;rft.atitle=Index+of+%2Fpub%2FLinux%2Fgames%2Fvideo&amp;rft&#95;id=https%3A%2F%2Fwww.ibiblio.org%2Fpub%2Fhistoric-linux%2Fftp-archives%2Fsunsite.unc.edu%2FSep-29-1996%2Fgames%2Fvideo%2FINDEX.html&amp;rfr&#95;id=info%3Asid%2Fen.wikipedia.org%3ASVGALib" class="Z3988"></span></span>
+</li>
+<li id="cite&#95;note-33"><span class="mw-cite-backlink"><b><a href="#cite_ref-33">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1333433106" /><cite id="CITEREFWeller" class="citation web cs1">Weller, Michael. <a rel="nofollow" class="external text" href="https://linux.die.net/man/7/svgalib">"svgalib(7) - Linux man page"</a>. <i>die.net</i><span class="reference-accessdate">. Retrieved <span class="nowrap">2023-09-29</span></span>.</cite><span title="ctx&#95;ver=Z39.88-2004&amp;rft&#95;val&#95;fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=die.net&amp;rft.atitle=svgalib%287%29+-+Linux+man+page&amp;rft.aulast=Weller&amp;rft.aufirst=Michael&amp;rft&#95;id=https%3A%2F%2Flinux.die.net%2Fman%2F7%2Fsvgalib&amp;rfr&#95;id=info%3Asid%2Fen.wikipedia.org%3ASVGALib" class="Z3988"></span></span>
+</li>
+<li id="cite&#95;note-34"><span class="mw-cite-backlink"><b><a href="#cite_ref-34">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1333433106" /><cite class="citation web cs1"><a rel="nofollow" class="external text" href="http://web.mit.edu/~linux/redhat/redhat-5.2/i386/doc/rhmanual/manual/doc101.htm">"Games"</a>. <i>Official <a href="/wiki/Red_Hat_Linux" title="Red Hat Linux">Red Hat Linux</a> FAQ</i>. <a href="/wiki/Massachusetts_Institute_of_Technology" title="Massachusetts Institute of Technology">Massachusetts Institute of Technology</a><span class="reference-accessdate">. Retrieved <span class="nowrap">2023-09-29</span></span>.</cite><span title="ctx&#95;ver=Z39.88-2004&amp;rft&#95;val&#95;fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=Official+Red+Hat+Linux+FAQ&amp;rft.atitle=Games&amp;rft&#95;id=http%3A%2F%2Fweb.mit.edu%2F~linux%2Fredhat%2Fredhat-5.2%2Fi386%2Fdoc%2Frhmanual%2Fmanual%2Fdoc101.htm&amp;rfr&#95;id=info%3Asid%2Fen.wikipedia.org%3ASVGALib" class="Z3988"></span></span>
+</li>
+<li id="cite&#95;note-35"><span class="mw-cite-backlink"><b><a href="#cite_ref-35">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1333433106" /><cite id="CITEREFPranevich1999" class="citation web cs1">Pranevich, Joseph (1999-04-01). <a rel="nofollow" class="external text" href="https://www.linuxjournal.com/article/3278">"Linux 2.2 and the Frame-Buffer Console Software"</a>. <i><a href="/wiki/Linux_Journal" title="Linux Journal">Linux Journal</a></i><span class="reference-accessdate">. Retrieved <span class="nowrap">2023-09-29</span></span>. <q><i>Limitations aside, SVGAlib has proven to be a stable and popular solution to the console problem and is the primary interface used in Quake and other games.</i></q></cite><span title="ctx&#95;ver=Z39.88-2004&amp;rft&#95;val&#95;fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=Linux+Journal&amp;rft.atitle=Linux+2.2+and+the+Frame-Buffer+Console+Software&amp;rft.date=1999-04-01&amp;rft.aulast=Pranevich&amp;rft.aufirst=Joseph&amp;rft&#95;id=https%3A%2F%2Fwww.linuxjournal.com%2Farticle%2F3278&amp;rfr&#95;id=info%3Asid%2Fen.wikipedia.org%3ASVGALib" class="Z3988"></span></span>
+</li>
+<li id="cite&#95;note-36"><span class="mw-cite-backlink"><b><a href="#cite_ref-36">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1333433106" /><cite id="CITEREFWallis2008" class="citation web cs1">Wallis, Alistair (2008-05-26). <a rel="nofollow" class="external text" href="https://www.gamedeveloper.com/pc/bonus-interview-the-state-of-linux-gaming-">"Bonus Interview: 'The State Of... Linux Gaming?'<span class="cs1-kern-right"></span>"</a>. <i><a href="/wiki/Game_Developer_(website)" title="Game Developer (website)">Game Developer</a></i><span class="reference-accessdate">. Retrieved <span class="nowrap">2023-09-29</span></span>. <q><i>I've always been a video game nerd, so it was important to me to see how much gaming I could do on this new system. I remember how exciting it was to get Doom running fullscreen - [graphics library] svgalib was a monster that I'm sure nobody misses today. I was also quite taken by Maelstrom, a Linux port of a slick Asteroids clone for the Mac.</i></q></cite><span title="ctx&#95;ver=Z39.88-2004&amp;rft&#95;val&#95;fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=Game+Developer&amp;rft.atitle=Bonus+Interview%3A+%27The+State+Of...+Linux+Gaming%3F%27&amp;rft.date=2008-05-26&amp;rft.aulast=Wallis&amp;rft.aufirst=Alistair&amp;rft&#95;id=https%3A%2F%2Fwww.gamedeveloper.com%2Fpc%2Fbonus-interview-the-state-of-linux-gaming-&amp;rfr&#95;id=info%3Asid%2Fen.wikipedia.org%3ASVGALib" class="Z3988"></span></span>
+</li>
+<li id="cite&#95;note-37"><span class="mw-cite-backlink"><b><a href="#cite_ref-37">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1333433106" /><cite id="CITEREFtimothy2000" class="citation web cs1">timothy (2000-10-26). <a rel="nofollow" class="external text" href="https://developers.slashdot.org/story/00/10/24/1937235/linux-graphics-programming-with-svgalib">"Linux Graphics Programming with SVGAlib"</a>. <i><a href="/wiki/Slashdot" title="Slashdot">Slashdot</a></i><span class="reference-accessdate">. Retrieved <span class="nowrap">2023-09-29</span></span>.</cite><span title="ctx&#95;ver=Z39.88-2004&amp;rft&#95;val&#95;fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=Slashdot&amp;rft.atitle=Linux+Graphics+Programming+with+SVGAlib&amp;rft.date=2000-10-26&amp;rft.au=timothy&amp;rft&#95;id=https%3A%2F%2Fdevelopers.slashdot.org%2Fstory%2F00%2F10%2F24%2F1937235%2Flinux-graphics-programming-with-svgalib&amp;rfr&#95;id=info%3Asid%2Fen.wikipedia.org%3ASVGALib" class="Z3988"></span></span>
+</li>
+<li id="cite&#95;note-38"><span class="mw-cite-backlink"><b><a href="#cite_ref-38">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1333433106" /><cite class="citation web cs1"><a rel="nofollow" class="external text" href="https://happypenguin.altervista.org/sheet.php?gameid=749">"SDL Sasteroids"</a>. <i>The Linux Game Tome</i>. 2005-04-01<span class="reference-accessdate">. Retrieved <span class="nowrap">2023-09-29</span></span>. <q><i>SDL Sasteroids is a major revision to the original sasteroids game to allow it to run on modern systems. In addition to providing very similar gameplay to the original sasteroids game, a few surprises and updates have been inserted to make it fun for new and old fans.&#160;:) Sasteroids was originally an Asteroids game written for svgalib.</i></q></cite><span title="ctx&#95;ver=Z39.88-2004&amp;rft&#95;val&#95;fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=The+Linux+Game+Tome&amp;rft.atitle=SDL+Sasteroids&amp;rft.date=2005-04-01&amp;rft&#95;id=https%3A%2F%2Fhappypenguin.altervista.org%2Fsheet.php%3Fgameid%3D749&amp;rfr&#95;id=info%3Asid%2Fen.wikipedia.org%3ASVGALib" class="Z3988"></span></span>
+</li>
+<li id="cite&#95;note-sdl-faq-39"><span class="mw-cite-backlink"><b><a href="#cite_ref-sdl-faq_39-0">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1333433106" /><cite class="citation web cs1"><a rel="nofollow" class="external text" href="https://wiki.libsdl.org/FAQUsingSDL">"FAQ: Using SDL"</a>. <i>wiki.libsdl.org</i>.</cite><span title="ctx&#95;ver=Z39.88-2004&amp;rft&#95;val&#95;fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=wiki.libsdl.org&amp;rft.atitle=FAQ%3A+Using+SDL&amp;rft&#95;id=https%3A%2F%2Fwiki.libsdl.org%2FFAQUsingSDL&amp;rfr&#95;id=info%3Asid%2Fen.wikipedia.org%3ASVGALib" class="Z3988"></span></span>
+</li>
+<li id="cite&#95;note-40"><span class="mw-cite-backlink"><b><a href="#cite_ref-40">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1333433106" /><cite id="CITEREFArmstrong2020" class="citation web cs1">Armstrong, Ryan (2020-11-18). <a rel="nofollow" class="external text" href="https://www.zerker.ca/home/old-x-games.html">"Old X Games"</a>. <i>Zerk Zone</i><span class="reference-accessdate">. Retrieved <span class="nowrap">2023-09-29</span></span>. <q><i>That said, I will probably post info on SVGAlib games in the future, as they were a fascinating and forgotten stepping stone towards SDL.</i></q></cite><span title="ctx&#95;ver=Z39.88-2004&amp;rft&#95;val&#95;fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=Zerk+Zone&amp;rft.atitle=Old+X+Games&amp;rft.date=2020-11-18&amp;rft.aulast=Armstrong&amp;rft.aufirst=Ryan&amp;rft&#95;id=https%3A%2F%2Fwww.zerker.ca%2Fhome%2Fold-x-games.html&amp;rfr&#95;id=info%3Asid%2Fen.wikipedia.org%3ASVGALib" class="Z3988"></span></span>
+</li>
+<li id="cite&#95;note-41"><span class="mw-cite-backlink"><b><a href="#cite_ref-41">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1333433106" /><cite class="citation web cs1"><a rel="nofollow" class="external text" href="https://www.exploit-db.com/exploits/20517">"Itetris 1.6.1/1.6.2 - Privileged Arbitrary Command Execution"</a>. <i>Exploit Database</i>. 2000-12-19<span class="reference-accessdate">. Retrieved <span class="nowrap">2023-09-29</span></span>.</cite><span title="ctx&#95;ver=Z39.88-2004&amp;rft&#95;val&#95;fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=Exploit+Database&amp;rft.atitle=Itetris+1.6.1%2F1.6.2+-+Privileged+Arbitrary+Command+Execution&amp;rft.date=2000-12-19&amp;rft&#95;id=https%3A%2F%2Fwww.exploit-db.com%2Fexploits%2F20517&amp;rfr&#95;id=info%3Asid%2Fen.wikipedia.org%3ASVGALib" class="Z3988"></span></span>
+</li>
+<li id="cite&#95;note-42"><span class="mw-cite-backlink"><b><a href="#cite_ref-42">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1333433106" /><cite id="CITEREFWilson2023" class="citation web cs1">Wilson, Hamish (2023-02-27). <a rel="nofollow" class="external text" href="https://www.gamingonlinux.com/2023/02/building-a-retro-linux-gaming-computer-part-27-lost-souls/">"Building a Retro Linux Gaming Computer - Part 27: Lost Souls"</a>. <i><a href="/wiki/GamingOnLinux" class="mw-redirect" title="GamingOnLinux">GamingOnLinux</a></i><span class="reference-accessdate">. Retrieved <span class="nowrap">2023-09-29</span></span>.</cite><span title="ctx&#95;ver=Z39.88-2004&amp;rft&#95;val&#95;fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=GamingOnLinux&amp;rft.atitle=Building+a+Retro+Linux+Gaming+Computer+-+Part+27%3A+Lost+Souls&amp;rft.date=2023-02-27&amp;rft.aulast=Wilson&amp;rft.aufirst=Hamish&amp;rft&#95;id=https%3A%2F%2Fwww.gamingonlinux.com%2F2023%2F02%2Fbuilding-a-retro-linux-gaming-computer-part-27-lost-souls%2F&amp;rfr&#95;id=info%3Asid%2Fen.wikipedia.org%3ASVGALib" class="Z3988"></span></span>
+</li>
+<li id="cite&#95;note-43"><span class="mw-cite-backlink"><b><a href="#cite_ref-43">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1333433106" /><cite id="CITEREFZimbinski1998" class="citation web cs1">Zimbinski, Bob (1998-08-30). <a rel="nofollow" class="external text" href="https://www.linuxdoc.org/HOWTO/Quake-HOWTO-2.html">"Linux Quake HOWTO"</a>. 0.1.14<span class="reference-accessdate">. Retrieved <span class="nowrap">2023-09-29</span></span>. <q><i>Quake and QuakeWorld servers can be run by any user. The Quake clients, however, need access to your sound and graphics cards, which requires privileges that normal users don't have. One (bad) way to deal with this is to always run Quake as root. Responsible system administrators will cringe at this filthy suggestion. Making the Quake binaries setuid root is a more acceptable solution. Quake can then be run by regular users and still have the privileges it needs to access the sound and graphics devices. Setuid presents a security risk, though. A clever user could exploit a bug or security hole in Quake to gain root access to your system. Of course, if you don't run a multi-user system, this is may not be a big concern.</i></q></cite><span title="ctx&#95;ver=Z39.88-2004&amp;rft&#95;val&#95;fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=Linux+Quake+HOWTO&amp;rft.series=0.1.14&amp;rft.date=1998-08-30&amp;rft.aulast=Zimbinski&amp;rft.aufirst=Bob&amp;rft&#95;id=https%3A%2F%2Fwww.linuxdoc.org%2FHOWTO%2FQuake-HOWTO-2.html&amp;rfr&#95;id=info%3Asid%2Fen.wikipedia.org%3ASVGALib" class="Z3988"></span></span>
+</li>
+</ol></div></div>
+<div class="mw-heading mw-heading2"><h2 id="External_links">External links</h2><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=SVGALib&amp;action=edit&amp;section=3" title="Edit section: External links"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></div>
+<ul><li><a rel="nofollow" class="external text" href="https://www.svgalib.org/">SVGAlib homepage</a></li>
+<li><a rel="nofollow" class="external text" href="https://my.svgalib.org/svgalib/">Matan Ziv-Av's svgalib page</a> - mirrors the main SVGAlib site's "development" page</li>
+<li><a rel="nofollow" class="external text" href="https://www.uvlist.net/groups/info/svgalib">SVGAlib - Universal Videogames List</a></li></ul>
+<!-- 
+NewPP limit report
+Parsed by mw‐web.eqiad.main‐77f597fd54‐8k5lx
+Cached time: 20260504003843
+Cache expiry: 86400
+Cache expiry source: Module:Time_ago (formatDate)
+Reduced expiry: true
+Complications: [vary‐revision‐sha1]
+CPU time usage: 0.431 seconds
+Real time usage: 0.515 seconds
+Preprocessor visited node count: 2603/1000000
+Revision size: 18284/2097152 bytes
+Post‐expand include size: 85949/2097152 bytes
+Template argument size: 3199/2097152 bytes
+Highest expansion depth: 29/100
+Expensive parser function count: 3/500
+Unstrip recursion depth: 1/20
+Unstrip post‐expand size: 150366/5000000 bytes
+Lua time usage: 0.277/10.000 seconds
+Lua memory usage: 6969205/52428800 bytes
+Number of Wikibase entities loaded: 1/500
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%  474.609      1 -total
+ 58.01%  275.325      1 Template:Reflist
+ 50.87%  241.428     43 Template:Cite_web
+ 31.71%  150.515      2 Template:Infobox
+ 24.40%  115.811      1 Template:Infobox_software
+ 14.75%   69.997      1 Template:Short_description
+ 10.88%   51.659      1 Template:Infobox_software/simple
+  7.84%   37.208      2 Template:Pagetype
+  7.58%   35.967     14 Template:If_empty
+  4.86%   23.052      7 Template:Main_other
+-->
+
+<!-- Render ID 9a30b57e-4751-11f1-b71a-d35de94e0962 -->
+
+<!-- Saved in parser cache with key enwiki:pcache:1874031:|#|:idhash:canonical and timestamp 20260504003843 and revision id 1334124867. Rendering was triggered because: page_view
+ -->
+</div><noscript><img src="https://en.wikipedia.org/wiki/Special:CentralAutoLogin/start?useformat=desktop&amp;type=1x1&amp;usesul3=1" alt="" width="1" height="1" style="border: none; position: absolute;"></noscript>
+<div class="printfooter" data-nosnippet="">Retrieved from "<a dir="ltr" href="https://en.wikipedia.org/w/index.php?title=SVGALib&amp;oldid=1334124867">https://en.wikipedia.org/w/index.php?title=SVGALib&amp;oldid=1334124867</a>"</div></div>
+					<div id="catlinks" class="catlinks" data-mw-interface=""><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/wiki/Help:Category" title="Help:Category">Categories</a>: <ul><li><a href="/wiki/Category:Free_computer_libraries" title="Category:Free computer libraries">Free computer libraries</a></li><li><a href="/wiki/Category:Graphics_libraries" title="Category:Graphics libraries">Graphics libraries</a></li><li><a href="/wiki/Category:Video_game_development_software_for_Linux" title="Category:Video game development software for Linux">Video game development software for Linux</a></li></ul></div><div id="mw-hidden-catlinks" class="mw-hidden-catlinks mw-hidden-cats-hidden">Hidden categories: <ul><li><a href="/wiki/Category:Articles_with_short_description" title="Category:Articles with short description">Articles with short description</a></li><li><a href="/wiki/Category:Short_description_is_different_from_Wikidata" title="Category:Short description is different from Wikidata">Short description is different from Wikidata</a></li><li><a href="/wiki/Category:Articles_with_example_C_code" title="Category:Articles with example C code">Articles with example C code</a></li></ul></div></div>
+				</div>
+			</main>
+			
+		</div>
+		<div class="mw-footer-container">
+			
+<footer id="footer" class="mw-footer" >
+	<ul id="footer-info">
+	<li id="footer-info-lastmod"> This page was last edited on 21 January 2026, at 18:09<span class="anonymous-show">&#160;(UTC)</span>.</li>
+	<li id="footer-info-copyright">Text is available under the <a href="/wiki/Wikipedia:Text_of_the_Creative_Commons_Attribution-ShareAlike_4.0_International_License" title="Wikipedia:Text of the Creative Commons Attribution-ShareAlike 4.0 International License">Creative Commons Attribution-ShareAlike 4.0 License</a>;
+additional terms may apply. By using this site, you agree to the <a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Terms_of_Use" class="extiw" title="foundation:Special:MyLanguage/Policy:Terms of Use">Terms of Use</a> and <a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Privacy_policy" class="extiw" title="foundation:Special:MyLanguage/Policy:Privacy policy">Privacy Policy</a>. Wikipedia® is a registered trademark of the <a rel="nofollow" class="external text" href="https://wikimediafoundation.org/">Wikimedia Foundation, Inc.</a>, a non-profit organization.</li>
+</ul>
+
+	<ul id="footer-places">
+	<li id="footer-places-privacy"><a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Privacy_policy">Privacy policy</a></li>
+	<li id="footer-places-about"><a href="/wiki/Wikipedia:About">About Wikipedia</a></li>
+	<li id="footer-places-disclaimers"><a href="/wiki/Wikipedia:General_disclaimer">Disclaimers</a></li>
+	<li id="footer-places-contact"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us">Contact Wikipedia</a></li>
+	<li id="footer-places-legal-safety-contacts"><a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Legal:Wikimedia_Foundation_Legal_and_Safety_Contact_Information">Legal &amp; safety contacts</a></li>
+	<li id="footer-places-wm-codeofconduct"><a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Universal_Code_of_Conduct">Code of Conduct</a></li>
+	<li id="footer-places-developers"><a href="https://developer.wikimedia.org">Developers</a></li>
+	<li id="footer-places-statslink"><a href="https://stats.wikimedia.org/#/en.wikipedia.org">Statistics</a></li>
+	<li id="footer-places-cookiestatement"><a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Cookie_statement">Cookie statement</a></li>
+	<li id="footer-places-mobileview"><a href="//en.wikipedia.org/w/index.php?title=SVGALib&amp;mobileaction=toggle_view_mobile" class="noprint stopMobileRedirectToggle">Mobile view</a></li>
+</ul>
+
+	<ul id="footer-icons" class="noprint">
+	<li id="footer-copyrightico"><a href="https://www.wikimedia.org/" class="cdx-button cdx-button--fake-button cdx-button--size-large cdx-button--fake-button--enabled"><picture><source media="(min-width: 500px)" srcset="/static/images/footer/wikimedia-button.svg" width="84" height="29"><img src="/static/images/footer/wikimedia.svg" width="25" height="25" alt="Wikimedia Foundation" lang="en" loading="lazy"></picture></a></li>
+	<li id="footer-poweredbyico"><a href="https://www.mediawiki.org/" class="cdx-button cdx-button--fake-button cdx-button--size-large cdx-button--fake-button--enabled"><picture><source media="(min-width: 500px)" srcset="/w/resources/assets/poweredby_mediawiki.svg" width="88" height="31"><img src="/w/resources/assets/mediawiki_compact.svg" alt="Powered by MediaWiki" lang="en" width="25" height="25" loading="lazy"></picture></a></li>
+</ul>
+
+</footer>
+
+		</div>
+	</div> 
+</div> 
+<div class="vector-header-container vector-sticky-header-container no-font-mode-scale">
+	<div id="vector-sticky-header" class="vector-sticky-header">
+		<div class="vector-sticky-header-start">
+			<div class="vector-sticky-header-icon-start vector-button-flush-left" aria-hidden="true">
+				<button class="cdx-button cdx-button--weight-quiet cdx-button--icon-only vector-sticky-header-search-toggle" tabindex="-1" data-event-name="ui.vector-sticky-search-form.icon"><span class="vector-icon mw-ui-icon-search mw-ui-icon-wikimedia-search"></span>
+
+<span>Search</span>
+			</button>
+		</div>
+			
+		<div role="search" class="vector-search-box-vue  vector-search-box-show-thumbnail vector-search-box">
+			<div class="vector-typeahead-search-container">
+				<div class="cdx-typeahead-search cdx-typeahead-search--show-thumbnail">
+					<form action="/w/index.php" id="vector-sticky-search-form" class="cdx-search-input cdx-search-input--has-end-button">
+						<div  class="cdx-search-input__input-wrapper"  data-search-loc="header-moved">
+							<div class="cdx-text-input cdx-text-input--has-start-icon">
+								<input
+									class="cdx-text-input__input mw-searchInput" autocomplete="off"
+									
+									type="search" name="search" placeholder="Search Wikipedia">
+								<span class="cdx-text-input__icon cdx-text-input__start-icon"></span>
+							</div>
+							<input type="hidden" name="title" value="Special:Search">
+						</div>
+						<button class="cdx-button cdx-search-input__end-button">Search</button>
+					</form>
+				</div>
+			</div>
+		</div>
+		<div class="vector-sticky-header-context-bar">
+				<nav aria-label="Contents" class="vector-toc-landmark">
+						
+					<div id="vector-sticky-header-toc" class="vector-dropdown mw-portlet mw-portlet-sticky-header-toc vector-sticky-header-toc vector-button-flush-left"  >
+						<input type="checkbox" id="vector-sticky-header-toc-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-vector-sticky-header-toc" class="vector-dropdown-checkbox "  aria-label="Toggle the table of contents"  >
+						<label id="vector-sticky-header-toc-label" for="vector-sticky-header-toc-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only " aria-hidden="true"  ><span class="vector-icon mw-ui-icon-listBullet mw-ui-icon-wikimedia-listBullet"></span>
+
+<span class="vector-dropdown-label-text">Toggle the table of contents</span>
+						</label>
+						<div class="vector-dropdown-content">
+					
+						<div id="vector-sticky-header-toc-unpinned-container" class="vector-unpinned-container">
+						</div>
+					
+						</div>
+					</div>
+			</nav>
+				<div class="vector-sticky-header-context-bar-primary" aria-hidden="true" ><span lang="en" dir="ltr"><span class="mw-page-title-main">SVGALib</span></span></div>
+			</div>
+		</div>
+		<div class="vector-sticky-header-end" aria-hidden="true">
+			<div class="vector-sticky-header-icons">
+				<a href="#" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" id="ca-talk-sticky-header" tabindex="-1" data-event-name="talk-sticky-header"><span class="vector-icon mw-ui-icon-speechBubbles mw-ui-icon-wikimedia-speechBubbles"></span>
+
+<span></span>
+			</a>
+			<a href="#" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" id="ca-subject-sticky-header" tabindex="-1" data-event-name="subject-sticky-header"><span class="vector-icon mw-ui-icon-article mw-ui-icon-wikimedia-article"></span>
+
+<span></span>
+			</a>
+			<a href="#" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" id="ca-history-sticky-header" tabindex="-1" data-event-name="history-sticky-header"><span class="vector-icon mw-ui-icon-wikimedia-history mw-ui-icon-wikimedia-wikimedia-history"></span>
+
+<span></span>
+			</a>
+			<a href="#" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only mw-watchlink" id="ca-watchstar-sticky-header" tabindex="-1" data-event-name="watch-sticky-header"><span class="vector-icon mw-ui-icon-wikimedia-star mw-ui-icon-wikimedia-wikimedia-star"></span>
+
+<span></span>
+			</a>
+			<a href="#" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" id="ca-edit-sticky-header" tabindex="-1" data-event-name="wikitext-edit-sticky-header"><span class="vector-icon mw-ui-icon-wikimedia-wikiText mw-ui-icon-wikimedia-wikimedia-wikiText"></span>
+
+<span></span>
+			</a>
+			<a href="#" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" id="ca-ve-edit-sticky-header" tabindex="-1" data-event-name="ve-edit-sticky-header"><span class="vector-icon mw-ui-icon-wikimedia-edit mw-ui-icon-wikimedia-wikimedia-edit"></span>
+
+<span></span>
+			</a>
+			<a href="#" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" id="ca-viewsource-sticky-header" tabindex="-1" data-event-name="ve-edit-protected-sticky-header"><span class="vector-icon mw-ui-icon-wikimedia-editLock mw-ui-icon-wikimedia-wikimedia-editLock"></span>
+
+<span></span>
+			</a>
+		</div>
+			<div class="vector-sticky-header-buttons">
+				<button class="cdx-button cdx-button--weight-quiet mw-interlanguage-selector" id="p-lang-btn-sticky-header" tabindex="-1" data-event-name="ui.dropdown-p-lang-btn-sticky-header"><span class="vector-icon mw-ui-icon-wikimedia-language mw-ui-icon-wikimedia-wikimedia-language"></span>
+
+<span>5 languages</span>
+			</button>
+			<a href="#" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--action-progressive" id="ca-addsection-sticky-header" tabindex="-1" data-event-name="addsection-sticky-header"><span class="vector-icon mw-ui-icon-speechBubbleAdd-progressive mw-ui-icon-wikimedia-speechBubbleAdd-progressive"></span>
+
+<span>Add topic</span>
+			</a>
+		</div>
+			<div class="vector-sticky-header-icon-end">
+				<div class="vector-user-links">
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="mw-portlet mw-portlet-dock-bottom emptyPortlet" id="p-dock-bottom">
+	<ul>
+		
+	</ul>
+</div>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgHostname":"mw-web.codfw.main-f8dfc794d-gg6ml","wgBackendResponseTime":120,"wgPageParseReport":{"limitreport":{"cputime":"0.431","walltime":"0.515","ppvisitednodes":{"value":2603,"limit":1000000},"revisionsize":{"value":18284,"limit":2097152},"postexpandincludesize":{"value":85949,"limit":2097152},"templateargumentsize":{"value":3199,"limit":2097152},"expansiondepth":{"value":29,"limit":100},"expensivefunctioncount":{"value":3,"limit":500},"unstrip-depth":{"value":1,"limit":20},"unstrip-size":{"value":150366,"limit":5000000},"entityaccesscount":{"value":1,"limit":500},"timingprofile":["100.00%  474.609      1 -total"," 58.01%  275.325      1 Template:Reflist"," 50.87%  241.428     43 Template:Cite_web"," 31.71%  150.515      2 Template:Infobox"," 24.40%  115.811      1 Template:Infobox_software"," 14.75%   69.997      1 Template:Short_description"," 10.88%   51.659      1 Template:Infobox_software/simple","  7.84%   37.208      2 Template:Pagetype","  7.58%   35.967     14 Template:If_empty","  4.86%   23.052      7 Template:Main_other"]},"scribunto":{"limitreport-timeusage":{"value":"0.277","limit":"10.000"},"limitreport-memusage":{"value":6969205,"limit":52428800}},"cachereport":{"origin":"mw-web.eqiad.main-77f597fd54-8k5lx","timestamp":"20260504003843","ttl":86400,"transientcontent":true,"expiry-source":"Module:Time_ago (formatDate)"}}});});</script>
+<script type="application/ld+json">{"@context":"https:\/\/schema.org","@type":"Article","name":"SVGALib","url":"https:\/\/en.wikipedia.org\/wiki\/SVGALib","sameAs":"http:\/\/www.wikidata.org\/entity\/Q3498967","mainEntity":"http:\/\/www.wikidata.org\/entity\/Q3498967","author":{"@type":"Organization","name":"Contributors to Wikimedia projects"},"publisher":{"@type":"Organization","name":"Wikimedia Foundation, Inc.","logo":{"@type":"ImageObject","url":"https:\/\/www.wikimedia.org\/static\/images\/wmf-hor-googpub.png"}},"datePublished":"2005-05-11T22:55:53Z","dateModified":"2026-01-21T18:09:52Z","headline":"Linux graphics library"}</script>
+</body>
+</html>
