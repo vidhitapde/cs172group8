@@ -93,7 +93,7 @@ def worker():
             frontier.task_done()
             continue
         
-        print(f"{thread_name} Fetching: {final_website},Hop: {curr_hop}]")
+        print(f"{thread_name} Fetching: {final_website},Hop: {curr_hop}")
         
         page = requests.get(final_website, headers=headers)
         html_file = page.text
