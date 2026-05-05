@@ -1,7 +1,7 @@
 # cs172group8
 
 
-##**Instructions to Deploy the System**
+## **Instructions to Deploy the System**
 - In order to successfully run our crawler, we have implemented a crawler.sh executable script.
 - This successfully checks the inputted parameters and runs our scrape.py file with the inputted arguments. 
 
