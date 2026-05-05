@@ -64,6 +64,7 @@ start_time = time.time()
 
 def worker():
     global pages_crawled
+    thread_name = threading.current_thread().name
     while not thread_event.is_set():  
         if time.time() - start_time > time_limit_secs:
             print(f"time limit of {time_limit_secs}s reached!")
@@ -91,6 +92,9 @@ def worker():
             print(f"Skipping {final_website}, restricted by robots.txt.")
             frontier.task_done()
             continue
+        
+        print(f"{thread_name} Fetching: {final_website},Hop: {curr_hop}")
+        
         page = requests.get(final_website, headers=headers)
         html_file = page.text
 
@@ -105,6 +109,7 @@ def worker():
         with open(file_path, "w", encoding="utf-8") as f:
             f.write(html_file)            
 
+        new_links_count = 0
         for link in soup.find_all('a', href=True):
             # skip images
             if link.find('img'):
@@ -119,6 +124,9 @@ def worker():
                 with visited_lock:
                     if normalized_full_url not in visited:
                         frontier.put((normalized_full_url, curr_hop+1))
+                        new_links_count += 1
+        
+        print(f"{thread_name} Saved '{clean_title}.html' and queued {new_links_count} new links.")
         time.sleep(1)
         frontier.task_done()
         
