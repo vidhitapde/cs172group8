@@ -76,7 +76,7 @@ def load_json_file(filename):
 def save_json_file(data, file):
    os.makedirs(os.path.dirname(file), exist_ok=True)
    with open(file, "w", encoding=encoding) as f:
-       json.dump(data, f, ensure_ascii=False)
+       json.dump(data, f, ensure_ascii=False, indent=4)
 
 
 def normalize_url(url) -> str:
