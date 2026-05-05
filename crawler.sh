@@ -5,7 +5,7 @@ RED='\033[0;31m'
 NC='\033[0m' # No Color reset
 
 if [ "$#" -lt 4 ]; then
-    echo -e "${YELLOW}Usage: $0 <seed-file> <max-pages> <max-depth> <output.json> [time-limit_secs]${NC}"
+    echo -e "${YELLOW}Usage: $0 <seed-file> <max-pages> <max-depth> <output-dir> [time-limit_secs]${NC}"
     exit 1
 fi
 
