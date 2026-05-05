@@ -1,0 +1,968 @@
+<!DOCTYPE html>
+<html class="client-nojs vector-feature-language-in-header-enabled vector-feature-language-in-main-menu-disabled vector-feature-language-in-main-page-header-disabled vector-feature-page-tools-pinned-disabled vector-feature-toc-pinned-clientpref-1 vector-feature-main-menu-pinned-disabled vector-feature-limited-width-clientpref-1 vector-feature-limited-width-content-enabled vector-feature-custom-font-size-clientpref-1 vector-feature-appearance-pinned-clientpref-1 skin-theme-clientpref-day vector-sticky-header-enabled vector-toc-available skin-theme-clientpref-thumb-standard" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<title>Dynamic game difficulty balancing - Wikipedia</title>
+<script>(function(){var className="client-js vector-feature-language-in-header-enabled vector-feature-language-in-main-menu-disabled vector-feature-language-in-main-page-header-disabled vector-feature-page-tools-pinned-disabled vector-feature-toc-pinned-clientpref-1 vector-feature-main-menu-pinned-disabled vector-feature-limited-width-clientpref-1 vector-feature-limited-width-content-enabled vector-feature-custom-font-size-clientpref-1 vector-feature-appearance-pinned-clientpref-1 skin-theme-clientpref-day vector-sticky-header-enabled vector-toc-available skin-theme-clientpref-thumb-standard";var cookie=document.cookie.match(/(?:^|; )enwikimwclientpreferences=([^;]+)/);if(cookie){cookie[1].split('%2C').forEach(function(pref){className=className.replace(new RegExp('(^| )'+pref.replace(/-clientpref-\w+$|[^\w-]+/g,'')+'-clientpref-\\w+( |$)'),'$1'+pref+'$2');});}document.documentElement.className=className;}());RLCONF={"wgBreakFrames":false,"wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgRequestId":"4e79d1d7-e4ff-4abf-b94c-1ac8ff28d222","wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Dynamic_game_difficulty_balancing","wgTitle":"Dynamic game difficulty balancing","wgCurRevisionId":1348823350,"wgRevisionId":1348823350,"wgArticleId":22006984,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["CS1 maint: location missing publisher","Webarchive template wayback links","CS1 maint: deprecated archival service","Articles with short description","Short description is different from Wikidata","Video game terminology"],"wgPageViewLanguage":"en","wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgRelevantPageName":"Dynamic_game_difficulty_balancing","wgRelevantArticleId":22006984,"wgTempUserName":null,"wgIsProbablyEditable":true,"wgRelevantPageIsProbablyEditable":true,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgNoticeProject":"wikipedia","wgFlaggedRevsParams":{"tags":{"status":{"levels":1}}},"wgConfirmEditCaptchaNeededForGenericEdit":"hcaptcha","wgConfirmEditForceShowCaptcha":false,"wgConfirmEditHCaptchaVisualEditorOnLoadIntegrationEnabled":false,"wgConfirmEditHCaptchaSiteKey":"5d0c670e-a5f4-4258-ad16-1f42792c9c62","wgMediaViewerOnClick":true,"wgMediaViewerEnabledByDefault":true,"wgPopupsFlags":0,"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","pageVariantFallbacks":"en"},"wgMFDisplayWikibaseDescriptions":{"search":true,"watchlist":true,"tagline":false,"nearby":true},"wgWMESchemaEditAttemptStepOversample":false,"wgWMEPageLength":30000,"wgTestKitchenUserExperiments":{"overrides":[],"enrolled":[],"assigned":[],"subject_ids":[]},"wgEditSubmitButtonLabelPublish":true,"wgVisualEditorPageIsDisambiguation":false,"wgULSPosition":"interlanguage","wgULSisCompactLinksEnabled":false,"wgVector2022LanguageInHeader":true,"wgULSisLanguageSelectorEmpty":false,"wgULSLanguageSelectorV2Enabled":false,"wgWikibaseItemId":"Q606374","wgCheckUserClientHintsHeadersJsApi":["brands","architecture","bitness","fullVersionList","mobile","model","platform","platformVersion"],"GEHomepageSuggestedEditsEnableTopics":true,"wgGESuggestedEditsTaskTypes":{"taskTypes":["copyedit","link-recommendation"],"unavailableTaskTypes":[]},"wgGETopicsMatchModeEnabled":false,"wgGELevelingUpEnabledForUser":false};
+RLSTATE={"ext.globalCssJs.user.styles":"ready","site.styles":"ready","user.styles":"ready","ext.globalCssJs.user":"ready","user":"ready","user.options":"loading","ext.wikimediamessages.styles":"ready","ext.cite.styles":"ready","skins.vector.search.codex.styles":"ready","skins.vector.styles":"ready","skins.vector.icons":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready","ext.uls.interlanguage":"ready","wikibase.client.init":"ready"};RLPAGEMODULES=["ext.parsermigration.survey","ext.cite.ux-enhancements","site","mediawiki.page.ready","mediawiki.toc","skins.vector.js","ext.centralNotice.geoIP","ext.centralNotice.startUp","ext.gadget.ReferenceTooltips","ext.gadget.switcher","ext.urlShortener.toolbar","ext.centralauth.centralautologin","ext.testKitchen","mmv.bootstrap","ext.popups","ext.visualEditor.desktopArticleTarget.init","ext.echo.centralauth","ext.eventLogging","ext.wikimediaEvents","ext.navigationTiming","ext.uls.interface","ext.cx.eventlogging.campaigns","ext.cx.uls.quick.actions","wikibase.client.vector-2022","wikibase.databox.fromWikidata","ext.checkUser.clientHints","ext.quicksurveys.init","ext.growthExperiments.SuggestedEditSession"];</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.loader.impl(function(){return["user.options@12s5i",function($,jQuery,require,module){mw.user.tokens.set({"patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+}];});});</script>
+<link rel="stylesheet" href="/w/load.php?lang=en&amp;modules=ext.cite.styles%7Cext.uls.interlanguage%7Cext.visualEditor.desktopArticleTarget.noscript%7Cext.wikimediamessages.styles%7Cskins.vector.icons%2Cstyles%7Cskins.vector.search.codex.styles%7Cwikibase.client.init&amp;only=styles&amp;skin=vector-2022">
+<script async="" src="/w/load.php?lang=en&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=vector-2022"></script>
+<meta name="ResourceLoaderDynamicStyles" content="">
+<link rel="stylesheet" href="/w/load.php?lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=vector-2022">
+<meta name="generator" content="MediaWiki 1.46.0-wmf.26">
+<meta name="referrer" content="origin">
+<meta name="referrer" content="origin-when-cross-origin">
+<meta name="robots" content="max-image-preview:standard">
+<meta name="format-detection" content="telephone=no">
+<meta name="viewport" content="width=1120">
+<meta property="og:title" content="Dynamic game difficulty balancing - Wikipedia">
+<meta property="og:type" content="website">
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="/w/index.php?title=Dynamic_game_difficulty_balancing&amp;action=edit">
+<link rel="apple-touch-icon" href="/static/apple-touch/wikipedia.png">
+<link rel="icon" href="/static/favicon/wikipedia.ico">
+<link rel="search" type="application/opensearchdescription+xml" href="/w/rest.php/v1/search" title="Wikipedia (en)">
+<link rel="EditURI" type="application/rsd+xml" href="//en.wikipedia.org/w/api.php?action=rsd">
+<link rel="canonical" href="https://en.wikipedia.org/wiki/Dynamic_game_difficulty_balancing">
+<link rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/deed.en">
+<link rel="alternate" type="application/atom+xml" title="Wikipedia Atom feed" href="/w/index.php?title=Special:RecentChanges&amp;feed=atom">
+<link rel="dns-prefetch" href="//meta.wikimedia.org" />
+<link rel="dns-prefetch" href="auth.wikimedia.org">
+</head>
+<body class="skin--responsive skin-vector skin-vector-search-vue mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject mw-editable page-Dynamic_game_difficulty_balancing rootpage-Dynamic_game_difficulty_balancing skin-vector-2022 action-view">
+<div id="mw-aria-live-region" class="mw-aria-live-region" aria-live="polite"></div><a class="mw-jump-link" href="#bodyContent">Jump to content</a>
+<div class="vector-header-container">
+	<header class="vector-header mw-header no-font-mode-scale">
+		<div class="vector-header-start">
+			<nav class="vector-main-menu-landmark" aria-label="Site">
+				
+<div id="vector-main-menu-dropdown" class="vector-dropdown vector-main-menu-dropdown vector-button-flush-left vector-button-flush-right"  title="Main menu" >
+	<input type="checkbox" id="vector-main-menu-dropdown-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-vector-main-menu-dropdown" class="vector-dropdown-checkbox "  aria-label="Main menu"  >
+	<label id="vector-main-menu-dropdown-label" for="vector-main-menu-dropdown-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only " aria-hidden="true"  ><span class="vector-icon mw-ui-icon-menu mw-ui-icon-wikimedia-menu"></span>
+
+<span class="vector-dropdown-label-text">Main menu</span>
+	</label>
+	<div class="vector-dropdown-content">
+
+
+				<div id="vector-main-menu-unpinned-container" class="vector-unpinned-container">
+		
+<div id="vector-main-menu" class="vector-main-menu vector-pinnable-element">
+	<div
+	class="vector-pinnable-header vector-main-menu-pinnable-header vector-pinnable-header-unpinned"
+	data-feature-name="main-menu-pinned"
+	data-pinnable-element-id="vector-main-menu"
+	data-pinned-container-id="vector-main-menu-pinned-container"
+	data-unpinned-container-id="vector-main-menu-unpinned-container"
+>
+	<div class="vector-pinnable-header-label">Main menu</div>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-main-menu.pin">move to sidebar</button>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-main-menu.unpin">hide</button>
+</div>
+
+	
+<div id="p-navigation" class="vector-menu mw-portlet mw-portlet-navigation"  >
+	<div class="vector-menu-heading">
+		Navigation
+	</div>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="n-mainpage-description" class="mw-list-item"><a href="/wiki/Main_Page" title="Visit the main page [z]" accesskey="z"><span>Main page</span></a></li><li id="n-contents" class="mw-list-item"><a href="/wiki/Wikipedia:Contents" title="Guides to browsing Wikipedia"><span>Contents</span></a></li><li id="n-currentevents" class="mw-list-item"><a href="/wiki/Portal:Current_events" title="Articles related to current events"><span>Current events</span></a></li><li id="n-randompage" class="mw-list-item"><a href="/wiki/Special:Random" title="Visit a randomly selected article [x]" accesskey="x"><span>Random article</span></a></li><li id="n-aboutsite" class="mw-list-item"><a href="/wiki/Wikipedia:About" title="Learn about Wikipedia and how it works"><span>About Wikipedia</span></a></li><li id="n-contactpage" class="mw-list-item"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us" title="How to contact Wikipedia"><span>Contact us</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+	
+<div id="p-interaction" class="vector-menu mw-portlet mw-portlet-interaction"  >
+	<div class="vector-menu-heading">
+		Contribute
+	</div>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="n-help" class="mw-list-item"><a href="/wiki/Help:Contents" title="Guidance on how to use and edit Wikipedia"><span>Help</span></a></li><li id="n-introduction" class="mw-list-item"><a href="/wiki/Help:Introduction" title="Learn how to edit Wikipedia"><span>Learn to edit</span></a></li><li id="n-portal" class="mw-list-item"><a href="/wiki/Wikipedia:Community_portal" title="The hub for editors"><span>Community portal</span></a></li><li id="n-recentchanges" class="mw-list-item"><a href="/wiki/Special:RecentChanges" title="A list of recent changes to Wikipedia [r]" accesskey="r"><span>Recent changes</span></a></li><li id="n-upload" class="mw-list-item"><a href="/wiki/Wikipedia:File_upload_wizard" title="Add images or other media for use on Wikipedia"><span>Upload file</span></a></li><li id="n-specialpages" class="mw-list-item"><a href="/wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q"><span>Special pages</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+</div>
+
+				</div>
+
+	</div>
+</div>
+
+		</nav>
+			
+<a href="/wiki/Main_Page" class="mw-logo">
+	<img class="mw-logo-icon" src="/static/images/icons/enwiki-25.svg" alt="" aria-hidden="true" height="50" width="50">
+	<span class="mw-logo-container skin-invert">
+		<img class="mw-logo-wordmark" alt="Wikipedia" src="/static/images/mobile/copyright/wikipedia-wordmark-en-25.svg" style="width: 8.75em; height: 1.375em;">
+		<img class="mw-logo-tagline" alt="The Free Encyclopedia" src="/static/images/mobile/copyright/wikipedia-tagline-en-25.svg" width="140" height="11" style="width: 8.75em; height: 0.6875em;">
+	</span>
+</a>
+
+		</div>
+		<div class="vector-header-end">
+			
+<div id="p-search" role="search" class="vector-search-box-vue  vector-search-box-collapses vector-search-box-show-thumbnail vector-search-box-auto-expand-width vector-search-box">
+	<a href="/wiki/Special:Search" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only search-toggle" title="Search Wikipedia [f]" accesskey="f"><span class="vector-icon mw-ui-icon-search mw-ui-icon-wikimedia-search"></span>
+
+<span>Search</span>
+	</a>
+	<div class="vector-typeahead-search-container">
+		<div class="cdx-typeahead-search cdx-typeahead-search--show-thumbnail cdx-typeahead-search--auto-expand-width">
+			<form action="/w/index.php" id="searchform" class="cdx-search-input cdx-search-input--has-end-button">
+				<div id="simpleSearch" class="cdx-search-input__input-wrapper"  data-search-loc="header-moved">
+					<div class="cdx-text-input cdx-text-input--has-start-icon">
+						<input
+							class="cdx-text-input__input mw-searchInput" autocomplete="off"
+							 type="search" name="search" placeholder="Search Wikipedia" aria-label="Search Wikipedia" autocapitalize="none" spellcheck="false" title="Search Wikipedia [f]" accesskey="f" id="searchInput"
+							>
+						<span class="cdx-text-input__icon cdx-text-input__start-icon"></span>
+					</div>
+					<input type="hidden" name="title" value="Special:Search">
+				</div>
+				<button class="cdx-button cdx-search-input__end-button">Search</button>
+			</form>
+		</div>
+	</div>
+</div>
+
+			<nav class="vector-user-links vector-user-links-wide" aria-label="Personal tools">
+	<div class="vector-user-links-main">
+	
+<div id="p-vector-user-menu-preferences" class="vector-menu mw-portlet emptyPortlet"  >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			
+		</ul>
+		
+	</div>
+</div>
+
+	
+<div id="p-vector-user-menu-userpage" class="vector-menu mw-portlet emptyPortlet"  >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			
+		</ul>
+		
+	</div>
+</div>
+
+	<nav class="vector-appearance-landmark" aria-label="Appearance">
+		
+<div id="vector-appearance-dropdown" class="vector-dropdown "  title="Change the appearance of the page&#039;s font size, width, and color" >
+	<input type="checkbox" id="vector-appearance-dropdown-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-vector-appearance-dropdown" class="vector-dropdown-checkbox "  aria-label="Appearance"  >
+	<label id="vector-appearance-dropdown-label" for="vector-appearance-dropdown-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only " aria-hidden="true"  ><span class="vector-icon mw-ui-icon-appearance mw-ui-icon-wikimedia-appearance"></span>
+
+<span class="vector-dropdown-label-text">Appearance</span>
+	</label>
+	<div class="vector-dropdown-content">
+
+
+			<div id="vector-appearance-unpinned-container" class="vector-unpinned-container">
+				
+			</div>
+		
+	</div>
+</div>
+
+	</nav>
+	
+<div id="p-vector-user-menu-notifications" class="vector-menu mw-portlet emptyPortlet"  >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			
+		</ul>
+		
+	</div>
+</div>
+
+	
+<div id="p-vector-user-menu-overflow" class="vector-menu mw-portlet"  >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			<li id="pt-sitesupport-2" class="mw-list-item user-links-collapsible-item"><a data-mw-interface  href="https://donate.wikimedia.org/?wmf_source=donate&amp;wmf_medium=sidebar&amp;wmf_campaign=en.wikipedia.org&amp;uselang=en" class=" cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet"><span class="vector-icon mw-ui-icon-heart mw-ui-icon-wikimedia-heart"></span>
+
+<span>Donate</span></a>
+</li>
+<li id="pt-createaccount-2" class="mw-list-item user-links-collapsible-item"><a data-mw-interface  href="/w/index.php?title=Special:CreateAccount&amp;returnto=Dynamic+game+difficulty+balancing" title="You are encouraged to create an account and log in; however, it is not mandatory" class=""><span>Create account</span></a>
+</li>
+<li id="pt-login-2" class="mw-list-item user-links-collapsible-item"><a data-mw-interface  href="/w/index.php?title=Special:UserLogin&amp;returnto=Dynamic+game+difficulty+balancing" title="You&#039;re encouraged to log in; however, it&#039;s not mandatory. [o]" accesskey="o" class=""><span>Log in</span></a>
+</li>
+
+			
+		</ul>
+		
+	</div>
+</div>
+
+	</div>
+	
+<div id="vector-user-links-dropdown" class="vector-dropdown vector-user-menu vector-button-flush-right vector-user-menu-logged-out user-links-collapsible-item"  title="Log in and more options" >
+	<input type="checkbox" id="vector-user-links-dropdown-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-vector-user-links-dropdown" class="vector-dropdown-checkbox "  aria-label="Personal tools"  >
+	<label id="vector-user-links-dropdown-label" for="vector-user-links-dropdown-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only " aria-hidden="true"  ><span class="vector-icon mw-ui-icon-ellipsis mw-ui-icon-wikimedia-ellipsis"></span>
+
+<span class="vector-dropdown-label-text">Personal tools</span>
+	</label>
+	<div class="vector-dropdown-content">
+
+
+		
+<div id="p-personal" class="vector-menu mw-portlet mw-portlet-personal user-links-collapsible-item"  title="User menu" >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			<li id="pt-sitesupport" class="mw-list-item user-links-collapsible-item"><a data-mw-interface  href="https://donate.wikimedia.org/?wmf_source=donate&amp;wmf_medium=sidebar&amp;wmf_campaign=en.wikipedia.org&amp;uselang=en" class=""><span class="vector-icon mw-ui-icon-heart mw-ui-icon-wikimedia-heart"></span>
+
+<span>Donate</span></a>
+</li>
+<li id="pt-createaccount" class="mw-list-item user-links-collapsible-item"><a data-mw-interface  href="/w/index.php?title=Special:CreateAccount&amp;returnto=Dynamic+game+difficulty+balancing" title="You are encouraged to create an account and log in; however, it is not mandatory" class=""><span class="vector-icon mw-ui-icon-userAdd mw-ui-icon-wikimedia-userAdd"></span>
+
+<span>Create account</span></a>
+</li>
+<li id="pt-login" class="mw-list-item user-links-collapsible-item"><a data-mw-interface  href="/w/index.php?title=Special:UserLogin&amp;returnto=Dynamic+game+difficulty+balancing" title="You&#039;re encouraged to log in; however, it&#039;s not mandatory. [o]" accesskey="o" class=""><span class="vector-icon mw-ui-icon-logIn mw-ui-icon-wikimedia-logIn"></span>
+
+<span>Log in</span></a>
+</li>
+
+			
+		</ul>
+		
+	</div>
+</div>
+
+	
+	</div>
+</div>
+
+</nav>
+
+		</div>
+	</header>
+</div>
+<div class="mw-page-container">
+	<div class="mw-page-container-inner">
+		<div class="vector-sitenotice-container">
+			<div id="siteNotice"><!-- CentralNotice --></div>
+		</div>
+		<div class="vector-column-start">
+			<div class="vector-main-menu-container">
+		<div id="mw-navigation">
+			<nav id="mw-panel" class="vector-main-menu-landmark" aria-label="Site">
+				<div id="vector-main-menu-pinned-container" class="vector-pinned-container">
+				
+				</div>
+		</nav>
+		</div>
+	</div>
+	<div class="vector-sticky-pinned-container">
+				<nav id="mw-panel-toc" aria-label="Contents" data-event-name="ui.sidebar-toc" class="mw-table-of-contents-container vector-toc-landmark">
+					<div id="vector-toc-pinned-container" class="vector-pinned-container">
+					<div id="vector-toc" class="vector-toc vector-pinnable-element">
+	<div
+	class="vector-pinnable-header vector-toc-pinnable-header vector-pinnable-header-pinned"
+	data-feature-name="toc-pinned"
+	data-pinnable-element-id="vector-toc"
+	data-pinned-container-id="vector-toc-pinned-container"
+	data-unpinned-container-id="vector-toc-unpinned-container"
+>
+	<h2 class="vector-pinnable-header-label">Contents</h2>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-toc.pin">move to sidebar</button>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-toc.unpin">hide</button>
+</div>
+
+
+	<ul class="vector-toc-contents" id="mw-panel-toc-list">
+		<li id="toc-mw-content-text"
+			class="vector-toc-list-item vector-toc-level-1">
+			<a href="#" class="vector-toc-link">
+				<div class="vector-toc-text">(Top)</div>
+			</a>
+		</li>
+		<li id="toc-Dynamic_game_elements"
+		class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded">
+		<a class="vector-toc-link" href="#Dynamic_game_elements">
+			<div class="vector-toc-text">
+				<span class="vector-toc-numb">1</span>
+				<span>Dynamic game elements</span>
+			</div>
+		</a>
+		
+		<ul id="toc-Dynamic_game_elements-sublist" class="vector-toc-list">
+		</ul>
+	</li>
+	<li id="toc-Approaches"
+		class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded">
+		<a class="vector-toc-link" href="#Approaches">
+			<div class="vector-toc-text">
+				<span class="vector-toc-numb">2</span>
+				<span>Approaches</span>
+			</div>
+		</a>
+		
+		<ul id="toc-Approaches-sublist" class="vector-toc-list">
+		</ul>
+	</li>
+	<li id="toc-Caveats"
+		class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded">
+		<a class="vector-toc-link" href="#Caveats">
+			<div class="vector-toc-text">
+				<span class="vector-toc-numb">3</span>
+				<span>Caveats</span>
+			</div>
+		</a>
+		
+		<ul id="toc-Caveats-sublist" class="vector-toc-list">
+		</ul>
+	</li>
+	<li id="toc-Uses_in_video_games"
+		class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded">
+		<a class="vector-toc-link" href="#Uses_in_video_games">
+			<div class="vector-toc-text">
+				<span class="vector-toc-numb">4</span>
+				<span>Uses in video games</span>
+			</div>
+		</a>
+		
+			<button aria-controls="toc-Uses_in_video_games-sublist" class="cdx-button cdx-button--weight-quiet cdx-button--icon-only vector-toc-toggle">
+				<span class="vector-icon mw-ui-icon-wikimedia-expand"></span>
+				<span>Toggle Uses in video games subsection</span>
+			</button>
+		
+		<ul id="toc-Uses_in_video_games-sublist" class="vector-toc-list">
+			<li id="toc-Alleged_use_to_shape_player_buying_behaviour"
+			class="vector-toc-list-item vector-toc-level-2">
+			<a class="vector-toc-link" href="#Alleged_use_to_shape_player_buying_behaviour">
+				<div class="vector-toc-text">
+					<span class="vector-toc-numb">4.1</span>
+					<span>Alleged use to shape player buying behaviour</span>
+				</div>
+			</a>
+			
+			<ul id="toc-Alleged_use_to_shape_player_buying_behaviour-sublist" class="vector-toc-list">
+			</ul>
+		</li>
+	</ul>
+	</li>
+	<li id="toc-See_also"
+		class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded">
+		<a class="vector-toc-link" href="#See_also">
+			<div class="vector-toc-text">
+				<span class="vector-toc-numb">5</span>
+				<span>See also</span>
+			</div>
+		</a>
+		
+		<ul id="toc-See_also-sublist" class="vector-toc-list">
+		</ul>
+	</li>
+	<li id="toc-References"
+		class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded">
+		<a class="vector-toc-link" href="#References">
+			<div class="vector-toc-text">
+				<span class="vector-toc-numb">6</span>
+				<span>References</span>
+			</div>
+		</a>
+		
+		<ul id="toc-References-sublist" class="vector-toc-list">
+		</ul>
+	</li>
+	<li id="toc-Further_reading"
+		class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded">
+		<a class="vector-toc-link" href="#Further_reading">
+			<div class="vector-toc-text">
+				<span class="vector-toc-numb">7</span>
+				<span>Further reading</span>
+			</div>
+		</a>
+		
+		<ul id="toc-Further_reading-sublist" class="vector-toc-list">
+		</ul>
+	</li>
+	<li id="toc-External_links"
+		class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded">
+		<a class="vector-toc-link" href="#External_links">
+			<div class="vector-toc-text">
+				<span class="vector-toc-numb">8</span>
+				<span>External links</span>
+			</div>
+		</a>
+		
+		<ul id="toc-External_links-sublist" class="vector-toc-list">
+		</ul>
+	</li>
+</ul>
+</div>
+
+					</div>
+		</nav>
+			</div>
+		</div>
+		<div class="mw-content-container">
+			<main id="content" class="mw-body">
+				<header class="mw-body-header vector-page-titlebar no-font-mode-scale">
+					<nav aria-label="Contents" class="vector-toc-landmark">
+						
+<div id="vector-page-titlebar-toc" class="vector-dropdown vector-page-titlebar-toc vector-button-flush-left"  title="Table of Contents" >
+	<input type="checkbox" id="vector-page-titlebar-toc-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-vector-page-titlebar-toc" class="vector-dropdown-checkbox "  aria-label="Toggle the table of contents"  >
+	<label id="vector-page-titlebar-toc-label" for="vector-page-titlebar-toc-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only " aria-hidden="true"  ><span class="vector-icon mw-ui-icon-listBullet mw-ui-icon-wikimedia-listBullet"></span>
+
+<span class="vector-dropdown-label-text">Toggle the table of contents</span>
+	</label>
+	<div class="vector-dropdown-content">
+
+
+							<div id="vector-page-titlebar-toc-unpinned-container" class="vector-unpinned-container">
+			</div>
+		
+	</div>
+</div>
+
+					</nav>
+					<h1 id="firstHeading" class="firstHeading mw-first-heading"><span lang="en" dir="ltr"><span class="mw-page-title-main">Dynamic game difficulty balancing</span></span></h1>
+							
+<div id="p-lang-btn" class="vector-dropdown mw-portlet mw-portlet-lang"  >
+	<input type="checkbox" id="p-lang-btn-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-p-lang-btn" class="vector-dropdown-checkbox mw-interlanguage-selector" aria-label="Go to an article in another language. Available in 5 languages"   >
+	<label id="p-lang-btn-label" for="p-lang-btn-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--action-progressive mw-portlet-lang-heading-5" aria-hidden="true"  ><span class="vector-icon mw-ui-icon-language-progressive mw-ui-icon-wikimedia-language-progressive"></span>
+
+<span class="vector-dropdown-label-text">5 languages</span>
+	</label>
+	<div class="vector-dropdown-content">
+
+		<div class="vector-menu-content">
+			
+			<ul class="vector-menu-content-list">
+				
+				<li class="interlanguage-link interwiki-ar mw-list-item"><a href="https://ar.wikipedia.org/wiki/%D9%85%D9%88%D8%A7%D8%B2%D9%86%D8%A9_%D8%B5%D8%B9%D9%88%D8%A8%D8%A9_%D8%A7%D9%84%D9%84%D8%B9%D8%A8%D8%A9_%D8%A7%D9%84%D8%AF%D9%8A%D9%86%D8%A7%D9%85%D9%8A%D9%83%D9%8A%D8%A9" title="موازنة صعوبة اللعبة الديناميكية – Arabic" lang="ar" hreflang="ar" data-title="موازنة صعوبة اللعبة الديناميكية" data-language-autonym="العربية" data-language-local-name="Arabic" class="interlanguage-link-target"><span>العربية</span></a></li><li class="interlanguage-link interwiki-fr mw-list-item"><a href="https://fr.wikipedia.org/wiki/Difficult%C3%A9_adaptative" title="Difficulté adaptative – French" lang="fr" hreflang="fr" data-title="Difficulté adaptative" data-language-autonym="Français" data-language-local-name="French" class="interlanguage-link-target"><span>Français</span></a></li><li class="interlanguage-link interwiki-pl mw-list-item"><a href="https://pl.wikipedia.org/wiki/Dynamiczne_wywa%C5%BCanie_rozgrywki" title="Dynamiczne wyważanie rozgrywki – Polish" lang="pl" hreflang="pl" data-title="Dynamiczne wyważanie rozgrywki" data-language-autonym="Polski" data-language-local-name="Polish" class="interlanguage-link-target"><span>Polski</span></a></li><li class="interlanguage-link interwiki-sv mw-list-item"><a href="https://sv.wikipedia.org/wiki/Dynamisk_sv%C3%A5righetsanpassning" title="Dynamisk svårighetsanpassning – Swedish" lang="sv" hreflang="sv" data-title="Dynamisk svårighetsanpassning" data-language-autonym="Svenska" data-language-local-name="Swedish" class="interlanguage-link-target"><span>Svenska</span></a></li><li class="interlanguage-link interwiki-zh-yue mw-list-item"><a href="https://zh-yue.wikipedia.org/wiki/%E5%8B%95%E6%85%8B%E9%9B%A3%E5%BA%A6%E8%AA%BF%E6%8E%A7" title="動態難度調控 – Cantonese" lang="yue" hreflang="yue" data-title="動態難度調控" data-language-autonym="粵語" data-language-local-name="Cantonese" class="interlanguage-link-target"><span>粵語</span></a></li>
+			</ul>
+			<div class="after-portlet after-portlet-lang"><span class="wb-langlinks-edit wb-langlinks-link"><a href="https://www.wikidata.org/wiki/Special:EntityPage/Q606374#sitelinks-wikipedia" title="Edit interlanguage links" class="wbc-editpage">Edit links</a></span></div>
+		</div>
+
+	</div>
+</div>
+</header>
+				<div class="vector-page-toolbar vector-feature-custom-font-size-clientpref--excluded">
+					<div class="vector-page-toolbar-container">
+						<div id="left-navigation">
+							<nav aria-label="Namespaces">
+								
+<div id="p-associated-pages" class="vector-menu vector-menu-tabs mw-portlet mw-portlet-associated-pages"  >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="ca-nstab-main" class="selected vector-tab-noicon mw-list-item"><a href="/wiki/Dynamic_game_difficulty_balancing" title="View the content page [c]" accesskey="c"><span>Article</span></a></li><li id="ca-talk" class="vector-tab-noicon mw-list-item"><a href="/wiki/Talk:Dynamic_game_difficulty_balancing" rel="discussion" title="Discuss improvements to the content page [t]" accesskey="t"><span>Talk</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+								
+<div id="vector-variants-dropdown" class="vector-dropdown emptyPortlet"  >
+	<input type="checkbox" id="vector-variants-dropdown-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-vector-variants-dropdown" class="vector-dropdown-checkbox " aria-label="Change language variant"   >
+	<label id="vector-variants-dropdown-label" for="vector-variants-dropdown-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet" aria-hidden="true"  ><span class="vector-dropdown-label-text">English</span>
+	</label>
+	<div class="vector-dropdown-content">
+
+
+					
+<div id="p-variants" class="vector-menu mw-portlet mw-portlet-variants emptyPortlet"  >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			
+		</ul>
+		
+	</div>
+</div>
+
+				
+	</div>
+</div>
+
+							</nav>
+						</div>
+						<div id="right-navigation" class="vector-collapsible">
+							<nav aria-label="Views">
+								
+<div id="p-views" class="vector-menu vector-menu-tabs mw-portlet mw-portlet-views"  >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="ca-view" class="selected vector-tab-noicon mw-list-item"><a href="/wiki/Dynamic_game_difficulty_balancing"><span>Read</span></a></li><li id="ca-edit" class="vector-tab-noicon mw-list-item"><a href="/w/index.php?title=Dynamic_game_difficulty_balancing&amp;action=edit" title="Edit this page [e]" accesskey="e"><span>Edit</span></a></li><li id="ca-history" class="vector-tab-noicon mw-list-item"><a href="/w/index.php?title=Dynamic_game_difficulty_balancing&amp;action=history" title="Past revisions of this page [h]" accesskey="h"><span>View history</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+							</nav>
+				
+							<nav class="vector-page-tools-landmark" aria-label="Page tools">
+								
+<div id="vector-page-tools-dropdown" class="vector-dropdown vector-page-tools-dropdown"  >
+	<input type="checkbox" id="vector-page-tools-dropdown-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-vector-page-tools-dropdown" class="vector-dropdown-checkbox "  aria-label="Tools"  >
+	<label id="vector-page-tools-dropdown-label" for="vector-page-tools-dropdown-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet" aria-hidden="true"  ><span class="vector-dropdown-label-text">Tools</span>
+	</label>
+	<div class="vector-dropdown-content">
+
+
+									<div id="vector-page-tools-unpinned-container" class="vector-unpinned-container">
+						
+<div id="vector-page-tools" class="vector-page-tools vector-pinnable-element">
+	<div
+	class="vector-pinnable-header vector-page-tools-pinnable-header vector-pinnable-header-unpinned"
+	data-feature-name="page-tools-pinned"
+	data-pinnable-element-id="vector-page-tools"
+	data-pinned-container-id="vector-page-tools-pinned-container"
+	data-unpinned-container-id="vector-page-tools-unpinned-container"
+>
+	<div class="vector-pinnable-header-label">Tools</div>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-page-tools.pin">move to sidebar</button>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-page-tools.unpin">hide</button>
+</div>
+
+	
+<div id="p-cactions" class="vector-menu mw-portlet mw-portlet-cactions emptyPortlet vector-has-collapsible-items"  title="More options" >
+	<div class="vector-menu-heading">
+		Actions
+	</div>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="ca-more-view" class="selected vector-more-collapsible-item mw-list-item"><a href="/wiki/Dynamic_game_difficulty_balancing"><span>Read</span></a></li><li id="ca-more-edit" class="vector-more-collapsible-item mw-list-item"><a href="/w/index.php?title=Dynamic_game_difficulty_balancing&amp;action=edit" title="Edit this page [e]" accesskey="e"><span>Edit</span></a></li><li id="ca-more-history" class="vector-more-collapsible-item mw-list-item"><a href="/w/index.php?title=Dynamic_game_difficulty_balancing&amp;action=history"><span>View history</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+<div id="p-tb" class="vector-menu mw-portlet mw-portlet-tb"  >
+	<div class="vector-menu-heading">
+		General
+	</div>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="t-whatlinkshere" class="mw-list-item"><a href="/wiki/Special:WhatLinksHere/Dynamic_game_difficulty_balancing" title="List of all English Wikipedia pages containing links to this page [j]" accesskey="j"><span>What links here</span></a></li><li id="t-recentchangeslinked" class="mw-list-item"><a href="/wiki/Special:RecentChangesLinked/Dynamic_game_difficulty_balancing" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k"><span>Related changes</span></a></li><li id="t-upload" class="mw-list-item"><a href="//en.wikipedia.org/wiki/Wikipedia:File_Upload_Wizard" title="Upload files [u]" accesskey="u"><span>Upload file</span></a></li><li id="t-permalink" class="mw-list-item"><a href="/w/index.php?title=Dynamic_game_difficulty_balancing&amp;oldid=1348823350" title="Permanent link to this revision of this page"><span>Permanent link</span></a></li><li id="t-info" class="mw-list-item"><a href="/w/index.php?title=Dynamic_game_difficulty_balancing&amp;action=info" title="More information about this page"><span>Page information</span></a></li><li id="t-cite" class="mw-list-item"><a href="/w/index.php?title=Special:CiteThisPage&amp;page=Dynamic_game_difficulty_balancing&amp;id=1348823350&amp;wpFormIdentifier=titleform" title="Information on how to cite this page"><span>Cite this page</span></a></li><li id="t-urlshortener" class="mw-list-item"><a href="/w/index.php?title=Special:UrlShortener&amp;url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FDynamic_game_difficulty_balancing"><span>Get shortened URL</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+<div id="p-coll-print_export" class="vector-menu mw-portlet mw-portlet-coll-print_export"  >
+	<div class="vector-menu-heading">
+		Print/export
+	</div>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="coll-download-as-rl" class="mw-list-item"><a href="/w/index.php?title=Special:DownloadAsPdf&amp;page=Dynamic_game_difficulty_balancing&amp;action=show-download-screen" title="Download this page as a PDF file"><span>Download as PDF</span></a></li><li id="t-print" class="mw-list-item"><a href="/w/index.php?title=Dynamic_game_difficulty_balancing&amp;printable=yes" title="Printable version of this page [p]" accesskey="p"><span>Printable version</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+<div id="p-wikibase-otherprojects" class="vector-menu mw-portlet mw-portlet-wikibase-otherprojects"  >
+	<div class="vector-menu-heading">
+		In other projects
+	</div>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="t-wikibase" class="wb-otherproject-link wb-otherproject-wikibase-dataitem mw-list-item"><a href="https://www.wikidata.org/wiki/Special:EntityPage/Q606374" title="Structured data on this page hosted by Wikidata [g]" accesskey="g"><span>Wikidata item</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+</div>
+
+									</div>
+				
+	</div>
+</div>
+
+							</nav>
+						</div>
+					</div>
+				</div>
+				<div class="vector-column-end no-font-mode-scale">
+					<div class="vector-sticky-pinned-container">
+						<div class="wp25eastereggs-vector-sitenotice-landmark"></div>
+						<nav class="vector-page-tools-landmark" aria-label="Page tools">
+							<div id="vector-page-tools-pinned-container" class="vector-pinned-container">
+				
+							</div>
+		</nav>
+						<nav class="vector-appearance-landmark" aria-label="Appearance">
+							<div id="vector-appearance-pinned-container" class="vector-pinned-container">
+				<div id="vector-appearance" class="vector-appearance vector-pinnable-element">
+	<div
+	class="vector-pinnable-header vector-appearance-pinnable-header vector-pinnable-header-pinned"
+	data-feature-name="appearance-pinned"
+	data-pinnable-element-id="vector-appearance"
+	data-pinned-container-id="vector-appearance-pinned-container"
+	data-unpinned-container-id="vector-appearance-unpinned-container"
+>
+	<div class="vector-pinnable-header-label">Appearance</div>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-appearance.pin">move to sidebar</button>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-appearance.unpin">hide</button>
+</div>
+
+
+</div>
+
+							</div>
+		</nav>
+					</div>
+				</div>
+				<div id="bodyContent" class="vector-body" aria-labelledby="firstHeading" data-mw-ve-target-container>
+					<div class="vector-body-before-content">
+							<div class="mw-indicators">
+		</div>
+
+						<div id="siteSub" class="noprint">From Wikipedia, the free encyclopedia</div>
+					</div>
+					<div id="contentSub"><div id="mw-content-subtitle"></div></div>
+					
+					
+					<div id="mw-content-text" class="mw-body-content"><div class="mw-subjectpageheader">
+</div><div class="mw-content-ltr mw-parser-output" lang="en" dir="ltr"><div class="shortdescription nomobile noexcerpt noprint searchaux" style="display:none">Automatically changing parameters, scenarios, and behaviors in video games in real-time</div>
+<p><b>Dynamic game difficulty balancing</b> (<b>DGDB</b>), also known as <b>dynamic difficulty adjustment</b> (<b>DDA</b>), <b>adaptive difficulty</b>, or <b>dynamic game balancing</b> (<b>DGB</b>), is the process of automatically adjusting parameters, scenarios, and behaviors in a <a href="/wiki/Video_game" title="Video game">video game</a> in real-time based on the player's ability. Its purpose is to prevent the player from becoming bored if the game is too easy or frustrated if it is too difficult. The aim of dynamic difficulty balancing is to maintain the player's interest throughout the game by providing an appropriate level of challenge.
+</p>
+<meta property="mw:PageProp/toc" />
+<div class="mw-heading mw-heading2"><h2 id="Dynamic_game_elements">Dynamic game elements</h2><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Dynamic_game_difficulty_balancing&amp;action=edit&amp;section=1" title="Edit section: Dynamic game elements"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></div>
+<p>Some elements of a game that might be changed via dynamic difficulty balancing include:
+</p>
+<ul><li>Speed of enemies</li>
+<li>Health of enemies</li>
+<li>Frequency of enemies</li>
+<li>Frequency of powerups</li>
+<li>Power of player</li>
+<li>Power of enemies</li>
+<li>Duration of gameplay experience</li></ul>
+<div class="mw-heading mw-heading2"><h2 id="Approaches">Approaches</h2><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Dynamic_game_difficulty_balancing&amp;action=edit&amp;section=2" title="Edit section: Approaches"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></div>
+<style data-mw-deduplicate="TemplateStyles:r1244412712">.mw-parser-output .templatequote{overflow:hidden;margin:1em 0;padding:0 32px}.mw-parser-output .templatequotecite{line-height:1.5em;text-align:left;margin-top:0}@media(min-width:500px){.mw-parser-output .templatequotecite{padding-left:1.6em}}</style><blockquote class="templatequote"><p>[A]s players work with a game, their scores should reflect steady improvement. Beginners should be able to make some progress, intermediate people should get intermediate scores, and experienced players should get high scores ... Ideally, the progression is automatic; players start at the beginner's level and the advanced features are brought in as the computer recognizes proficient play.</p></blockquote><div class="templatequotecite"><p style="display: inline; padding-left: 2.3em;">—&#8202;<a href="/wiki/Chris_Crawford_(game_designer)" title="Chris Crawford (game designer)">Chris Crawford</a>, 1982<sup id="cite&#95;ref-crawford198212&#95;1-0" class="reference"><a href="#cite_note-crawford198212-1"><span class="cite-bracket">&#91;</span>1<span class="cite-bracket">&#93;</span></a></sup><span style="display:none" data-plural="0"></span></p></div>
+<p>Different approaches are found in the literature to address dynamic game difficulty balancing. In all cases, it is necessary to measure, implicitly or explicitly, the difficulty the user is facing at a given moment. This measure can be performed by a <a href="/wiki/Heuristics" class="mw-redirect" title="Heuristics">heuristic</a> function, which some authors call "challenge function". This function maps a given game state to a value that specifies how easy or difficult the game feels to the user at a specific moment. Examples of heuristics used are:
+</p>
+<ul><li>The rate of successful shots or hits</li>
+<li>The numbers of won and lost pieces</li>
+<li>Life points</li>
+<li>Evolution</li>
+<li>Time to complete some task</li></ul>
+<p>... or any metric used to calculate a <a href="/wiki/Score_(video_games)" title="Score (video games)">game's score</a>. <a href="/wiki/Chris_Crawford_(game_designer)" title="Chris Crawford (game designer)">Chris Crawford</a> said, "If I were to make a graph of a typical player's score as a function of time spent within the game, that graph should show a curve sloping smoothly and steadily upward. I describe such a game as having a positive monotonic curve". Games without such a curve seem "either too hard or too easy", he said.<sup id="cite&#95;ref-crawford198212&#95;1-1" class="reference"><a href="#cite_note-crawford198212-1"><span class="cite-bracket">&#91;</span>1<span class="cite-bracket">&#93;</span></a></sup>
+</p><p><a href="/wiki/Robin_Hunicke" title="Robin Hunicke">Hunicke</a> and Chapman's approach<sup id="cite&#95;ref-2" class="reference"><a href="#cite_note-2"><span class="cite-bracket">&#91;</span>2<span class="cite-bracket">&#93;</span></a></sup> controls the game environment settings to make challenges easier or harder. For example, if the game is too hard, the player gets more weapons, recovers life points faster, or faces fewer opponents. Although this approach may be effective, its application can cause implausible situations. A straightforward approach is to combine such "parameter manipulation" with some mechanisms to modify the behavior of the <a href="/wiki/Non-player_character" title="Non-player character">non-player characters</a> (characters controlled by the computer and usually modeled as <a href="/wiki/Game_artificial_intelligence" class="mw-redirect" title="Game artificial intelligence">intelligent</a> agents). This adjustment, however, should be made with moderation to avoid the 'rubber band' effect. One example of this effect in a racing game would involve the AI driver's vehicles becoming significantly faster when behind the player's vehicle, and significantly slower while in front, as if a large <a href="/wiki/Rubber_band" title="Rubber band">rubber band</a> connected the two vehicles.
+</p><p>A traditional implementation of such an agent's intelligence is to use behavior rules defined during <a href="/wiki/Video_game_development" title="Video game development">game development</a>. A typical rule in a <a href="/wiki/Fighting_game" title="Fighting game">fighting game</a> would state "punch opponent if he is reachable, chase him otherwise". Extending such an approach to include opponent modeling can be made through Spronck <i>et al.</i>′s dynamic <a href="/wiki/Scripting_language" title="Scripting language">scripting</a>,<sup id="cite&#95;ref-3" class="reference"><a href="#cite_note-3"><span class="cite-bracket">&#91;</span>3<span class="cite-bracket">&#93;</span></a></sup><sup id="cite&#95;ref-4" class="reference"><a href="#cite_note-4"><span class="cite-bracket">&#91;</span>4<span class="cite-bracket">&#93;</span></a></sup> which assigns to each rule a <a href="/wiki/Probability" title="Probability">probability</a> of being picked. Rule weights can be dynamically updated throughout the game according to the opponent's skills, leading to adaptation to the specific user. With a simple mechanism, rules can be picked that generate tactics that are neither too strong nor too weak for the current player.
+</p><p>Andrade <i>et al.</i><sup id="cite&#95;ref-5" class="reference"><a href="#cite_note-5"><span class="cite-bracket">&#91;</span>5<span class="cite-bracket">&#93;</span></a></sup> divide the DGB problem into two dimensions: competence (learn as well as possible) and performance (act just as well as necessary). This dichotomy between competence and performance is well known and studied in <a href="/wiki/Linguistics" title="Linguistics">linguistics</a>, as proposed by <a href="/wiki/Noam_Chomsky" title="Noam Chomsky">Noam Chomsky</a>.<sup id="cite&#95;ref-Aspects&#95;6-0" class="reference"><a href="#cite_note-Aspects-6"><span class="cite-bracket">&#91;</span>6<span class="cite-bracket">&#93;</span></a></sup> Their approach faces both dimensions with <a href="/wiki/Reinforcement_learning" title="Reinforcement learning">reinforcement learning</a> (RL). Offline training is used to bootstrap the learning process. This can be done by letting the agent play against itself (self-learning), other pre-programmed agents, or human players. Then, online learning is used to continually adapt this initially built-in intelligence to each specific human opponent, in order to discover the most suitable strategy to play against him or her. Concerning performance, their idea is to find an adequate policy for choosing actions that provide a good game balance, i.e., actions that keep both the agent and human player at approximately the same performance level. According to the difficulty the player is facing, the agent chooses actions with high or low expected performance. For a given situation, if the game level is too hard, the agent does not choose the optimal action (provided by the RL framework), but chooses progressively less and less suboptimal actions until its performance is as good as the player's. Similarly, if the game level becomes too easy, it will choose actions whose values are higher, possibly until it reaches optimal performance.
+</p><p>Demasi and Cruz<sup id="cite&#95;ref-7" class="reference"><a href="#cite_note-7"><span class="cite-bracket">&#91;</span>7<span class="cite-bracket">&#93;</span></a></sup> built intelligent agents employing <a href="/wiki/Genetic_algorithm" title="Genetic algorithm">genetic algorithm</a> techniques to keep alive agents that best fit the user level. Online coevolution is used to speed up the learning process. Online coevolution uses pre-defined models (agents with good genetic features) as parents in the genetic operations, so that the evolution is biased by them. These models are constructed by offline training or by hand when the agent's genetic encoding is simple enough.
+</p><p>Other work in DGB is based on the hypothesis that the player-opponent interaction—rather than the audiovisual features, the context or the genre of the game—is the property that contributes most of the quality features of entertainment in a computer game.<sup id="cite&#95;ref-8" class="reference"><a href="#cite_note-8"><span class="cite-bracket">&#91;</span>8<span class="cite-bracket">&#93;</span></a></sup> Based on this fundamental assumption, a metric for measuring the real-time entertainment value of predator/prey games was introduced and established as efficient and reliable by validation against human judgment.
+</p><p>Further studies by Yannakakis and Hallam<sup id="cite&#95;ref-Yannakakis&#95;9-0" class="reference"><a href="#cite_note-Yannakakis-9"><span class="cite-bracket">&#91;</span>9<span class="cite-bracket">&#93;</span></a></sup> have shown that <a href="/wiki/Artificial_neural_network" class="mw-redirect" title="Artificial neural network">artificial neural networks</a> (ANN) and <a href="/wiki/Fuzzy_neural_network" class="mw-redirect" title="Fuzzy neural network">fuzzy neural networks</a> can extract a better estimator of player satisfaction than a human-designed one, given appropriate estimators of the challenge and curiosity (intrinsic qualitative factors for engaging gameplay according to Malone)<sup id="cite&#95;ref-10" class="reference"><a href="#cite_note-10"><span class="cite-bracket">&#91;</span>10<span class="cite-bracket">&#93;</span></a></sup> of the game and data on human players' preferences. The approach of constructing user models of the player of a game that can predict which variants of the game are more or less <i>fun</i> is defined as <i>Entertainment Modeling</i>. The model is usually constructed using <a href="/wiki/Machine_learning" title="Machine learning">machine learning</a> techniques applied to game parameters derived from player-game interaction<sup id="cite&#95;ref-11" class="reference"><a href="#cite_note-11"><span class="cite-bracket">&#91;</span>11<span class="cite-bracket">&#93;</span></a></sup> and/or statistical features of player's <a href="/w/index.php?title=Physiological_signal&amp;action=edit&amp;redlink=1" class="new" title="Physiological signal (page does not exist)">physiological signals</a> recorded during play.<sup id="cite&#95;ref-12" class="reference"><a href="#cite_note-12"><span class="cite-bracket">&#91;</span>12<span class="cite-bracket">&#93;</span></a></sup> This basic approach applies to a variety of games, both computer<sup id="cite&#95;ref-Yannakakis&#95;9-1" class="reference"><a href="#cite_note-Yannakakis-9"><span class="cite-bracket">&#91;</span>9<span class="cite-bracket">&#93;</span></a></sup> and physical.
+</p>
+<div class="mw-heading mw-heading2"><h2 id="Caveats">Caveats</h2><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Dynamic_game_difficulty_balancing&amp;action=edit&amp;section=3" title="Edit section: Caveats"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></div>
+<p>Designing a game that is fair without being predictable is difficult.<sup id="cite&#95;ref-barry19810511&#95;13-0" class="reference"><a href="#cite_note-barry19810511-13"><span class="cite-bracket">&#91;</span>13<span class="cite-bracket">&#93;</span></a></sup> Andrew Rollings and Ernest Adams cite an example of a game that changed the difficulty of each level based on how the player performed in several preceding levels. Players noticed this and developed a strategy to overcome challenging levels by deliberately playing badly in the levels before the difficult ones. The authors stress the importance of covering up the existence of difficulty adaptation so that players are not aware of it.<sup id="cite&#95;ref-14" class="reference"><a href="#cite_note-14"><span class="cite-bracket">&#91;</span>14<span class="cite-bracket">&#93;</span></a></sup>
+</p>
+<div class="mw-heading mw-heading2"><h2 id="Uses_in_video_games">Uses in video games</h2><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Dynamic_game_difficulty_balancing&amp;action=edit&amp;section=4" title="Edit section: Uses in video games"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></div>
+<p>Dynamic difficulty (DDA) refers to automated adjustments to make gameplay easier or harder based on player performance, whereas <a href="/wiki/Cheating_AI" class="mw-redirect" title="Cheating AI">cheating AI</a> involves the game appearing to override realistic mechanics, giving the AI unfair advantages. Some games may have a blend of both these systems at once.
+</p><p>An early example of difficulty balancing can be found in <i><a href="/wiki/Zanac" title="Zanac">Zanac</a></i>, developed in 1986 by <a href="/wiki/Compile_(publisher)" class="mw-redirect" title="Compile (publisher)">Compile</a>. The game featured a unique adaptive <a href="/wiki/Artificial_intelligence" title="Artificial intelligence">artificial intelligence</a>, in which the game automatically adjusted the difficulty level according to the player's skill level, rate of fire, and the ship's current defensive status/capability. Earlier than this can be found in Midway's 1975 <a href="/wiki/Gun_Fight" title="Gun Fight">Gun Fight</a> coin-op game. This head-to-head shoot-'em-up would aid whichever player had just been shot by placing a fresh additional object, such as a cactus plant, on their half of the playfield, making it easier for them to hide.
+</p><p><i><a href="/wiki/Archon:_The_Light_and_the_Dark" title="Archon: The Light and the Dark">Archon</a></i><span class="nowrap" style="padding-left:0.1em;">&#39;</span>s computer opponent slowly adapts over time to help players defeat it.<sup id="cite&#95;ref-bateman198411&#95;15-0" class="reference"><a href="#cite_note-bateman198411-15"><span class="cite-bracket">&#91;</span>15<span class="cite-bracket">&#93;</span></a></sup> <a href="/wiki/Danielle_Bunten_Berry" title="Danielle Bunten Berry">Danielle Bunten</a> designed both <i><a href="/wiki/M.U.L.E." title="M.U.L.E.">M.U.L.E.</a></i> and <i><a href="/wiki/Global_Conquest" title="Global Conquest">Global Conquest</a></i> to dynamically balance gameplay between players. Random events are adjusted so that the player in first place is never lucky and the last-place player is never unlucky.<sup id="cite&#95;ref-cgw199208&#95;16-0" class="reference"><a href="#cite_note-cgw199208-16"><span class="cite-bracket">&#91;</span>16<span class="cite-bracket">&#93;</span></a></sup>
+</p><p>The first <i><a href="/wiki/Crash_Bandicoot_(video_game)" title="Crash Bandicoot (video game)">Crash Bandicoot</a></i> game and its sequels make use of a "Dynamic Difficulty Adjustment" system, slowing down obstacles, giving extra hit points, and adding continue points according to the player's number of deaths. According to the game's lead designer <a href="/wiki/Jason_Rubin" title="Jason Rubin">Jason Rubin</a>, the goal was to "help weaker players without changing the game for the better players".<sup id="cite&#95;ref-17" class="reference"><a href="#cite_note-17"><span class="cite-bracket">&#91;</span>17<span class="cite-bracket">&#93;</span></a></sup>
+</p><p>Both <a href="/wiki/Insomniac_Games" title="Insomniac Games">Insomniac Games</a>, <a href="/wiki/Spyro_the_Dragon" title="Spyro the Dragon">Spyro the Dragon</a> and <a href="/wiki/Ratchet_and_Clank" class="mw-redirect" title="Ratchet and Clank">Ratchet and Clank</a> series make use of dynamic difficulty with a system termed Automatic Challenge Tuning (ACT). Sometimes, in the first released versions of these games, malfunctions in this system resulted in the player being unable to complete the game 100% due to programming oversights.<sup id="cite&#95;ref-18" class="reference"><a href="#cite_note-18"><span class="cite-bracket">&#91;</span>18<span class="cite-bracket">&#93;</span></a></sup><sup id="cite&#95;ref-19" class="reference"><a href="#cite_note-19"><span class="cite-bracket">&#91;</span>19<span class="cite-bracket">&#93;</span></a></sup>
+</p><p>The video game <i><a href="/wiki/Flow_(video_game)" title="Flow (video game)">Flow</a></i> was notable for popularizing the application of mental immersion (also called <a href="/wiki/Flow_(psychology)" title="Flow (psychology)">flow</a>) to video games with its 2006 Flash version. The video game design was based on the master's thesis of one of its authors and was later adapted for the <a href="/wiki/PlayStation_3" title="PlayStation 3">PlayStation 3</a>.
+</p><p><i><a href="/wiki/SiN_Episodes" class="mw-redirect" title="SiN Episodes">SiN Episodes</a></i> released in 2006 featured a "Personal Challenge System" where the numbers and toughness of enemies faced would vary based on the player's performance to ensure the level of challenge and pace of progression through the game.  The developer, <a href="/wiki/Ritual_Entertainment" title="Ritual Entertainment">Ritual Entertainment</a>, claimed that players with widely different levels of ability could finish the game within a small range of time of each other.<sup id="cite&#95;ref-20" class="reference"><a href="#cite_note-20"><span class="cite-bracket">&#91;</span>20<span class="cite-bracket">&#93;</span></a></sup>
+</p><p>In 2005, <i><a href="/wiki/Resident_Evil_4" title="Resident Evil 4">Resident Evil 4</a></i> employed a system called the "Difficulty Scale", unknown to most players, as the only mention of it was in the Official Strategy Guide. This system grades the player's performance on a number scale from 1 to 10 and adjusts both enemy behavior/attacks used and enemy damage/resistance based on the player's performance (such as deaths, critical attacks, etc.). The selected difficulty levels lock players at a certain number; for example, on Normal difficulty, one starts at Grade 4, can move down to Grade 2 if doing poorly, or up to Grade 7 if doing well. The grades between difficulties can overlap.<sup id="cite&#95;ref-21" class="reference"><a href="#cite_note-21"><span class="cite-bracket">&#91;</span>21<span class="cite-bracket">&#93;</span></a></sup>
+</p><p><i><a href="/wiki/God_Hand" title="God Hand">God Hand</a></i>, a 2006 video game developed by <a href="/wiki/Clover_Studio" title="Clover Studio">Clover Studio</a>, directed by <i>Resident Evil 4</i> director <a href="/wiki/Shinji_Mikami" title="Shinji Mikami">Shinji Mikami</a>, and published by <a href="/wiki/Capcom" title="Capcom">Capcom</a> for the <a href="/wiki/PlayStation_2" title="PlayStation 2">PlayStation 2</a>, features a meter during gameplay that regulates enemy intelligence and strength. This meter increases when the player successfully dodges and attacks opponents, and decreases when the player is hit. The meter is divided into four levels, with the hardest level called "Level DIE." The game also has three difficulties, with the easy difficulty only allowing the meter to ascend to level 2, while the hardest difficulty locks the meter to level DIE. This system also offers greater rewards when defeating enemies at higher levels.
+</p><p>The 2008 video game <i><a href="/wiki/Left_4_Dead" title="Left 4 Dead">Left 4 Dead</a></i> uses an artificial intelligence technology dubbed "The AI Director".<sup id="cite&#95;ref-22" class="reference"><a href="#cite_note-22"><span class="cite-bracket">&#91;</span>22<span class="cite-bracket">&#93;</span></a></sup> The AI Director is used to procedurally generate a different experience for the players each time the game is played. It monitors individual players' performance and how well they work together as a group to pace the game, determining the number of zombies that attack the players and the location of boss infected encounters based on the information gathered. The Director also determines how quickly players are moving through the level towards each objective; if it detects that players have remained in one place for too long or are not making enough progress, it will summon a horde of common infected to force any players and AI Characters present to move from their current location and combat the new threat. Besides pacing, the Director also controls some video and audio elements of the game to set a mood for a boss encounter or to draw the players' attention to a certain area.<sup id="cite&#95;ref-23" class="reference"><a href="#cite_note-23"><span class="cite-bracket">&#91;</span>23<span class="cite-bracket">&#93;</span></a></sup> Valve calls the way the Director is working "<a href="/wiki/Procedural_narrative" class="mw-redirect" title="Procedural narrative">procedural narrative</a>" because instead of having a difficulty level which just ramps up to a constant level, the A.I. analyzes how the players fared in the game so far, and try to add subsequent events that would give them a sense of narrative.<sup id="cite&#95;ref-24" class="reference"><a href="#cite_note-24"><span class="cite-bracket">&#91;</span>24<span class="cite-bracket">&#93;</span></a></sup>
+</p><p><i><a href="/wiki/Madden_NFL_09" title="Madden NFL 09">Madden NFL 09</a></i> introduces "Madden IQ", which begins with an optional test of the player's knowledge of the sport and abilities in various situations. The score is then used to control the game's difficulty.<sup id="cite&#95;ref-25" class="reference"><a href="#cite_note-25"><span class="cite-bracket">&#91;</span>25<span class="cite-bracket">&#93;</span></a></sup><sup id="cite&#95;ref-26" class="reference"><a href="#cite_note-26"><span class="cite-bracket">&#91;</span>26<span class="cite-bracket">&#93;</span></a></sup>
+</p><p>In the match-3 game <i><a href="/wiki/Fishdom" title="Fishdom">Fishdom</a></i>, the time limit is adjusted based on how well the player performs. The time limit is increased should the player fail a level, making it possible for any player to beat a level after a few tries.
+</p><p>In the 1999 video game <i><a href="/wiki/Homeworld" title="Homeworld">Homeworld</a></i>, the number of ships that the AI begins with in each mission is set depending on how powerful the game deems the player's fleet to be.  Successful players have larger fleets because they take fewer losses.  In this way, a player who is successful over a number of missions will be challenged more and more as the game progresses.
+</p><p>In <i><a href="/wiki/Fallout:_New_Vegas" title="Fallout: New Vegas">Fallout: New Vegas</a></i> and <i><a href="/wiki/Fallout_3" title="Fallout 3">Fallout 3</a></i>, as the player increases in level, tougher variants of enemies, enemies with higher statistics and better weapons, or new enemies will replace older ones to retain a constant difficulty, which can be raised, using a slider, with experience bonuses and vice versa in <i>Fallout 3</i>. This can also be done in <i>New Vegas</i>, but there is no bonus to increasing or decreasing the difficulty.
+</p><p>The <i><a href="/wiki/Mario_Kart" title="Mario Kart">Mario Kart</a></i> series features items during races that help an individual driver get ahead of their opponents. These items are distributed based on a driver's position in a way that is an example of dynamic game difficulty balancing. For example, a driver near the bottom of the field is likely to get an item that will drastically increase their speed or sharply decrease the speed of their opponents, whereas a driver in first or second place can expect to get these kinds of items rarely (and will probably receive the game's weaker items). The game's computer racers also adapt to the player's speed - slowing down when the leading player racer is too far behind the best computer racer, and vice versa - as the rival computer racers catch up to the player in first.
+</p>
+<div class="mw-heading mw-heading3"><h3 id="Alleged_use_to_shape_player_buying_behaviour">Alleged use to shape player buying behaviour</h3><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Dynamic_game_difficulty_balancing&amp;action=edit&amp;section=5" title="Edit section: Alleged use to shape player buying behaviour"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></div>
+<p>In 2020, a <a href="/wiki/Class-action_lawsuit" class="mw-redirect" title="Class-action lawsuit">class-action lawsuit</a> in the <a href="/wiki/United_States_District_Court_for_the_Northern_District_of_California" title="United States District Court for the Northern District of California">United States District Court for the Northern District of California</a> accused game developer <a href="/wiki/Electronic_Arts" title="Electronic Arts">Electronic Arts</a> of using its patented <i>Dynamic Difficulty Adjustment</i> technology in three of its <a href="/wiki/EA_Sports" title="EA Sports">EA Sports</a> franchises—<a href="/wiki/Madden_NFL" title="Madden NFL">Madden NFL</a>, <a href="/wiki/FIFA_(video_game_series)" title="FIFA (video game series)">FIFA</a>, and <a href="/wiki/NHL_(video_game_series)" title="NHL (video game series)">NHL</a>—across all games ranging back to the 2017 versions. The plaintiffs say that EA uses this technology to push players into purchasing more <a href="/wiki/Loot_boxes" class="mw-redirect" title="Loot boxes">loot boxes</a> as Player Packs, saying that it effectively makes even high-stat players not play as well as they should.
+</p><p>The suit also notes that EA uses this technology without disclosing it to players, noting that EA has denied its use in the past in multiple games mentioned in the suit. When asked for comment on the allegations, EA called the claims "baseless" and that they "misrepresent our games."<sup id="cite&#95;ref-27" class="reference"><a href="#cite_note-27"><span class="cite-bracket">&#91;</span>27<span class="cite-bracket">&#93;</span></a></sup><sup id="cite&#95;ref-28" class="reference"><a href="#cite_note-28"><span class="cite-bracket">&#91;</span>28<span class="cite-bracket">&#93;</span></a></sup><sup id="cite&#95;ref-29" class="reference"><a href="#cite_note-29"><span class="cite-bracket">&#91;</span>29<span class="cite-bracket">&#93;</span></a></sup> The plaintiffs voluntarily dismissed the lawsuit in 2021.<sup id="cite&#95;ref-30" class="reference"><a href="#cite_note-30"><span class="cite-bracket">&#91;</span>30<span class="cite-bracket">&#93;</span></a></sup>
+</p>
+<div class="mw-heading mw-heading2"><h2 id="See_also">See also</h2><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Dynamic_game_difficulty_balancing&amp;action=edit&amp;section=6" title="Edit section: See also"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></div>
+<ul><li><a href="/wiki/Difficulty_level" class="mw-redirect" title="Difficulty level">Difficulty level</a></li>
+<li><a href="/wiki/Nonlinear_gameplay" title="Nonlinear gameplay">Nonlinear gameplay</a></li>
+<li><a href="/wiki/Game_balance" title="Game balance">Game balance</a></li>
+<li><a href="/wiki/Game_artificial_intelligence" class="mw-redirect" title="Game artificial intelligence">Game artificial intelligence</a></li>
+<li><a href="/wiki/Flow_(psychology)" title="Flow (psychology)">Flow (psychology)</a></li>
+<li><a href="/wiki/Nintendo_Hard" class="mw-redirect" title="Nintendo Hard">Nintendo Hard</a></li>
+<li><a href="/wiki/FIFA_(video_game_series)" title="FIFA (video game series)">FIFA (video game series)</a></li></ul>
+<div class="mw-heading mw-heading2"><h2 id="References">References</h2><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Dynamic_game_difficulty_balancing&amp;action=edit&amp;section=7" title="Edit section: References"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></div>
+<style data-mw-deduplicate="TemplateStyles:r1327269900">.mw-parser-output .reflist-columns-2{column-width:30em}.mw-parser-output .reflist-columns-3{column-width:25em}body.skin-vector-2022 .mw-parser-output .reflist-columns-2{column-width:27em}body.skin-vector-2022 .mw-parser-output .reflist-columns-3{column-width:22.5em}.mw-parser-output .references[data-mw-group=upper-alpha]{list-style-type:upper-alpha}.mw-parser-output .references[data-mw-group=upper-roman]{list-style-type:upper-roman}.mw-parser-output .references[data-mw-group=lower-alpha]{list-style-type:lower-alpha}.mw-parser-output .references[data-mw-group=lower-greek]{list-style-type:lower-greek}.mw-parser-output .references[data-mw-group=lower-roman]{list-style-type:lower-roman}.mw-parser-output div.reflist-liststyle-upper-alpha .references{list-style-type:upper-alpha}.mw-parser-output div.reflist-liststyle-upper-roman .references{list-style-type:upper-roman}.mw-parser-output div.reflist-liststyle-lower-alpha .references{list-style-type:lower-alpha}.mw-parser-output div.reflist-liststyle-lower-greek .references{list-style-type:lower-greek}.mw-parser-output div.reflist-liststyle-lower-roman .references{list-style-type:lower-roman}</style><div class="mw-references-wrap mw-references-columns reflist-columns-2"><ol class="references">
+<li id="cite&#95;note-crawford198212-1"><span class="mw-cite-backlink">^ <a href="#cite_ref-crawford198212_1-0"><sup><i><b>a</b></i></sup></a> <a href="#cite_ref-crawford198212_1-1"><sup><i><b>b</b></i></sup></a></span> <span class="reference-text"><style data-mw-deduplicate="TemplateStyles:r1333433106">.mw-parser-output cite.citation{font-style:inherit;word-wrap:break-word}.mw-parser-output .citation q{quotes:"\"""\"""'""'"}.mw-parser-output .citation:target{background-color:rgba(0,127,255,0.133)}.mw-parser-output .id-lock-free.id-lock-free a{background:url("//upload.wikimedia.org/wikipedia/commons/6/65/Lock-green.svg")right 0.1em center/9px no-repeat}.mw-parser-output .id-lock-limited.id-lock-limited a,.mw-parser-output .id-lock-registration.id-lock-registration a{background:url("//upload.wikimedia.org/wikipedia/commons/d/d6/Lock-gray-alt-2.svg")right 0.1em center/9px no-repeat}.mw-parser-output .id-lock-subscription.id-lock-subscription a{background:url("//upload.wikimedia.org/wikipedia/commons/a/aa/Lock-red-alt-2.svg")right 0.1em center/9px no-repeat}.mw-parser-output .cs1-ws-icon a{background:url("//upload.wikimedia.org/wikipedia/commons/4/4c/Wikisource-logo.svg")right 0.1em center/12px no-repeat}body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .id-lock-free a,body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .id-lock-limited a,body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .id-lock-registration a,body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .id-lock-subscription a,body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .cs1-ws-icon a{background-size:contain;padding:0 1em 0 0}.mw-parser-output .cs1-code{color:inherit;background:inherit;border:none;padding:inherit}.mw-parser-output .cs1-hidden-error{display:none;color:var(--color-error,#bf3c2c)}.mw-parser-output .cs1-visible-error{color:var(--color-error,#bf3c2c)}.mw-parser-output .cs1-maint{display:none;color:#085;margin-left:0.3em}.mw-parser-output .cs1-kern-left{padding-left:0.2em}.mw-parser-output .cs1-kern-right{padding-right:0.2em}.mw-parser-output .citation .mw-selflink{font-weight:inherit}@media screen{.mw-parser-output .cs1-format{font-size:95%}html.skin-theme-clientpref-night .mw-parser-output .cs1-maint{color:#18911f}}@media screen and (prefers-color-scheme:dark){html.skin-theme-clientpref-os .mw-parser-output .cs1-maint{color:#18911f}}</style><cite id="CITEREFCrawford1982" class="citation magazine cs1">Crawford, Chris (December 1982). <a rel="nofollow" class="external text" href="https://archive.org/stream/byte-magazine-1982-12/1982_12_BYTE_07-12_Game_Plan_1982#page/n97/mode/2up">"Design Techniques and Ideas for Computer Games"</a>. <i>BYTE</i>. p.&#160;96<span class="reference-accessdate">. Retrieved <span class="nowrap">19 October</span> 2013</span>.</cite><span title="ctx&#95;ver=Z39.88-2004&amp;rft&#95;val&#95;fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=BYTE&amp;rft.atitle=Design+Techniques+and+Ideas+for+Computer+Games&amp;rft.pages=96&amp;rft.date=1982-12&amp;rft.aulast=Crawford&amp;rft.aufirst=Chris&amp;rft&#95;id=https%3A%2F%2Farchive.org%2Fstream%2Fbyte-magazine-1982-12%2F1982&#95;12&#95;BYTE&#95;07-12&#95;Game&#95;Plan&#95;1982%23page%2Fn97%2Fmode%2F2up&amp;rfr&#95;id=info%3Asid%2Fen.wikipedia.org%3ADynamic+game+difficulty+balancing" class="Z3988"></span></span>
+</li>
+<li id="cite&#95;note-2"><span class="mw-cite-backlink"><b><a href="#cite_ref-2">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1333433106" /><cite id="CITEREFRobin&#95;HunickeV.&#95;Chapman2004" class="citation book cs1">Robin Hunicke; V. Chapman (2004). "AI for Dynamic Difficulty Adjustment in Games". <i>Challenges in Game Artificial Intelligence AAAI Workshop</i>. San Jose. pp.&#160;<span class="nowrap">91–</span>96.</cite><span title="ctx&#95;ver=Z39.88-2004&amp;rft&#95;val&#95;fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.atitle=AI+for+Dynamic+Difficulty+Adjustment+in+Games&amp;rft.btitle=Challenges+in+Game+Artificial+Intelligence+AAAI+Workshop&amp;rft.place=San+Jose&amp;rft.pages=91-96&amp;rft.date=2004&amp;rft.au=Robin+Hunicke&amp;rft.au=V.+Chapman&amp;rfr&#95;id=info%3Asid%2Fen.wikipedia.org%3ADynamic+game+difficulty+balancing" class="Z3988"></span><span class="cs1-maint citation-comment"><code class="cs1-code">{{<a href="/wiki/Template:Cite_book" title="Template:Cite book">cite book</a>}}</code>:  CS1 maint: location missing publisher (<a href="/wiki/Category:CS1_maint:_location_missing_publisher" title="Category:CS1 maint: location missing publisher">link</a>)</span></span>
+</li>
+<li id="cite&#95;note-3"><span class="mw-cite-backlink"><b><a href="#cite_ref-3">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://www.spronck.net/">Pieter Spronck</a> <a rel="nofollow" class="external text" href="https://web.archive.org/web/20081210105323/http://www.spronck.net/">Archived</a> 2008-12-10 at the <a href="/wiki/Wayback_Machine" title="Wayback Machine">Wayback Machine</a> from Tilburg centre for Creative Computing</span>
+</li>
+<li id="cite&#95;note-4"><span class="mw-cite-backlink"><b><a href="#cite_ref-4">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1333433106" /><cite id="CITEREFP.&#95;SpronckI.&#95;Sprinkhuizen-KuyperE.&#95;Postma2004" class="citation book cs1">P. Spronck; I. Sprinkhuizen-Kuyper; E. Postma (2004). "Difficulty Scaling of Game AI". <i>Proceedings of the 5th International Conference on Intelligent Games and Simulation</i>. Belgium. pp.&#160;<span class="nowrap">33–</span>37.</cite><span title="ctx&#95;ver=Z39.88-2004&amp;rft&#95;val&#95;fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.atitle=Difficulty+Scaling+of+Game+AI&amp;rft.btitle=Proceedings+of+the+5th+International+Conference+on+Intelligent+Games+and+Simulation&amp;rft.place=Belgium&amp;rft.pages=33-37&amp;rft.date=2004&amp;rft.au=P.+Spronck&amp;rft.au=I.+Sprinkhuizen-Kuyper&amp;rft.au=E.+Postma&amp;rfr&#95;id=info%3Asid%2Fen.wikipedia.org%3ADynamic+game+difficulty+balancing" class="Z3988"></span><span class="cs1-maint citation-comment"><code class="cs1-code">{{<a href="/wiki/Template:Cite_book" title="Template:Cite book">cite book</a>}}</code>:  CS1 maint: location missing publisher (<a href="/wiki/Category:CS1_maint:_location_missing_publisher" title="Category:CS1 maint: location missing publisher">link</a>)</span></span>
+</li>
+<li id="cite&#95;note-5"><span class="mw-cite-backlink"><b><a href="#cite_ref-5">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1333433106" /><cite id="CITEREFG.&#95;AndradeG.&#95;RamalhoH.&#95;SantanaV.&#95;Corruble2005" class="citation book cs1">G. Andrade; G. Ramalho; H. Santana; V. Corruble (2005). "Challenge-Sensitive Action Selection: an Application to Game Balancing". <i>Proceedings of the IEEE/WIC/ACM International Conference on Intelligent Agent Technology (IAT-05)</i>. Compiègne, France: IEEE Computer Society. pp.&#160;<span class="nowrap">194–</span>200.</cite><span title="ctx&#95;ver=Z39.88-2004&amp;rft&#95;val&#95;fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.atitle=Challenge-Sensitive+Action+Selection%3A+an+Application+to+Game+Balancing&amp;rft.btitle=Proceedings+of+the+IEEE%2FWIC%2FACM+International+Conference+on+Intelligent+Agent+Technology+%28IAT-05%29&amp;rft.place=Compi%C3%A8gne%2C+France&amp;rft.pages=194-200&amp;rft.pub=IEEE+Computer+Society&amp;rft.date=2005&amp;rft.au=G.+Andrade&amp;rft.au=G.+Ramalho&amp;rft.au=H.+Santana&amp;rft.au=V.+Corruble&amp;rfr&#95;id=info%3Asid%2Fen.wikipedia.org%3ADynamic+game+difficulty+balancing" class="Z3988"></span></span>
+</li>
+<li id="cite&#95;note-Aspects-6"><span class="mw-cite-backlink"><b><a href="#cite_ref-Aspects_6-0">^</a></b></span> <span class="reference-text">Chomsky, Noam. (1965). <i>Aspects of the Theory of Syntax</i>. Cambridge, MA: MIT Press.</span>
+</li>
+<li id="cite&#95;note-7"><span class="mw-cite-backlink"><b><a href="#cite_ref-7">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1333433106" /><cite id="CITEREFP.&#95;DemasiA.&#95;Cruz2002" class="citation book cs1">P. Demasi; A. Cruz (2002). "Online Coevolution for Action Games". <i>Proceedings of the 3rd International Conference on Intelligent Games and Simulation</i>. London. pp.&#160;<span class="nowrap">113–</span>120.</cite><span title="ctx&#95;ver=Z39.88-2004&amp;rft&#95;val&#95;fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.atitle=Online+Coevolution+for+Action+Games&amp;rft.btitle=Proceedings+of+the+3rd+International+Conference+on+Intelligent+Games+and+Simulation&amp;rft.place=London&amp;rft.pages=113-120&amp;rft.date=2002&amp;rft.au=P.+Demasi&amp;rft.au=A.+Cruz&amp;rfr&#95;id=info%3Asid%2Fen.wikipedia.org%3ADynamic+game+difficulty+balancing" class="Z3988"></span><span class="cs1-maint citation-comment"><code class="cs1-code">{{<a href="/wiki/Template:Cite_book" title="Template:Cite book">cite book</a>}}</code>:  CS1 maint: location missing publisher (<a href="/wiki/Category:CS1_maint:_location_missing_publisher" title="Category:CS1 maint: location missing publisher">link</a>)</span></span>
+</li>
+<li id="cite&#95;note-8"><span class="mw-cite-backlink"><b><a href="#cite_ref-8">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1333433106" /><cite id="CITEREFG.&#95;N.&#95;YannakakisJ.&#95;Hallam2004" class="citation book cs1">G. N. Yannakakis; J. Hallam (13–17 July 2004). "Evolving Opponents for Interesting Interactive Computer Games". <i>Proceedings of the 8th International Conference on the Simulation of Adaptive Behavior (SAB'04); From Animals to Animats 8</i>. Los Angeles, California, United States: The MIT Press. pp.&#160;<span class="nowrap">499–</span>508.</cite><span title="ctx&#95;ver=Z39.88-2004&amp;rft&#95;val&#95;fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.atitle=Evolving+Opponents+for+Interesting+Interactive+Computer+Games&amp;rft.btitle=Proceedings+of+the+8th+International+Conference+on+the+Simulation+of+Adaptive+Behavior+%28SAB%2704%29%3B+From+Animals+to+Animats+8&amp;rft.place=Los+Angeles%2C+California%2C+United+States&amp;rft.pages=499-508&amp;rft.pub=The+MIT+Press&amp;rft.date=2004-07-13%2F2004-07-17&amp;rft.au=G.+N.+Yannakakis&amp;rft.au=J.+Hallam&amp;rfr&#95;id=info%3Asid%2Fen.wikipedia.org%3ADynamic+game+difficulty+balancing" class="Z3988"></span></span>
+</li>
+<li id="cite&#95;note-Yannakakis-9"><span class="mw-cite-backlink">^ <a href="#cite_ref-Yannakakis_9-0"><sup><i><b>a</b></i></sup></a> <a href="#cite_ref-Yannakakis_9-1"><sup><i><b>b</b></i></sup></a></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1333433106" /><cite id="CITEREFG.&#95;N.&#95;YannakakisJ.&#95;Hallam2006" class="citation book cs1">G. N. Yannakakis; J. Hallam (18–20 May 2006). "Towards Capturing and Enhancing Entertainment in Computer Games". <i>Proceedings of the 4th Hellenic Conference on Artificial Intelligence, Lecture Notes in Artificial Intelligence</i>. Heraklion, Crete, Greece: Springer-Verlag. pp.&#160;<span class="nowrap">432–</span>442.</cite><span title="ctx&#95;ver=Z39.88-2004&amp;rft&#95;val&#95;fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.atitle=Towards+Capturing+and+Enhancing+Entertainment+in+Computer+Games&amp;rft.btitle=Proceedings+of+the+4th+Hellenic+Conference+on+Artificial+Intelligence%2C+Lecture+Notes+in+Artificial+Intelligence&amp;rft.place=Heraklion%2C+Crete%2C+Greece&amp;rft.pages=432-442&amp;rft.pub=Springer-Verlag&amp;rft.date=2006-05-18%2F2006-05-20&amp;rft.au=G.+N.+Yannakakis&amp;rft.au=J.+Hallam&amp;rfr&#95;id=info%3Asid%2Fen.wikipedia.org%3ADynamic+game+difficulty+balancing" class="Z3988"></span></span>
+</li>
+<li id="cite&#95;note-10"><span class="mw-cite-backlink"><b><a href="#cite_ref-10">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1333433106" /><cite id="CITEREFMalone1981" class="citation journal cs1">Malone, T. W. (1981). "What makes computer games fun?". <i>Byte</i>. <b>6</b>: <span class="nowrap">258–</span>277.</cite><span title="ctx&#95;ver=Z39.88-2004&amp;rft&#95;val&#95;fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Byte&amp;rft.atitle=What+makes+computer+games+fun%3F&amp;rft.volume=6&amp;rft.pages=258-277&amp;rft.date=1981&amp;rft.aulast=Malone&amp;rft.aufirst=T.+W.&amp;rfr&#95;id=info%3Asid%2Fen.wikipedia.org%3ADynamic+game+difficulty+balancing" class="Z3988"></span></span>
+</li>
+<li id="cite&#95;note-11"><span class="mw-cite-backlink"><b><a href="#cite_ref-11">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1333433106" /><cite id="CITEREFWheatMasekLamHingston2015" class="citation book cs1">Wheat, D; Masek, M; Lam, CP; Hingston, P (2015). "Dynamic Difficulty Adjustment in 2D Platformers through Agent-Based Procedural Level Generation". <i>2015 IEEE International Conference on Systems, Man, and Cybernetics</i>. pp.&#160;<span class="nowrap">2778–</span>2785. <a href="/wiki/Doi_(identifier)" class="mw-redirect" title="Doi (identifier)">doi</a>:<a rel="nofollow" class="external text" href="https://doi.org/10.1109%2FSMC.2015.485">10.1109/SMC.2015.485</a>. <a href="/wiki/ISBN_(identifier)" class="mw-redirect" title="ISBN (identifier)">ISBN</a>&#160;<a href="/wiki/Special:BookSources/978-1-4799-8697-2" title="Special:BookSources/978-1-4799-8697-2"><bdi>978-1-4799-8697-2</bdi></a>. <a href="/wiki/S2CID_(identifier)" class="mw-redirect" title="S2CID (identifier)">S2CID</a>&#160;<a rel="nofollow" class="external text" href="https://api.semanticscholar.org/CorpusID:19949213">19949213</a>.</cite><span title="ctx&#95;ver=Z39.88-2004&amp;rft&#95;val&#95;fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.atitle=Dynamic+Difficulty+Adjustment+in+2D+Platformers+through+Agent-Based+Procedural+Level+Generation&amp;rft.btitle=2015+IEEE+International+Conference+on+Systems%2C+Man%2C+and+Cybernetics&amp;rft.pages=2778-2785&amp;rft.date=2015&amp;rft&#95;id=https%3A%2F%2Fapi.semanticscholar.org%2FCorpusID%3A19949213%23id-name%3DS2CID&amp;rft&#95;id=info%3Adoi%2F10.1109%2FSMC.2015.485&amp;rft.isbn=978-1-4799-8697-2&amp;rft.aulast=Wheat&amp;rft.aufirst=D&amp;rft.au=Masek%2C+M&amp;rft.au=Lam%2C+CP&amp;rft.au=Hingston%2C+P&amp;rfr&#95;id=info%3Asid%2Fen.wikipedia.org%3ADynamic+game+difficulty+balancing" class="Z3988"></span></span>
+</li>
+<li id="cite&#95;note-12"><span class="mw-cite-backlink"><b><a href="#cite_ref-12">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1333433106" /><cite id="CITEREFChanelRebetezBetrancourtPun2011" class="citation journal cs1">Chanel, Guillaume; Rebetez, Cyril; Betrancourt, Mireille; Pun, Thierry (2011). "Emotion Assessment from Physiological Signals for Adaptation of Game Difficulty". <i>IEEE Transactions on Systems, Man, and Cybernetics - Part A: Systems and Humans</i>. <b>41</b> (6): <span class="nowrap">1052–</span>1063. <a href="/wiki/CiteSeerX_(identifier)" class="mw-redirect" title="CiteSeerX (identifier)">CiteSeerX</a>&#160;<span class="id-lock-free" title="Freely accessible"><a rel="nofollow" class="external text" href="https://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.650.5420">10.1.1.650.5420</a></span>. <a href="/wiki/Doi_(identifier)" class="mw-redirect" title="Doi (identifier)">doi</a>:<a rel="nofollow" class="external text" href="https://doi.org/10.1109%2FTSMCA.2011.2116000">10.1109/TSMCA.2011.2116000</a>. <a href="/wiki/S2CID_(identifier)" class="mw-redirect" title="S2CID (identifier)">S2CID</a>&#160;<a rel="nofollow" class="external text" href="https://api.semanticscholar.org/CorpusID:8681078">8681078</a>.</cite><span title="ctx&#95;ver=Z39.88-2004&amp;rft&#95;val&#95;fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=IEEE+Transactions+on+Systems%2C+Man%2C+and+Cybernetics+-+Part+A%3A+Systems+and+Humans&amp;rft.atitle=Emotion+Assessment+from+Physiological+Signals+for+Adaptation+of+Game+Difficulty&amp;rft.volume=41&amp;rft.issue=6&amp;rft.pages=1052-1063&amp;rft.date=2011&amp;rft&#95;id=https%3A%2F%2Fciteseerx.ist.psu.edu%2Fviewdoc%2Fsummary%3Fdoi%3D10.1.1.650.5420%23id-name%3DCiteSeerX&amp;rft&#95;id=https%3A%2F%2Fapi.semanticscholar.org%2FCorpusID%3A8681078%23id-name%3DS2CID&amp;rft&#95;id=info%3Adoi%2F10.1109%2FTSMCA.2011.2116000&amp;rft.aulast=Chanel&amp;rft.aufirst=Guillaume&amp;rft.au=Rebetez%2C+Cyril&amp;rft.au=Betrancourt%2C+Mireille&amp;rft.au=Pun%2C+Thierry&amp;rfr&#95;id=info%3Asid%2Fen.wikipedia.org%3ADynamic+game+difficulty+balancing" class="Z3988"></span></span>
+</li>
+<li id="cite&#95;note-barry19810511-13"><span class="mw-cite-backlink"><b><a href="#cite_ref-barry19810511_13-0">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1333433106" /><cite id="CITEREFBarry1981" class="citation magazine cs1">Barry, Tim (1981-05-11). <a rel="nofollow" class="external text" href="https://books.google.com/books?id=Cz4EAAAAMBAJ&amp;pg=PA11">"In Search of the Ultimate Computer Game"</a>. <i>InfoWorld</i>. pp.&#160;11, 48. <a rel="nofollow" class="external text" href="https://web.archive.org/web/20230214170815/https://books.google.com/books?id=Cz4EAAAAMBAJ&amp;pg=PA11">Archived</a> from the original on 2023-02-14<span class="reference-accessdate">. Retrieved <span class="nowrap">2019-04-17</span></span>.</cite><span title="ctx&#95;ver=Z39.88-2004&amp;rft&#95;val&#95;fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=InfoWorld&amp;rft.atitle=In+Search+of+the+Ultimate+Computer+Game&amp;rft.pages=11%2C+48&amp;rft.date=1981-05-11&amp;rft.aulast=Barry&amp;rft.aufirst=Tim&amp;rft&#95;id=https%3A%2F%2Fbooks.google.com%2Fbooks%3Fid%3DCz4EAAAAMBAJ%26pg%3DPA11&amp;rfr&#95;id=info%3Asid%2Fen.wikipedia.org%3ADynamic+game+difficulty+balancing" class="Z3988"></span></span>
+</li>
+<li id="cite&#95;note-14"><span class="mw-cite-backlink"><b><a href="#cite_ref-14">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1333433106" /><cite id="CITEREFA.&#95;RollingsE.&#95;Adams" class="citation book cs1">A. Rollings; E. Adams. <a rel="nofollow" class="external text" href="https://web.archive.org/web/20210501153552/http://jnoodle.com/lcgc/GamePlay.pdf">"Gameplay"</a> <span class="cs1-format">(PDF)</span>. <i>Andrew Rollings and Ernest Adams on Game Design</i>. New Riders Press. Archived from <a rel="nofollow" class="external text" href="http://jnoodle.com/lcgc/GamePlay.pdf">the original</a> <span class="cs1-format">(PDF)</span> on 2021-05-01<span class="reference-accessdate">. Retrieved <span class="nowrap">2014-12-23</span></span>.</cite><span title="ctx&#95;ver=Z39.88-2004&amp;rft&#95;val&#95;fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.atitle=Gameplay&amp;rft.btitle=Andrew+Rollings+and+Ernest+Adams+on+Game+Design&amp;rft.pub=New+Riders+Press&amp;rft.au=A.+Rollings&amp;rft.au=E.+Adams&amp;rft&#95;id=http%3A%2F%2Fjnoodle.com%2Flcgc%2FGamePlay.pdf&amp;rfr&#95;id=info%3Asid%2Fen.wikipedia.org%3ADynamic+game+difficulty+balancing" class="Z3988"></span></span>
+</li>
+<li id="cite&#95;note-bateman198411-15"><span class="mw-cite-backlink"><b><a href="#cite_ref-bateman198411_15-0">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1333433106" /><cite id="CITEREFBateman,&#95;Selby1984" class="citation news cs1">Bateman, Selby (November 1984). <a rel="nofollow" class="external text" href="https://archive.org/stream/1984-11-computegazette/Compute_Gazette_Issue_17_1984_Nov#page/n53/mode/2up">"Free Fall Associates: The Designers Behind Archon and Archon II: Adept"</a>. <i>Compute!'s Gazette</i>. p.&#160;54<span class="reference-accessdate">. Retrieved <span class="nowrap">6 July</span> 2014</span>.</cite><span title="ctx&#95;ver=Z39.88-2004&amp;rft&#95;val&#95;fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Compute%21%27s+Gazette&amp;rft.atitle=Free+Fall+Associates%3A+The+Designers+Behind+Archon+and+Archon+II%3A+Adept&amp;rft.pages=54&amp;rft.date=1984-11&amp;rft.au=Bateman%2C+Selby&amp;rft&#95;id=https%3A%2F%2Farchive.org%2Fstream%2F1984-11-computegazette%2FCompute&#95;Gazette&#95;Issue&#95;17&#95;1984&#95;Nov%23page%2Fn53%2Fmode%2F2up&amp;rfr&#95;id=info%3Asid%2Fen.wikipedia.org%3ADynamic+game+difficulty+balancing" class="Z3988"></span></span>
+</li>
+<li id="cite&#95;note-cgw199208-16"><span class="mw-cite-backlink"><b><a href="#cite_ref-cgw199208_16-0">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1333433106" /><cite class="citation magazine cs1"><a rel="nofollow" class="external text" href="http://www.cgwmuseum.org/galleries/index.php?year=1992&amp;pub=2&amp;id=97">"Designing People..."</a> <i>Computer Gaming World</i>. August 1992. pp.&#160;<span class="nowrap">48–</span>54. <a rel="nofollow" class="external text" href="https://web.archive.org/web/20140702235249/http://www.cgwmuseum.org/galleries/index.php?year=1992&amp;pub=2&amp;id=97">Archived</a> from the original on 2 July 2014<span class="reference-accessdate">. Retrieved <span class="nowrap">3 July</span> 2014</span>.</cite><span title="ctx&#95;ver=Z39.88-2004&amp;rft&#95;val&#95;fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Computer+Gaming+World&amp;rft.atitle=Designing+People...&amp;rft.pages=48-54&amp;rft.date=1992-08&amp;rft&#95;id=http%3A%2F%2Fwww.cgwmuseum.org%2Fgalleries%2Findex.php%3Fyear%3D1992%26pub%3D2%26id%3D97&amp;rfr&#95;id=info%3Asid%2Fen.wikipedia.org%3ADynamic+game+difficulty+balancing" class="Z3988"></span></span>
+</li>
+<li id="cite&#95;note-17"><span class="mw-cite-backlink"><b><a href="#cite_ref-17">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1333433106" /><cite id="CITEREFGavin,&#95;Andy2011" class="citation web cs1"><a href="/wiki/Andy_Gavin" title="Andy Gavin">Gavin, Andy</a> (2011-02-07). <a rel="nofollow" class="external text" href="http://all-things-andy-gavin.com/2011/02/07/making-crash-bandicoot-part-6/">"Making Crash Bandicoot – part 6"</a>. All Things Andy Gavin. <a rel="nofollow" class="external text" href="https://web.archive.org/web/20110707112838/http://all-things-andy-gavin.com/2011/02/07/making-crash-bandicoot-part-6/">Archived</a> from the original on 2011-07-07<span class="reference-accessdate">. Retrieved <span class="nowrap">2016-09-03</span></span>.</cite><span title="ctx&#95;ver=Z39.88-2004&amp;rft&#95;val&#95;fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=Making+Crash+Bandicoot+%E2%80%93+part+6&amp;rft.pub=All+Things+Andy+Gavin&amp;rft.date=2011-02-07&amp;rft.au=Gavin%2C+Andy&amp;rft&#95;id=http%3A%2F%2Fall-things-andy-gavin.com%2F2011%2F02%2F07%2Fmaking-crash-bandicoot-part-6%2F&amp;rfr&#95;id=info%3Asid%2Fen.wikipedia.org%3ADynamic+game+difficulty+balancing" class="Z3988"></span></span>
+</li>
+<li id="cite&#95;note-18"><span class="mw-cite-backlink"><b><a href="#cite_ref-18">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1333433106" /><cite class="citation web cs1"><a rel="nofollow" class="external text" href="https://www.ign.com/wikis/spyro-year-of-the-dragon/PS1_Bugs">"PS1 Bugs - Spyro 3 Guide"</a>. <i>IGN</i>. 29 October 2018.</cite><span title="ctx&#95;ver=Z39.88-2004&amp;rft&#95;val&#95;fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=IGN&amp;rft.atitle=PS1+Bugs+-+Spyro+3+Guide&amp;rft.date=2018-10-29&amp;rft&#95;id=https%3A%2F%2Fwww.ign.com%2Fwikis%2Fspyro-year-of-the-dragon%2FPS1&#95;Bugs&amp;rfr&#95;id=info%3Asid%2Fen.wikipedia.org%3ADynamic+game+difficulty+balancing" class="Z3988"></span></span>
+</li>
+<li id="cite&#95;note-19"><span class="mw-cite-backlink"><b><a href="#cite_ref-19">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1333433106" /><cite class="citation web cs1"><a rel="nofollow" class="external text" href="https://www.youtube.com/watch?v=6CnfnhTBWX0">"How Ratchet and Clank secretly changes difficulty"</a>. 10 December 2023.</cite><span title="ctx&#95;ver=Z39.88-2004&amp;rft&#95;val&#95;fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=How+Ratchet+and+Clank+secretly+changes+difficulty&amp;rft.date=2023-12-10&amp;rft&#95;id=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3D6CnfnhTBWX0&amp;rfr&#95;id=info%3Asid%2Fen.wikipedia.org%3ADynamic+game+difficulty+balancing" class="Z3988"></span></span>
+</li>
+<li id="cite&#95;note-20"><span class="mw-cite-backlink"><b><a href="#cite_ref-20">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1333433106" /><cite id="CITEREFMonki2006" class="citation web cs1">Monki (2006-05-22). <a rel="nofollow" class="external text" href="http://www.aintitcool.com/display.cgi?id=23404">"Monki interviews Tom Mustaine of Ritual about SiN: Emergence"</a>. <a href="/wiki/Ain%27t_It_Cool_News" title="Ain&#39;t It Cool News">Ain't It Cool News</a>. <a rel="nofollow" class="external text" href="https://web.archive.org/web/20060823190524/http://www.aintitcool.com/display.cgi?id=23404">Archived</a> from the original on 2006-08-23<span class="reference-accessdate">. Retrieved <span class="nowrap">2006-08-24</span></span>.</cite><span title="ctx&#95;ver=Z39.88-2004&amp;rft&#95;val&#95;fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=Monki+interviews+Tom+Mustaine+of+Ritual+about+SiN%3A+Emergence&amp;rft.pub=Ain%27t+It+Cool+News&amp;rft.date=2006-05-22&amp;rft.au=Monki&amp;rft&#95;id=http%3A%2F%2Fwww.aintitcool.com%2Fdisplay.cgi%3Fid%3D23404&amp;rfr&#95;id=info%3Asid%2Fen.wikipedia.org%3ADynamic+game+difficulty+balancing" class="Z3988"></span></span>
+</li>
+<li id="cite&#95;note-21"><span class="mw-cite-backlink"><b><a href="#cite_ref-21">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1333433106" /><cite class="citation book cs1"><i>Resident Evil 4: The Official Strategy Guide</i>. Future Press. 4 November 2005.</cite><span title="ctx&#95;ver=Z39.88-2004&amp;rft&#95;val&#95;fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Resident+Evil+4%3A+The+Official+Strategy+Guide&amp;rft.pub=Future+Press&amp;rft.date=2005-11-04&amp;rfr&#95;id=info%3Asid%2Fen.wikipedia.org%3ADynamic+game+difficulty+balancing" class="Z3988"></span></span>
+</li>
+<li id="cite&#95;note-22"><span class="mw-cite-backlink"><b><a href="#cite_ref-22">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1333433106" /><cite class="citation web cs1"><a rel="nofollow" class="external text" href="https://web.archive.org/web/20090327034239/http://www.l4d.com/info.html">"Left 4 Dead"</a>. <a href="/wiki/Valve_Corporation" title="Valve Corporation">Valve</a>. Archived from <a rel="nofollow" class="external text" href="http://www.l4d.com/info.html">the original</a> on 2009-03-27.</cite><span title="ctx&#95;ver=Z39.88-2004&amp;rft&#95;val&#95;fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=Left+4+Dead&amp;rft.pub=Valve&amp;rft&#95;id=http%3A%2F%2Fwww.l4d.com%2Finfo.html&amp;rfr&#95;id=info%3Asid%2Fen.wikipedia.org%3ADynamic+game+difficulty+balancing" class="Z3988"></span></span>
+</li>
+<li id="cite&#95;note-23"><span class="mw-cite-backlink"><b><a href="#cite_ref-23">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1333433106" /><cite class="citation web cs1"><a rel="nofollow" class="external text" href="http://www.left4dead411.com/left-4-dead-preview-pg2">"Left 4 Dead Hands-on Preview"</a>. <i>Left 4 Dead 411</i>. <a rel="nofollow" class="external text" href="https://web.archive.org/web/20120220154533/http://www.left4dead411.com/left-4-dead-preview-pg2/">Archived</a> from the original on 2012-02-20<span class="reference-accessdate">. Retrieved <span class="nowrap">2009-03-16</span></span>.</cite><span title="ctx&#95;ver=Z39.88-2004&amp;rft&#95;val&#95;fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=Left+4+Dead+411&amp;rft.atitle=Left+4+Dead+Hands-on+Preview&amp;rft&#95;id=http%3A%2F%2Fwww.left4dead411.com%2Fleft-4-dead-preview-pg2&amp;rfr&#95;id=info%3Asid%2Fen.wikipedia.org%3ADynamic+game+difficulty+balancing" class="Z3988"></span></span>
+</li>
+<li id="cite&#95;note-24"><span class="mw-cite-backlink"><b><a href="#cite_ref-24">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1333433106" /><cite id="CITEREFNewell2008" class="citation web cs1">Newell, Gabe (21 November 2008). <a rel="nofollow" class="external text" href="http://www.next-gen.biz/opinion/gabe-newell-writes-edge">"Gabe Newell Writes for Edge"</a>. edge-online.com<span class="reference-accessdate">. Retrieved <span class="nowrap">2008-11-22</span></span>.</cite><span title="ctx&#95;ver=Z39.88-2004&amp;rft&#95;val&#95;fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=Gabe+Newell+Writes+for+Edge&amp;rft.pub=edge-online.com&amp;rft.date=2008-11-21&amp;rft.aulast=Newell&amp;rft.aufirst=Gabe&amp;rft&#95;id=http%3A%2F%2Fwww.next-gen.biz%2Fopinion%2Fgabe-newell-writes-edge&amp;rfr&#95;id=info%3Asid%2Fen.wikipedia.org%3ADynamic+game+difficulty+balancing" class="Z3988"></span><span class="cs1-maint citation-comment"><code class="cs1-code">{{<a href="/wiki/Template:Cite_web" title="Template:Cite web">cite web</a>}}</code>:  CS1 maint: deprecated archival service (<a href="/wiki/Category:CS1_maint:_deprecated_archival_service" title="Category:CS1 maint: deprecated archival service">link</a>)</span></span>
+</li>
+<li id="cite&#95;note-25"><span class="mw-cite-backlink"><b><a href="#cite_ref-25">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1333433106" /><cite class="citation web cs1"><a rel="nofollow" class="external text" href="http://www.gamespot.com/xbox360/sports/maddennfl09/news.html?sid=6189938&amp;om_act=convert&amp;om_clk=newsfeatures&amp;tag=newsfeatures;title;1:">"<span class="cs1-kern-left"></span>"Madden NFL 09 Preseason Report", April 25, 2008"</a>. <a rel="nofollow" class="external text" href="https://web.archive.org/web/20230214170834/https://www.gamespot.com/games/madden-nfl-09/news/">Archived</a> from the original on February 14, 2023<span class="reference-accessdate">. Retrieved <span class="nowrap">May 25,</span> 2015</span>.</cite><span title="ctx&#95;ver=Z39.88-2004&amp;rft&#95;val&#95;fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=%22Madden+NFL+09+Preseason+Report%22%2C+April+25%2C+2008&amp;rft&#95;id=http%3A%2F%2Fwww.gamespot.com%2Fxbox360%2Fsports%2Fmaddennfl09%2Fnews.html%3Fsid%3D6189938%26om&#95;act%3Dconvert%26om&#95;clk%3Dnewsfeatures%26tag%3Dnewsfeatures%3Btitle%3B1%3A&amp;rfr&#95;id=info%3Asid%2Fen.wikipedia.org%3ADynamic+game+difficulty+balancing" class="Z3988"></span></span>
+</li>
+<li id="cite&#95;note-26"><span class="mw-cite-backlink"><b><a href="#cite_ref-26">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1333433106" /><cite class="citation web cs1"><a rel="nofollow" class="external text" href="http://www.gamespot.com/xbox360/sports/maddennfl09/news.html?sid=6191473&amp;mode=previews:">"<span class="cs1-kern-left"></span>"Madden NFL 09 First Hands On", May 22, 2008"</a>. <a rel="nofollow" class="external text" href="https://web.archive.org/web/20230214170835/https://www.gamespot.com/games/madden-nfl-09/news/">Archived</a> from the original on February 14, 2023<span class="reference-accessdate">. Retrieved <span class="nowrap">May 25,</span> 2015</span>.</cite><span title="ctx&#95;ver=Z39.88-2004&amp;rft&#95;val&#95;fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=%22Madden+NFL+09+First+Hands+On%22%2C+May+22%2C+2008&amp;rft&#95;id=http%3A%2F%2Fwww.gamespot.com%2Fxbox360%2Fsports%2Fmaddennfl09%2Fnews.html%3Fsid%3D6191473%26mode%3Dpreviews%3A&amp;rfr&#95;id=info%3Asid%2Fen.wikipedia.org%3ADynamic+game+difficulty+balancing" class="Z3988"></span></span>
+</li>
+<li id="cite&#95;note-27"><span class="mw-cite-backlink"><b><a href="#cite_ref-27">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1333433106" /><cite id="CITEREFValentine" class="citation news cs1">Valentine, Rebekah. <a rel="nofollow" class="external text" href="https://www.gamesindustry.biz/articles/2020-11-11-ea-faces-yet-another-class-action-lawsuit-over-alleged-use-of-dynamic-difficulty-adjustment">"EA faces yet another class-action lawsuit connected to loot boxes"</a>. <i>GamesIndustry.biz</i>. <a rel="nofollow" class="external text" href="https://web.archive.org/web/20201112004252/https://www.gamesindustry.biz/articles/2020-11-11-ea-faces-yet-another-class-action-lawsuit-over-alleged-use-of-dynamic-difficulty-adjustment">Archived</a> from the original on 2020-11-12<span class="reference-accessdate">. Retrieved <span class="nowrap">12 November</span> 2020</span>.</cite><span title="ctx&#95;ver=Z39.88-2004&amp;rft&#95;val&#95;fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=GamesIndustry.biz&amp;rft.atitle=EA+faces+yet+another+class-action+lawsuit+connected+to+loot+boxes&amp;rft.aulast=Valentine&amp;rft.aufirst=Rebekah&amp;rft&#95;id=https%3A%2F%2Fwww.gamesindustry.biz%2Farticles%2F2020-11-11-ea-faces-yet-another-class-action-lawsuit-over-alleged-use-of-dynamic-difficulty-adjustment&amp;rfr&#95;id=info%3Asid%2Fen.wikipedia.org%3ADynamic+game+difficulty+balancing" class="Z3988"></span></span>
+</li>
+<li id="cite&#95;note-28"><span class="mw-cite-backlink"><b><a href="#cite_ref-28">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1333433106" /><cite id="CITEREFHetfeld2020" class="citation news cs1">Hetfeld, Malindy (12 November 2020). <a rel="nofollow" class="external text" href="https://www.pcgamer.com/class-action-lawsuit-claims-eas-dynamic-difficulty-tech-encourages-loot-box-spending/">"Class action lawsuit claims EA's dynamic difficulty tech encourages loot box spending"</a>. <i>PC Gamer</i>. <a rel="nofollow" class="external text" href="https://web.archive.org/web/20201112215303/https://www.pcgamer.com/class-action-lawsuit-claims-eas-dynamic-difficulty-tech-encourages-loot-box-spending/">Archived</a> from the original on 12 November 2020<span class="reference-accessdate">. Retrieved <span class="nowrap">12 November</span> 2020</span>.</cite><span title="ctx&#95;ver=Z39.88-2004&amp;rft&#95;val&#95;fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=PC+Gamer&amp;rft.atitle=Class+action+lawsuit+claims+EA%27s+dynamic+difficulty+tech+encourages+loot+box+spending&amp;rft.date=2020-11-12&amp;rft.aulast=Hetfeld&amp;rft.aufirst=Malindy&amp;rft&#95;id=https%3A%2F%2Fwww.pcgamer.com%2Fclass-action-lawsuit-claims-eas-dynamic-difficulty-tech-encourages-loot-box-spending%2F&amp;rfr&#95;id=info%3Asid%2Fen.wikipedia.org%3ADynamic+game+difficulty+balancing" class="Z3988"></span></span>
+</li>
+<li id="cite&#95;note-29"><span class="mw-cite-backlink"><b><a href="#cite_ref-29">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1333433106" /><cite id="CITEREFMcAloon" class="citation news cs1">McAloon, Alissa. <a rel="nofollow" class="external text" href="https://www.gamedeveloper.com/game-platforms/class-action-lawsuit-accuses-ea-of-changing-game-difficulty-to-push-loot-boxes">"Class action lawsuit accuses EA of changing game difficulty to push loot boxes"</a>. <i>www.gamasutra.com</i>. <a rel="nofollow" class="external text" href="https://web.archive.org/web/20201111234847/https://www.gamasutra.com/view/news/373594/Class_action_lawsuit_accuses_EA_of_quietly_changing_game_difficulty_to_push_loot_boxes.php">Archived</a> from the original on 11 November 2020<span class="reference-accessdate">. Retrieved <span class="nowrap">12 November</span> 2020</span>.</cite><span title="ctx&#95;ver=Z39.88-2004&amp;rft&#95;val&#95;fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=www.gamasutra.com&amp;rft.atitle=Class+action+lawsuit+accuses+EA+of+changing+game+difficulty+to+push+loot+boxes&amp;rft.aulast=McAloon&amp;rft.aufirst=Alissa&amp;rft&#95;id=https%3A%2F%2Fwww.gamedeveloper.com%2Fgame-platforms%2Fclass-action-lawsuit-accuses-ea-of-changing-game-difficulty-to-push-loot-boxes&amp;rfr&#95;id=info%3Asid%2Fen.wikipedia.org%3ADynamic+game+difficulty+balancing" class="Z3988"></span></span>
+</li>
+<li id="cite&#95;note-30"><span class="mw-cite-backlink"><b><a href="#cite_ref-30">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1333433106" /><cite id="CITEREFFitzgerald2021" class="citation web cs1">Fitzgerald, Jack (2021-02-11). <a rel="nofollow" class="external text" href="https://storage.courtlistener.com/recap/gov.uscourts.cand.368570/gov.uscourts.cand.368570.22.0.pdf">"Notice of Voluntary Dismissal of Action Without Prejudice"</a> <span class="cs1-format">(PDF)</span>. <i>RECAP Archive</i>.</cite><span title="ctx&#95;ver=Z39.88-2004&amp;rft&#95;val&#95;fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=RECAP+Archive&amp;rft.atitle=Notice+of+Voluntary+Dismissal+of+Action+Without+Prejudice&amp;rft.date=2021-02-11&amp;rft.aulast=Fitzgerald&amp;rft.aufirst=Jack&amp;rft&#95;id=https%3A%2F%2Fstorage.courtlistener.com%2Frecap%2Fgov.uscourts.cand.368570%2Fgov.uscourts.cand.368570.22.0.pdf&amp;rfr&#95;id=info%3Asid%2Fen.wikipedia.org%3ADynamic+game+difficulty+balancing" class="Z3988"></span></span>
+</li>
+</ol></div>
+<div class="mw-heading mw-heading2"><h2 id="Further_reading">Further reading</h2><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Dynamic_game_difficulty_balancing&amp;action=edit&amp;section=8" title="Edit section: Further reading"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></div>
+<ul><li><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1333433106" /><cite id="CITEREFHunicke2005" class="citation conference cs1">Hunicke, Robin (2005). "The case for dynamic difficulty adjustment in games". <i>Proceedings of the 2005 ACM SIGCHI International Conference on Advances in computer entertainment technology</i>. New York: ACM. pp.&#160;<span class="nowrap">429–</span>433. <a href="/wiki/Doi_(identifier)" class="mw-redirect" title="Doi (identifier)">doi</a>:<a rel="nofollow" class="external text" href="https://doi.org/10.1145%2F1178477.1178573">10.1145/1178477.1178573</a>.</cite><span title="ctx&#95;ver=Z39.88-2004&amp;rft&#95;val&#95;fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=conference&amp;rft.atitle=The+case+for+dynamic+difficulty+adjustment+in+games&amp;rft.btitle=Proceedings+of+the+2005+ACM+SIGCHI+International+Conference+on+Advances+in+computer+entertainment+technology&amp;rft.place=New+York&amp;rft.pages=429-433&amp;rft.pub=ACM&amp;rft.date=2005&amp;rft&#95;id=info%3Adoi%2F10.1145%2F1178477.1178573&amp;rft.aulast=Hunicke&amp;rft.aufirst=Robin&amp;rfr&#95;id=info%3Asid%2Fen.wikipedia.org%3ADynamic+game+difficulty+balancing" class="Z3988"></span></li>
+<li><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1333433106" /><cite id="CITEREFByrne2004" class="citation book cs1">Byrne, Edward (2004). <a rel="nofollow" class="external text" href="https://archive.org/details/gameleveldesign0000byrn/page/74"><i>Game Level Design</i></a>. Charles River Media. p.&#160;<a rel="nofollow" class="external text" href="https://archive.org/details/gameleveldesign0000byrn/page/74">74</a>. <a href="/wiki/ISBN_(identifier)" class="mw-redirect" title="ISBN (identifier)">ISBN</a>&#160;<a href="/wiki/Special:BookSources/1-58450-369-6" title="Special:BookSources/1-58450-369-6"><bdi>1-58450-369-6</bdi></a>.</cite><span title="ctx&#95;ver=Z39.88-2004&amp;rft&#95;val&#95;fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Game+Level+Design&amp;rft.pages=74&amp;rft.pub=Charles+River+Media&amp;rft.date=2004&amp;rft.isbn=1-58450-369-6&amp;rft.aulast=Byrne&amp;rft.aufirst=Edward&amp;rft&#95;id=https%3A%2F%2Farchive.org%2Fdetails%2Fgameleveldesign0000byrn%2Fpage%2F74&amp;rfr&#95;id=info%3Asid%2Fen.wikipedia.org%3ADynamic+game+difficulty+balancing" class="Z3988"></span></li>
+<li><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1333433106" /><cite id="CITEREFChen2006" class="citation web cs1">Chen, Jenova (2006). <a rel="nofollow" class="external text" href="http://www.jenovachen.com/flowingames/abstract.htm">"Flow in Games"</a>.</cite><span title="ctx&#95;ver=Z39.88-2004&amp;rft&#95;val&#95;fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=Flow+in+Games&amp;rft.date=2006&amp;rft.aulast=Chen&amp;rft.aufirst=Jenova&amp;rft&#95;id=http%3A%2F%2Fwww.jenovachen.com%2Fflowingames%2Fabstract.htm&amp;rfr&#95;id=info%3Asid%2Fen.wikipedia.org%3ADynamic+game+difficulty+balancing" class="Z3988"></span></li></ul>
+<div class="mw-heading mw-heading2"><h2 id="External_links">External links</h2><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Dynamic_game_difficulty_balancing&amp;action=edit&amp;section=9" title="Edit section: External links"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></div>
+<ul><li><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1333433106" /><cite class="citation web cs1"><a rel="nofollow" class="external text" href="https://web.archive.org/web/20100813151045/http://www.gameontology.org/index.php/Dynamic_Difficulty_Adjustment">"Dynamic Difficulty Adjustment"</a>. <i>Game Ontology Wiki</i>. Archived from <a rel="nofollow" class="external text" href="http://www.gameontology.org/index.php/Dynamic_Difficulty_Adjustment">the original</a> on 2010-08-13.</cite><span title="ctx&#95;ver=Z39.88-2004&amp;rft&#95;val&#95;fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=Game+Ontology+Wiki&amp;rft.atitle=Dynamic+Difficulty+Adjustment&amp;rft&#95;id=http%3A%2F%2Fwww.gameontology.org%2Findex.php%2FDynamic&#95;Difficulty&#95;Adjustment&amp;rfr&#95;id=info%3Asid%2Fen.wikipedia.org%3ADynamic+game+difficulty+balancing" class="Z3988"></span></li></ul>
+<!-- 
+NewPP limit report
+Parsed by mw‐web.codfw.main‐5f848bdcd5‐9ll65
+Cached time: 20260417205834
+Cache expiry: 2592000
+Cache expiry source: Module:Citation/CS1 (os.date(%Y))
+Reduced expiry: false
+Complications: [vary‐revision‐sha1, show‐toc]
+CPU time usage: 0.332 seconds
+Real time usage: 0.385 seconds
+Preprocessor visited node count: 1743/1000000
+Revision size: 28562/2097152 bytes
+Post‐expand include size: 62265/2097152 bytes
+Template argument size: 1663/2097152 bytes
+Highest expansion depth: 11/100
+Expensive parser function count: 1/500
+Unstrip recursion depth: 1/20
+Unstrip post‐expand size: 111626/5000000 bytes
+Lua time usage: 0.215/10.000 seconds
+Lua memory usage: 6277728/52428800 bytes
+Number of Wikibase entities loaded: 0/500
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%  345.238      1 -total
+ 68.01%  234.800      1 Template:Reflist
+ 21.61%   74.617      3 Template:Cite_magazine
+ 18.11%   62.518     12 Template:Cite_web
+ 14.86%   51.310      1 Template:Short_description
+ 14.22%   49.091     10 Template:Cite_book
+  8.77%   30.268      2 Template:Pagetype
+  5.19%   17.913      1 Template:Blockquote
+  4.72%   16.291      4 Template:Cite_news
+  4.46%   15.399      1 Template:R
+-->
+
+<!-- Render ID 32674637-3aa0-11f1-8f69-8d334d09bd66 -->
+
+<!-- Saved in parser cache with key enwiki:pcache:22006984:|#|:idhash:canonical and timestamp 20260417205834 and revision id 1348823350. Rendering was triggered because: page_view
+ -->
+</div><noscript><img src="https://en.wikipedia.org/wiki/Special:CentralAutoLogin/start?useformat=desktop&amp;type=1x1&amp;usesul3=1" alt="" width="1" height="1" style="border: none; position: absolute;"></noscript>
+<div class="printfooter" data-nosnippet="">Retrieved from "<a dir="ltr" href="https://en.wikipedia.org/w/index.php?title=Dynamic_game_difficulty_balancing&amp;oldid=1348823350">https://en.wikipedia.org/w/index.php?title=Dynamic_game_difficulty_balancing&amp;oldid=1348823350</a>"</div></div>
+					<div id="catlinks" class="catlinks" data-mw-interface=""><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/wiki/Help:Category" title="Help:Category">Category</a>: <ul><li><a href="/wiki/Category:Video_game_terminology" title="Category:Video game terminology">Video game terminology</a></li></ul></div><div id="mw-hidden-catlinks" class="mw-hidden-catlinks mw-hidden-cats-hidden">Hidden categories: <ul><li><a href="/wiki/Category:CS1_maint:_location_missing_publisher" title="Category:CS1 maint: location missing publisher">CS1 maint: location missing publisher</a></li><li><a href="/wiki/Category:Webarchive_template_wayback_links" title="Category:Webarchive template wayback links">Webarchive template wayback links</a></li><li><a href="/wiki/Category:CS1_maint:_deprecated_archival_service" title="Category:CS1 maint: deprecated archival service">CS1 maint: deprecated archival service</a></li><li><a href="/wiki/Category:Articles_with_short_description" title="Category:Articles with short description">Articles with short description</a></li><li><a href="/wiki/Category:Short_description_is_different_from_Wikidata" title="Category:Short description is different from Wikidata">Short description is different from Wikidata</a></li></ul></div></div>
+				</div>
+			</main>
+			
+		</div>
+		<div class="mw-footer-container">
+			
+<footer id="footer" class="mw-footer" >
+	<ul id="footer-info">
+	<li id="footer-info-lastmod"> This page was last edited on 14 April 2026, at 13:07<span class="anonymous-show">&#160;(UTC)</span>.</li>
+	<li id="footer-info-copyright">Text is available under the <a href="/wiki/Wikipedia:Text_of_the_Creative_Commons_Attribution-ShareAlike_4.0_International_License" title="Wikipedia:Text of the Creative Commons Attribution-ShareAlike 4.0 International License">Creative Commons Attribution-ShareAlike 4.0 License</a>;
+additional terms may apply. By using this site, you agree to the <a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Terms_of_Use" class="extiw" title="foundation:Special:MyLanguage/Policy:Terms of Use">Terms of Use</a> and <a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Privacy_policy" class="extiw" title="foundation:Special:MyLanguage/Policy:Privacy policy">Privacy Policy</a>. Wikipedia® is a registered trademark of the <a rel="nofollow" class="external text" href="https://wikimediafoundation.org/">Wikimedia Foundation, Inc.</a>, a non-profit organization.</li>
+</ul>
+
+	<ul id="footer-places">
+	<li id="footer-places-privacy"><a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Privacy_policy">Privacy policy</a></li>
+	<li id="footer-places-about"><a href="/wiki/Wikipedia:About">About Wikipedia</a></li>
+	<li id="footer-places-disclaimers"><a href="/wiki/Wikipedia:General_disclaimer">Disclaimers</a></li>
+	<li id="footer-places-contact"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us">Contact Wikipedia</a></li>
+	<li id="footer-places-legal-safety-contacts"><a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Legal:Wikimedia_Foundation_Legal_and_Safety_Contact_Information">Legal &amp; safety contacts</a></li>
+	<li id="footer-places-wm-codeofconduct"><a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Universal_Code_of_Conduct">Code of Conduct</a></li>
+	<li id="footer-places-developers"><a href="https://developer.wikimedia.org">Developers</a></li>
+	<li id="footer-places-statslink"><a href="https://stats.wikimedia.org/#/en.wikipedia.org">Statistics</a></li>
+	<li id="footer-places-cookiestatement"><a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Cookie_statement">Cookie statement</a></li>
+	<li id="footer-places-mobileview"><a href="//en.wikipedia.org/w/index.php?title=Dynamic_game_difficulty_balancing&amp;mobileaction=toggle_view_mobile" class="noprint stopMobileRedirectToggle">Mobile view</a></li>
+</ul>
+
+	<ul id="footer-icons" class="noprint">
+	<li id="footer-copyrightico"><a href="https://www.wikimedia.org/" class="cdx-button cdx-button--fake-button cdx-button--size-large cdx-button--fake-button--enabled"><picture><source media="(min-width: 500px)" srcset="/static/images/footer/wikimedia-button.svg" width="84" height="29"><img src="/static/images/footer/wikimedia.svg" width="25" height="25" alt="Wikimedia Foundation" lang="en" loading="lazy"></picture></a></li>
+	<li id="footer-poweredbyico"><a href="https://www.mediawiki.org/" class="cdx-button cdx-button--fake-button cdx-button--size-large cdx-button--fake-button--enabled"><picture><source media="(min-width: 500px)" srcset="/w/resources/assets/poweredby_mediawiki.svg" width="88" height="31"><img src="/w/resources/assets/mediawiki_compact.svg" alt="Powered by MediaWiki" lang="en" width="25" height="25" loading="lazy"></picture></a></li>
+</ul>
+
+</footer>
+
+		</div>
+	</div> 
+</div> 
+<div class="vector-header-container vector-sticky-header-container no-font-mode-scale">
+	<div id="vector-sticky-header" class="vector-sticky-header">
+		<div class="vector-sticky-header-start">
+			<div class="vector-sticky-header-icon-start vector-button-flush-left" aria-hidden="true">
+				<button class="cdx-button cdx-button--weight-quiet cdx-button--icon-only vector-sticky-header-search-toggle" tabindex="-1" data-event-name="ui.vector-sticky-search-form.icon"><span class="vector-icon mw-ui-icon-search mw-ui-icon-wikimedia-search"></span>
+
+<span>Search</span>
+			</button>
+		</div>
+			
+		<div role="search" class="vector-search-box-vue  vector-search-box-show-thumbnail vector-search-box">
+			<div class="vector-typeahead-search-container">
+				<div class="cdx-typeahead-search cdx-typeahead-search--show-thumbnail">
+					<form action="/w/index.php" id="vector-sticky-search-form" class="cdx-search-input cdx-search-input--has-end-button">
+						<div  class="cdx-search-input__input-wrapper"  data-search-loc="header-moved">
+							<div class="cdx-text-input cdx-text-input--has-start-icon">
+								<input
+									class="cdx-text-input__input mw-searchInput" autocomplete="off"
+									
+									type="search" name="search" placeholder="Search Wikipedia">
+								<span class="cdx-text-input__icon cdx-text-input__start-icon"></span>
+							</div>
+							<input type="hidden" name="title" value="Special:Search">
+						</div>
+						<button class="cdx-button cdx-search-input__end-button">Search</button>
+					</form>
+				</div>
+			</div>
+		</div>
+		<div class="vector-sticky-header-context-bar">
+				<nav aria-label="Contents" class="vector-toc-landmark">
+						
+					<div id="vector-sticky-header-toc" class="vector-dropdown mw-portlet mw-portlet-sticky-header-toc vector-sticky-header-toc vector-button-flush-left"  >
+						<input type="checkbox" id="vector-sticky-header-toc-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-vector-sticky-header-toc" class="vector-dropdown-checkbox "  aria-label="Toggle the table of contents"  >
+						<label id="vector-sticky-header-toc-label" for="vector-sticky-header-toc-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only " aria-hidden="true"  ><span class="vector-icon mw-ui-icon-listBullet mw-ui-icon-wikimedia-listBullet"></span>
+
+<span class="vector-dropdown-label-text">Toggle the table of contents</span>
+						</label>
+						<div class="vector-dropdown-content">
+					
+						<div id="vector-sticky-header-toc-unpinned-container" class="vector-unpinned-container">
+						</div>
+					
+						</div>
+					</div>
+			</nav>
+				<div class="vector-sticky-header-context-bar-primary" aria-hidden="true" ><span lang="en" dir="ltr"><span class="mw-page-title-main">Dynamic game difficulty balancing</span></span></div>
+			</div>
+		</div>
+		<div class="vector-sticky-header-end" aria-hidden="true">
+			<div class="vector-sticky-header-icons">
+				<a href="#" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" id="ca-talk-sticky-header" tabindex="-1" data-event-name="talk-sticky-header"><span class="vector-icon mw-ui-icon-speechBubbles mw-ui-icon-wikimedia-speechBubbles"></span>
+
+<span></span>
+			</a>
+			<a href="#" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" id="ca-subject-sticky-header" tabindex="-1" data-event-name="subject-sticky-header"><span class="vector-icon mw-ui-icon-article mw-ui-icon-wikimedia-article"></span>
+
+<span></span>
+			</a>
+			<a href="#" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" id="ca-history-sticky-header" tabindex="-1" data-event-name="history-sticky-header"><span class="vector-icon mw-ui-icon-wikimedia-history mw-ui-icon-wikimedia-wikimedia-history"></span>
+
+<span></span>
+			</a>
+			<a href="#" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only mw-watchlink" id="ca-watchstar-sticky-header" tabindex="-1" data-event-name="watch-sticky-header"><span class="vector-icon mw-ui-icon-wikimedia-star mw-ui-icon-wikimedia-wikimedia-star"></span>
+
+<span></span>
+			</a>
+			<a href="#" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" id="ca-edit-sticky-header" tabindex="-1" data-event-name="wikitext-edit-sticky-header"><span class="vector-icon mw-ui-icon-wikimedia-wikiText mw-ui-icon-wikimedia-wikimedia-wikiText"></span>
+
+<span></span>
+			</a>
+			<a href="#" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" id="ca-ve-edit-sticky-header" tabindex="-1" data-event-name="ve-edit-sticky-header"><span class="vector-icon mw-ui-icon-wikimedia-edit mw-ui-icon-wikimedia-wikimedia-edit"></span>
+
+<span></span>
+			</a>
+			<a href="#" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" id="ca-viewsource-sticky-header" tabindex="-1" data-event-name="ve-edit-protected-sticky-header"><span class="vector-icon mw-ui-icon-wikimedia-editLock mw-ui-icon-wikimedia-wikimedia-editLock"></span>
+
+<span></span>
+			</a>
+		</div>
+			<div class="vector-sticky-header-buttons">
+				<button class="cdx-button cdx-button--weight-quiet mw-interlanguage-selector" id="p-lang-btn-sticky-header" tabindex="-1" data-event-name="ui.dropdown-p-lang-btn-sticky-header"><span class="vector-icon mw-ui-icon-wikimedia-language mw-ui-icon-wikimedia-wikimedia-language"></span>
+
+<span>5 languages</span>
+			</button>
+			<a href="#" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--action-progressive" id="ca-addsection-sticky-header" tabindex="-1" data-event-name="addsection-sticky-header"><span class="vector-icon mw-ui-icon-speechBubbleAdd-progressive mw-ui-icon-wikimedia-speechBubbleAdd-progressive"></span>
+
+<span>Add topic</span>
+			</a>
+		</div>
+			<div class="vector-sticky-header-icon-end">
+				<div class="vector-user-links">
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="mw-portlet mw-portlet-dock-bottom emptyPortlet" id="p-dock-bottom">
+	<ul>
+		
+	</ul>
+</div>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgHostname":"mw-web.codfw.main-77696f4b88-wjl48","wgBackendResponseTime":156,"wgPageParseReport":{"limitreport":{"cputime":"0.332","walltime":"0.385","ppvisitednodes":{"value":1743,"limit":1000000},"revisionsize":{"value":28562,"limit":2097152},"postexpandincludesize":{"value":62265,"limit":2097152},"templateargumentsize":{"value":1663,"limit":2097152},"expansiondepth":{"value":11,"limit":100},"expensivefunctioncount":{"value":1,"limit":500},"unstrip-depth":{"value":1,"limit":20},"unstrip-size":{"value":111626,"limit":5000000},"entityaccesscount":{"value":0,"limit":500},"timingprofile":["100.00%  345.238      1 -total"," 68.01%  234.800      1 Template:Reflist"," 21.61%   74.617      3 Template:Cite_magazine"," 18.11%   62.518     12 Template:Cite_web"," 14.86%   51.310      1 Template:Short_description"," 14.22%   49.091     10 Template:Cite_book","  8.77%   30.268      2 Template:Pagetype","  5.19%   17.913      1 Template:Blockquote","  4.72%   16.291      4 Template:Cite_news","  4.46%   15.399      1 Template:R"]},"scribunto":{"limitreport-timeusage":{"value":"0.215","limit":"10.000"},"limitreport-memusage":{"value":6277728,"limit":52428800}},"cachereport":{"origin":"mw-web.codfw.main-5f848bdcd5-9ll65","timestamp":"20260417205834","ttl":2592000,"transientcontent":false,"expiry-source":"Module:Citation/CS1 (os.date(%Y))"}}});});</script>
+<script type="application/ld+json">{"@context":"https:\/\/schema.org","@type":"Article","name":"Dynamic game difficulty balancing","url":"https:\/\/en.wikipedia.org\/wiki\/Dynamic_game_difficulty_balancing","sameAs":"http:\/\/www.wikidata.org\/entity\/Q606374","mainEntity":"http:\/\/www.wikidata.org\/entity\/Q606374","author":{"@type":"Organization","name":"Contributors to Wikimedia projects"},"publisher":{"@type":"Organization","name":"Wikimedia Foundation, Inc.","logo":{"@type":"ImageObject","url":"https:\/\/www.wikimedia.org\/static\/images\/wmf-hor-googpub.png"}},"datePublished":"2009-03-16T19:22:29Z","dateModified":"2026-04-14T13:07:39Z","headline":"technique to balance the difficulty of a video game"}</script>
+</body>
+</html>
