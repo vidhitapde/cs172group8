@@ -3,7 +3,6 @@ from bs4 import BeautifulSoup
 import sys
 import os
 import time
-from collections import deque
 from urllib.parse import urljoin, urlparse, urlunparse
 import re
 import urllib.robotparser
@@ -140,4 +139,5 @@ for t in threads:
 
 
 data = parse_folder(output_dir)
-save_json_file(data, os.path.join(output_dir, "outputs.json"))
+base_dir = os.path.dirname(os.path.abspath(__file__))
+save_json_file(data, os.path.join(base_dir, "outputs.json"))
