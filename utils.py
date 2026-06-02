@@ -1,5 +1,6 @@
 import os
 import json
+import re
 from pathlib import Path
 from urllib.parse import urlparse, urlunparse,urljoin
 from bs4 import BeautifulSoup
@@ -11,10 +12,11 @@ encoding = "utf-8"
 def extract_title(soup):
     title_tag = soup.find("title")
     title = title_tag.text.strip()
-    exists = bool(title)
+    clean_title = title.split(' - Wikipedia')[0].strip()
+    exists = bool(clean_title)
     if not exists:
         return "No Title Found"
-    return title
+    return clean_title
 
 #extract heading
 def extract_headings(soup):
@@ -30,14 +32,18 @@ def extract_text_content(soup):
    targeted_tags = [ 'p', 'li']
    text_content = []
    for tag in find_text_content.find_all(targeted_tags):
-       text_content.append(tag.get_text(strip=True))
+       text_content.append(tag.get_text(" ", strip=True))
    return "\n".join(text_content)
   
 
 def last_edited_date(soup):
     last_modified_date = soup.find(id="footer-info-lastmod")
     if last_modified_date:
-         return last_modified_date.get_text(strip=True)
+        text = last_modified_date.get_text(strip=True)
+        match = re.search(r'edited on\s+(.*?),\s*at', text)
+        if match:
+            return match.group(1)
+        return text
     return "No Date Found"
 
 
