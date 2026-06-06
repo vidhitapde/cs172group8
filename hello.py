@@ -112,7 +112,7 @@ def hello_world():
         # results = search("index", query_str)
         rank_mode = request.form.get("rank_mode","lucene")
     #add multi field search
-        results = multifield_search("index1", query_str,rank_mode=rank_mode)
+        results = multifield_search("index", query_str,rank_mode=rank_mode)
 
     return render_template('hello.html',results=results,query=query_str,rank_mode=rank_mode,pagerank_available=bool(PAGERANK))
 
