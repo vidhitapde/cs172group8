@@ -8,9 +8,9 @@
 Make sure to have the proper Python libraries and dependencies installed (i.e. Beautiful Soup, Requests) Run in your terminal
 
 - **Run**:  **pip install beautifulsoup4**
-- **Run**:   **pip install -r requests.txt**
+- **Run**:   **pip install -r requirements.txt**
 
-
+# Part A
 Run the following command in your terminal to execute the crawler. 
 
 - **Run**: **chmod +x crawler.sh**
@@ -28,3 +28,12 @@ _Input Arguments:_
 **Output**:
 - After the command is ran, you will see your HTML files being populated under the <output_folder> folder within your file directory. 
 - <output.json> file contains a dictionary of key information about each html file that was generated (title, text content, headings, and last modified date).
+
+# Part B
+Install BeautifulSoup and requests library
+- **Run**:   **pip install -r requirements.txt**
+
+Run the following command in your terminal to execute our indexer executable and our search interface. 
+- **Run:** **./indexer.sh combined_output**
+
+
