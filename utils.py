@@ -96,6 +96,5 @@ def extract_infobox(soup):
     infobox_html = ""
     if infobox:
         infobox_html = str(infobox)
-        print(infobox_html)
     
     return infobox_html
